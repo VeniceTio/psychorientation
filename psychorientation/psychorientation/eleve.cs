@@ -8,21 +8,21 @@ namespace psychorientation
 {
     class eleve
     {
-        private string classe = "";
+        private int classe = 0;
         private double competence = 0;
         private double effort = 0;
-        private string orientation = "";
+        private int orientation = 0;
 
 
         public eleve()
         {
-            this.classe = "seconde";
+            this.classe = 0;
             this.competence = 10;
             this.effort = 10;
-            this.orientation = "Inconnu";
+            this.orientation = 0;
         }
 
-        public eleve(string classe, double competence, double effort, string orientation)
+        public eleve(int classe, double competence, double effort, int orientation)
         {
             this.classe = classe;
             this.competence = competence;
@@ -30,12 +30,12 @@ namespace psychorientation
             this.orientation = orientation;
         }
 
-        public void setClasse(string classe)
+        public void setClasse(int classe)
         {
             this.classe = classe;
         }
 
-        public void setOrientation(string orientation)
+        public void setOrientation(int orientation)
         {
             this.orientation = orientation;
         }
@@ -55,11 +55,11 @@ namespace psychorientation
         {
             return this.competence;
         }
-        public string getClasse()
+        public int getClasse()
         {
             return this.classe;
         }
-        public string getOrientation()
+        public int getOrientation()
         {
             return this.orientation;
         }
