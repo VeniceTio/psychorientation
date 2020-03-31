@@ -19,7 +19,8 @@ namespace psychorientation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ","Début");
+            m.ShowDialog();
         }
     }
 }
