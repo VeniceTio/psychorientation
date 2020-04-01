@@ -57,6 +57,12 @@
     <Compile Include="InterfaceClasse.Designer.cs">
       <DependentUpon>InterfaceClasse.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceInfoCompletEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceInfoCompletEleve.Designer.cs">
+      <DependentUpon>InterfaceInfoCompletEleve.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListeEleve.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InterfaceClasse.resx">
       <DependentUpon>InterfaceClasse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceInfoCompletEleve.resx">
+      <DependentUpon>InterfaceInfoCompletEleve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeEleve.resx">
       <DependentUpon>ListeEleve.cs</DependentUpon>

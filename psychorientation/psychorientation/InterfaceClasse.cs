@@ -70,8 +70,7 @@ namespace psychorientation
 
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
         {
-            ListeEleve le = new ListeEleve();
-            le.Show();
+
         }
 
         private void InterfaceClasse_SizeChanged(object sender, EventArgs e)
