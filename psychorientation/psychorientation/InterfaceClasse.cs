@@ -74,8 +74,20 @@ namespace psychorientation
 
         private void InterfaceClasse_SizeChanged(object sender, EventArgs e)
         {
-            PictureBox pb = pb_action_suivante;
-            pb.Location = new Point(Size.Width - pb.Width - 32, Size.Height - pb.Height - 32);
+            PictureBox pb1 = pb_action_suivante;
+            pb1.Location = new Point(Size.Width - pb1.Width - 32, Size.Height - pb1.Height - 32);
+
+            PictureBox pb2 = pb_sortir;
+            pb2.Location = new Point(Size.Width - pb2.Width, 0);
+        }
+
+        private void Pb_sortir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Souhaitez-vous quitter le jeu ?\nVous perdrez alors votre progression dans la partie en cours.",
+                                "Confirmation de fermeture", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
+            {
+                Close();
+            }
         }
     }
 }

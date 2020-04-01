@@ -57,6 +57,18 @@
     <Compile Include="InterfaceClasse.Designer.cs">
       <DependentUpon>InterfaceClasse.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceInfoCompletEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceInfoCompletEleve.Designer.cs">
+      <DependentUpon>InterfaceInfoCompletEleve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeEleve.Designer.cs">
+      <DependentUpon>ListeEleve.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionnaireEleve.cs" />
     <Compile Include="InterfaceInfoEleve.cs">
       <SubType>UserControl</SubType>
@@ -76,6 +88,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InterfaceClasse.resx">
       <DependentUpon>InterfaceClasse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceInfoCompletEleve.resx">
+      <DependentUpon>InterfaceInfoCompletEleve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeEleve.resx">
+      <DependentUpon>ListeEleve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceInfoEleve.resx">
       <DependentUpon>InterfaceInfoEleve.cs</DependentUpon>
@@ -112,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salleV1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sortir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

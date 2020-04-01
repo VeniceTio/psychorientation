@@ -8,79 +8,77 @@ namespace psychorientation
 {
     public class GestionnaireEleve
     {
-        private List<Eleve> listEleve = new List<Eleve>();
+        private List<Eleve> listeEleves = new List<Eleve>();
 
-        public GestionnaireEleve()
-        {
-        }
+        public GestionnaireEleve() {}
 
         public void AjouterEleve(Eleve e)
         {
-            this.listEleve.Add(e);
+            this.listeEleves.Add(e);
         }
 
         public void SupprimerEleve(Eleve e)
         {
-            this.listEleve.Remove(e);
+            this.listeEleves.Remove(e);
         }
 
         public void SupprimerEleve(int indice)
         {
-            this.listEleve.RemoveAt(indice);
+            this.listeEleves.RemoveAt(indice);
         }
 
-        public List<Eleve> GetListEleve()
+        public List<Eleve> GetListeEleves()
         {
-            return this.listEleve;
+            return this.listeEleves;
         }
 
         public Eleve GetEleve(int indice)
         {
-            return this.listEleve[indice];
+            return this.listeEleves[indice];
         }
 
         public double GetMoyenneClasse()
         {
             double res = -1;
-            if (this.listEleve.Count > 0)
+            if (this.listeEleves.Count > 0)
             {
-                foreach (Eleve el in this.listEleve)
+                foreach (Eleve el in this.listeEleves)
                 {
                     res += el.GetMoyenne();
                 }
             }
-            return res / this.listEleve.Count;
+            return res / this.listeEleves.Count;
         }
 
         public double GetCompetenceClasse()
         {
             double res = -1;
-            if (this.listEleve.Count > 0)
+            if (this.listeEleves.Count > 0)
             {
-                foreach (Eleve el in this.listEleve)
+                foreach (Eleve el in this.listeEleves)
                 {
                     res += el.GetCompetence();
                 }
             }
-            return res / this.listEleve.Count;
+            return res / this.listeEleves.Count;
         }
 
         public double GetEffortClasse()
         {
             double res = -1;
-            if (this.listEleve.Count > 0)
+            if (this.listeEleves.Count > 0)
             {
-                foreach (Eleve el in this.listEleve)
+                foreach (Eleve el in this.listeEleves)
                 {
                     res += el.GetEffort();
                 }
             }
-            return res / this.listEleve.Count;
+            return res / this.listeEleves.Count;
         }
 
         public void FaireControle(string nom)
         {
-            foreach (Eleve e in this.listEleve)
+            foreach (Eleve e in this.listeEleves)
             {
                 e.AjouterNote(nom);
             }
@@ -89,14 +87,14 @@ namespace psychorientation
         public double GetAppreciationClasse()
         {
             double res = -1;
-            if (this.listEleve.Count > 0)
+            if (this.listeEleves.Count > 0)
             {
-                foreach (Eleve el in this.listEleve)
+                foreach (Eleve el in this.listeEleves)
                 {
                     res += el.GetAppreciation();
                 }
             }
-            return res / this.listEleve.Count;
+            return res / this.listeEleves.Count;
         }
 
     }
