@@ -27,7 +27,7 @@ namespace psychorientation
             this.listeEleves.RemoveAt(indice);
         }
 
-        public List<Eleve> GetlisteEleves()
+        public List<Eleve> GetListeEleves()
         {
             return this.listeEleves;
         }

@@ -102,6 +102,12 @@ namespace psychorientation
 
 
 
+        public void Progression(double typeEducation)
+        {
+            this.competence += (this.effort - typeEducation) / competence * 2;
+            this.effort += (this.effort - typeEducation) / competence * 2;
+        }
+
         public void AjouterNote(string nom)
         {
             Note n = new Note(nom, CalculerNote(), this.competence, this.effort);
