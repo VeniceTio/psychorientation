@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 namespace psychorientation
 {
-    class eleve
+    public class Eleve
     {
         private int classe = 0;
         private double competence = 0;
         private double effort = 0;
         private int orientation = 0;
+        private int id;
 
 
-        public eleve()
+        public Eleve(int id)
         {
+            this.id = id;
             this.classe = 0;
             this.competence = 10;
             this.effort = 10;
             this.orientation = 0;
         }
 
-        public eleve(int classe, double competence, double effort, int orientation)
+        public Eleve(int id,int classe, double competence, double effort, int orientation)
         {
+            this.id = id;
             this.classe = classe;
             this.competence = competence;
             this.effort = effort;
@@ -50,10 +53,13 @@ namespace psychorientation
             this.competence = competence;
         }
 
-
         public double getCompetence()
         {
             return this.competence;
+        }
+        public int getId()
+        {
+            return this.id;
         }
         public int getClasse()
         {
