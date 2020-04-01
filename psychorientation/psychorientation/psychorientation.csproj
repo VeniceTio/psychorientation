@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -57,6 +57,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListeEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeEleve.Designer.cs">
+      <DependentUpon>ListeEleve.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionnaireEleve.cs" />
     <Compile Include="InterfaceInfoEleve.cs">
       <SubType>UserControl</SubType>
@@ -75,6 +81,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeEleve.resx">
+      <DependentUpon>ListeEleve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceInfoEleve.resx">
       <DependentUpon>InterfaceInfoEleve.cs</DependentUpon>
