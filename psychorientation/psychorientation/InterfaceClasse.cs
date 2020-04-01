@@ -21,7 +21,6 @@ namespace psychorientation
             InitializeComponent();
         }
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
             lbl_date.Text = libelle.Mois(moisActuel % 12) + " " + libelle.Niveau(anneeActuelle);
@@ -53,11 +52,13 @@ namespace psychorientation
                     break;
                 case 42: // Fin de la 3ème année : Debut Juillet.
                     // Fin de la partie.
-                    Message m_fin = new Message(-1, "Vous avez fini la phase bêta de ce jeu !\n" + 
-                                                "Bravo à vous et n'hésitez pas à essayer à nouveau pour " + 
-                                                "améliorer votre compréhension du monde extérieur.", 
-                                                "Félicitations", 
-                                                TypeMessage.INFORMATION
+                    Message m_fin = new Message(
+                        -1, 
+                        "Vous avez fini la phase bêta de ce jeu !\n" + 
+                        "Bravo à vous et n'hésitez pas à essayer à nouveau pour " + 
+                        "améliorer votre compréhension du monde extérieur.", 
+                        "Félicitations", 
+                        TypeMessage.INFORMATION
                     );
                     m_fin.ShowDialog();
                     Close();

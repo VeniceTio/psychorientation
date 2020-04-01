@@ -21,22 +21,22 @@ namespace psychorientation
             this.effort = effort;
         }
 
-        public string getNom()
+        public string GetNom()
         {
             return this.nom;
         }
 
-        public double getNote()
+        public double GetNote()
         {
             return this.note;
         }
 
-        public double getCompetence()
+        public double GetCompetence()
         {
             return this.competence;
         }
 
-        public double getEffort()
+        public double GetEffort()
         {
             return this.effort;
         }
