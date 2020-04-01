@@ -20,7 +20,7 @@ namespace psychorientation
 
         private void InterfaceInfoEleve_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         public void setParam(Eleve el)
@@ -53,6 +53,13 @@ namespace psychorientation
         {
             int val = (int)valeur;
             p.Size = new Size(val * 133 / 10, p.Height);
+        }
+
+        private void InterfaceInfoEleve_Click(object sender, EventArgs e)
+        {
+            InterfaceInfoCompletEleve iice = new InterfaceInfoCompletEleve();
+            iice.setParam(this.eleve);
+            iice.Show();
         }
     }
 }

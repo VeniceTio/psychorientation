@@ -23,6 +23,12 @@ namespace psychorientation
             GestionnaireEleve gestEleve = new GestionnaireEleve();
             Libelle lib = new Libelle();
 
+            // TEST
+            //Eleve e1 = new Eleve(4);
+            //Eleve e2 = new Eleve(5);
+            //gestEleve.AjouterEleve(e1);
+            //gestEleve.AjouterEleve(e2);
+
             List<Eleve> listEleve = gestEleve.GetListeEleves();
             int y = 0;
             foreach ( Eleve eleve in listEleve)

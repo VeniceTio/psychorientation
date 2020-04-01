@@ -40,6 +40,7 @@
             this.pnlCompetence = new System.Windows.Forms.Panel();
             this.lblMoyenneNote = new System.Windows.Forms.Label();
             this.pcbEleve = new System.Windows.Forms.PictureBox();
+            this.pnlNote = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEleve)).BeginInit();
@@ -158,11 +159,19 @@
             this.pcbEleve.TabIndex = 15;
             this.pcbEleve.TabStop = false;
             // 
+            // pnlNote
+            // 
+            this.pnlNote.Location = new System.Drawing.Point(98, 243);
+            this.pnlNote.Name = "pnlNote";
+            this.pnlNote.Size = new System.Drawing.Size(391, 134);
+            this.pnlNote.TabIndex = 16;
+            // 
             // InterfaceInfoCompletEleve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 408);
+            this.Controls.Add(this.pnlNote);
             this.Controls.Add(this.pcbEleve);
             this.Controls.Add(this.lblMoyenneNote);
             this.Controls.Add(this.panel2);
@@ -198,5 +207,6 @@
         private System.Windows.Forms.Panel pnlCompetence;
         private System.Windows.Forms.Label lblMoyenneNote;
         private System.Windows.Forms.PictureBox pcbEleve;
+        private System.Windows.Forms.Panel pnlNote;
     }
 }
