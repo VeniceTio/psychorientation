@@ -39,7 +39,7 @@
             // 
             // pb_action_suivante
             // 
-            this.pb_action_suivante.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_action_suivante.BackColor = System.Drawing.Color.Transparent;
             this.pb_action_suivante.BackgroundImage = global::psychorientation.Properties.Resources.passer;
             this.pb_action_suivante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pb_action_suivante.InitialImage = null;
@@ -52,6 +52,7 @@
             // 
             // pb_liste_eleves
             // 
+            this.pb_liste_eleves.BackColor = System.Drawing.Color.Transparent;
             this.pb_liste_eleves.BackgroundImage = global::psychorientation.Properties.Resources.grp;
             this.pb_liste_eleves.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_liste_eleves.Location = new System.Drawing.Point(12, 12);
@@ -74,6 +75,7 @@
             // 
             // pb_sortir
             // 
+            this.pb_sortir.BackColor = System.Drawing.Color.Transparent;
             this.pb_sortir.BackgroundImage = global::psychorientation.Properties.Resources.sortir;
             this.pb_sortir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_sortir.Location = new System.Drawing.Point(1283, -1);
@@ -88,7 +90,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::psychorientation.Properties.Resources.salleV1;
+            this.BackgroundImage = global::psychorientation.Properties.Resources.salleV11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
             this.Controls.Add(this.pb_sortir);

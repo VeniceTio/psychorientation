@@ -93,6 +93,16 @@ namespace psychorientation.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap salleV11 {
+            get {
+                object obj = ResourceManager.GetObject("salleV11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sortir {
             get {
                 object obj = ResourceManager.GetObject("sortir", resourceCulture);
