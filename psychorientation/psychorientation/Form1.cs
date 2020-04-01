@@ -43,7 +43,8 @@ namespace psychorientation
         private void Form1_Load(object sender, EventArgs e)
         {
             InitialiserTableau();
-            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ","Début");
+            TypeMessage tm = TypeMessage.INFORMATION;
+            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ","Début",tm);
             m.ShowDialog();
             
             CreerEleve(nombreEleve);

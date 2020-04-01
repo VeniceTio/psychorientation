@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace psychorientation
 {
+
+    public enum TypeMessage
+    {
+        INFORMATION
+    }
+
     public partial class Message : Form
     {
         int affichage = -1;
         string message = "";
         string titre = "";
-
+        TypeMessage typeMessage;
 
         bool reponseBool = false;
         string reponseString = "";
@@ -23,9 +29,10 @@ namespace psychorientation
         double reponseDouble = 0;
 
 
-        public Message(int affichageChoisi,string messageAffiche,string titreAffiche)
+        public Message(int affichageChoisi,string messageAffiche,string titreAffiche,TypeMessage typeMessage)
         {
             InitializeComponent();
+            this.typeMessage = typeMessage;
             affichage = affichageChoisi;
             message = messageAffiche;
             titre = titreAffiche;
@@ -56,11 +63,12 @@ namespace psychorientation
         {
             lblMessage.Text = message;
             lblTitre.Text = titre;
-            switch (affichage)
+            switch (typeMessage)
             {
-                case 1: //affichage
+                case TypeMessage.INFORMATION:;
                 break;
             }
+
         }
 
         private void button1_Click(object sender, EventArgs e)

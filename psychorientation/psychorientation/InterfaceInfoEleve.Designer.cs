@@ -34,9 +34,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblClasse = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pnlEffort = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pnlCompetence = new System.Windows.Forms.Panel();
+            this.lblEffort = new System.Windows.Forms.Label();
+            this.lblCompetence = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +98,14 @@
             this.panel1.Size = new System.Drawing.Size(139, 26);
             this.panel1.TabIndex = 5;
             // 
+            // pnlEffort
+            // 
+            this.pnlEffort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.pnlEffort.Location = new System.Drawing.Point(3, 4);
+            this.pnlEffort.Name = "pnlEffort";
+            this.pnlEffort.Size = new System.Drawing.Size(133, 18);
+            this.pnlEffort.TabIndex = 6;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
@@ -105,14 +115,6 @@
             this.panel2.Size = new System.Drawing.Size(139, 26);
             this.panel2.TabIndex = 6;
             // 
-            // pnlEffort
-            // 
-            this.pnlEffort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pnlEffort.Location = new System.Drawing.Point(3, 4);
-            this.pnlEffort.Name = "pnlEffort";
-            this.pnlEffort.Size = new System.Drawing.Size(133, 18);
-            this.pnlEffort.TabIndex = 6;
-            // 
             // pnlCompetence
             // 
             this.pnlCompetence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -121,10 +123,29 @@
             this.pnlCompetence.Size = new System.Drawing.Size(125, 18);
             this.pnlCompetence.TabIndex = 7;
             // 
+            // lblEffort
+            // 
+            this.lblEffort.AutoSize = true;
+            this.lblEffort.Location = new System.Drawing.Point(255, 144);
+            this.lblEffort.Name = "lblEffort";
+            this.lblEffort.Size = new System.Drawing.Size(0, 13);
+            this.lblEffort.TabIndex = 7;
+            // 
+            // lblCompetence
+            // 
+            this.lblCompetence.AutoSize = true;
+            this.lblCompetence.Location = new System.Drawing.Point(254, 189);
+            this.lblCompetence.Name = "lblCompetence";
+            this.lblCompetence.Size = new System.Drawing.Size(0, 13);
+            this.lblCompetence.TabIndex = 8;
+            
+            // 
             // InterfaceInfoEleve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblCompetence);
+            this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblClasse);
@@ -153,5 +174,7 @@
         private System.Windows.Forms.Panel pnlEffort;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnlCompetence;
+        private System.Windows.Forms.Label lblEffort;
+        private System.Windows.Forms.Label lblCompetence;
     }
 }
