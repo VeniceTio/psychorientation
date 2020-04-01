@@ -26,9 +26,8 @@ namespace psychorientation
         {
             lbl_date.Text = libelle.Mois(moisActuel % 12) + " " + libelle.Niveau(anneeActuelle);
 
-            TypeMessage tm = TypeMessage.INFORMATION;
-            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", tm);
-            m.ShowDialog();
+            Message m_accueil = new Message(-1, "Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
+            m_accueil.ShowDialog();
         }
 
         private void Pb_action_suivante_Click(object sender, EventArgs e)
@@ -71,6 +70,12 @@ namespace psychorientation
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void InterfaceClasse_SizeChanged(object sender, EventArgs e)
+        {
+            PictureBox pb = pb_action_suivante;
+            pb.Location = new Point(Size.Width - pb.Width - 32, Size.Height - pb.Height - 32);
         }
     }
 }

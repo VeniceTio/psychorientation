@@ -64,7 +64,7 @@
     <Compile Include="InterfaceInfoEleve.Designer.cs">
       <DependentUpon>InterfaceInfoEleve.cs</DependentUpon>
     </Compile>
-    <Compile Include="Libele.cs" />
+    <Compile Include="Libelle.cs" />
     <Compile Include="Message.cs">
       <SubType>Form</SubType>
     </Compile>

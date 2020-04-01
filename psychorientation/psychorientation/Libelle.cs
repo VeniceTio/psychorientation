@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace psychorientation
 {
-    class Libele
+    class Libelle
     {
         private List<string> libele_mois = new List<string>()
         {"Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"};
         private List<string> libele_niveau = new List<string>()
         {"Seconde", "Première", "Terminale"};
-        private static Libele instance;
+        private static Libelle instance;
 
-        public Libele() {}
+        public Libelle() {}
 
-        public static Libele GetInstance()
+        public static Libelle GetInstance()
         {
-            if(Libele.instance == null)
+            if(Libelle.instance == null)
             {
-                Libele.instance = new Libele();
-                return Libele.instance;
+                Libelle.instance = new Libelle();
+                return Libelle.instance;
             }
             else
             {
-                return Libele.instance;
+                return Libelle.instance;
             }
         }
 
