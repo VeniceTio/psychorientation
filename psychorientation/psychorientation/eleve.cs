@@ -13,6 +13,7 @@ namespace psychorientation
         private double effort = 0;
         private int orientation = 0;
         private int id;
+        private List<Note> listNote = new List<Note>();
 
 
         public Eleve(int id)
@@ -53,9 +54,15 @@ namespace psychorientation
             this.competence = competence;
         }
 
+
+
         public double getCompetence()
         {
             return this.competence;
+        }
+        public List<Note> getListNote()
+        {
+            return this.listNote;
         }
         public int getId()
         {
@@ -72,6 +79,16 @@ namespace psychorientation
         public double getEffort()
         {
             return this.effort;
+        }
+
+
+
+
+
+        public void ajouterNote(string nom, double note)
+        {
+            Note n = new Note(nom, note, this.competence, this.effort);
+            this.listNote.Add(n);
         }
     }
 }
