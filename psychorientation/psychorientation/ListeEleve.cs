@@ -28,7 +28,7 @@ namespace psychorientation
             gestEleve.AjouterEleve(el1);
             gestEleve.AjouterEleve(el2);
 
-            List<Eleve> listEleve = gestEleve.GetListEleve();
+            List<Eleve> listEleve = gestEleve.GetListeEleves();
             int y = 0;
             foreach ( Eleve eleve in listEleve)
             {

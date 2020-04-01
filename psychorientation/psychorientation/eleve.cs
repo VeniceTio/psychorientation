@@ -13,7 +13,7 @@ namespace psychorientation
         private double effort = 0;
         private int orientation = 0;
         private int id;
-        private List<Note> listNote = new List<Note>();
+        private List<Note> listeNotes = new List<Note>();
         private double appreciation;
 
         public Eleve(int id)
@@ -60,9 +60,9 @@ namespace psychorientation
         {
             return this.competence;
         }
-        public List<Note> GetListNote()
+        public List<Note> GetlisteNotes()
         {
-            return this.listNote;
+            return this.listeNotes;
         }
         public int GetId()
         {
@@ -86,26 +86,32 @@ namespace psychorientation
             return this.appreciation;
         }
 
-
-
         public double GetMoyenne()
         {
-            double res = -1;
-            if (this.listNote.Count > 0)
+            if (this.listeNotes.Count == 0) {return -1;}
+            double res = 0;
+            if (this.listeNotes.Count > 0)
             {
-               foreach(Note n in listNote)
+               foreach(Note n in listeNotes)
                 {
                     res += n.getNote();
                 }
             }
-            return res/ this.listNote.Count;
+            return res / this.listeNotes.Count;
         }
 
 
+
+        public void Progression(double typeEducation)
+        {
+            this.competence += (this.effort - typeEducation) / competence * 2;
+            this.effort += (this.effort - typeEducation) / competence * 2;
+        }
+
         public void AjouterNote(string nom)
         {
-            Note n = new Note(nom,CalculerNote() , this.competence, this.effort);
-            this.listNote.Add(n);
+            Note n = new Note(nom, CalculerNote(), this.competence, this.effort);
+            this.listeNotes.Add(n);
         }
 
         private double CalculerNote()

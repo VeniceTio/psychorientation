@@ -31,8 +31,10 @@
             this.pb_action_suivante = new System.Windows.Forms.PictureBox();
             this.pb_liste_eleves = new System.Windows.Forms.PictureBox();
             this.lbl_date = new System.Windows.Forms.Label();
+            this.pb_sortir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_liste_eleves)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_action_suivante
@@ -68,6 +70,17 @@
             this.lbl_date.TabIndex = 2;
             this.lbl_date.Text = "Chargement...";
             // 
+            // pb_sortir
+            // 
+            this.pb_sortir.BackgroundImage = global::psychorientation.Properties.Resources.sortir;
+            this.pb_sortir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_sortir.Location = new System.Drawing.Point(1283, -1);
+            this.pb_sortir.Name = "pb_sortir";
+            this.pb_sortir.Size = new System.Drawing.Size(75, 75);
+            this.pb_sortir.TabIndex = 3;
+            this.pb_sortir.TabStop = false;
+            this.pb_sortir.Click += new System.EventHandler(this.Pb_sortir_Click);
+            // 
             // InterfaceClasse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -76,6 +89,7 @@
             this.BackgroundImage = global::psychorientation.Properties.Resources.salleV1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
+            this.Controls.Add(this.pb_sortir);
             this.Controls.Add(this.lbl_date);
             this.Controls.Add(this.pb_liste_eleves);
             this.Controls.Add(this.pb_action_suivante);
@@ -90,6 +104,7 @@
             this.SizeChanged += new System.EventHandler(this.InterfaceClasse_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_liste_eleves)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,6 +115,7 @@
         private System.Windows.Forms.PictureBox pb_action_suivante;
         private System.Windows.Forms.PictureBox pb_liste_eleves;
         private System.Windows.Forms.Label lbl_date;
+        private System.Windows.Forms.PictureBox pb_sortir;
     }
 }
 
