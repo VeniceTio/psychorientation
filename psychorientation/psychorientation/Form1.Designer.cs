@@ -41,6 +41,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Psychorientation";
             this.Load += new System.EventHandler(this.Form1_Load);
+            
             this.ResumeLayout(false);
 
         }

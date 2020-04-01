@@ -83,12 +83,29 @@ namespace psychorientation
 
 
 
-
-
-        public void ajouterNote(string nom, double note)
+        public double getMoyenne()
         {
-            Note n = new Note(nom, note, this.competence, this.effort);
+            double res = -1;
+            if (this.listNote.Count > 0)
+            {
+               foreach(Note n in listNote)
+                {
+                    res += n.getNote();
+                }
+            }
+            return res/ this.listNote.Count;
+        }
+
+
+        public void ajouterNote(string nom)
+        {
+            Note n = new Note(nom,calculerNote() , this.competence, this.effort);
             this.listNote.Add(n);
+        }
+
+        private double calculerNote()
+        {
+            return this.effort*0.2+this.competence*1.8;
         }
     }
 }

@@ -47,7 +47,7 @@ namespace psychorientation
 
             TypeMessage tm = TypeMessage.INFORMATION;
             Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ","Début",tm);
-            m.ShowDialog();
+           // m.ShowDialog();
             
             
             InterfaceInfoEleve ii = new InterfaceInfoEleve();
@@ -55,7 +55,7 @@ namespace psychorientation
             ii.Left = 0;
             ii.Top = 0;
             ii.BorderStyle = BorderStyle.Fixed3D;
-            this.Controls.Add(ii);
+            //this.Controls.Add(ii);
 
 
         }

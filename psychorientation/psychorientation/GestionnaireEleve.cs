@@ -39,5 +39,52 @@ namespace psychorientation
             return this.listEleve[indice];
         }
 
+        public double getMoyenneClasse()
+        {
+            double res = -1;
+            if (this.listEleve.Count > 0)
+            {
+                foreach (Eleve el in this.listEleve)
+                {
+                    res += el.getMoyenne();
+                }
+            }
+            return res / this.listEleve.Count;
+        }
+
+        public double getCompetenceClasse()
+        {
+            double res = -1;
+            if (this.listEleve.Count > 0)
+            {
+                foreach (Eleve el in this.listEleve)
+                {
+                    res += el.getCompetence();
+                }
+            }
+            return res / this.listEleve.Count;
+        }
+
+        public double getEffortClasse()
+        {
+            double res = -1;
+            if (this.listEleve.Count > 0)
+            {
+                foreach (Eleve el in this.listEleve)
+                {
+                    res += el.getEffort();
+                }
+            }
+            return res / this.listEleve.Count;
+        }
+
+        public void faireControle(string nom)
+        {
+            foreach(Eleve e in this.listEleve)
+            {
+                e.ajouterNote(nom);
+            }
+        }
+
     }
 }
