@@ -18,7 +18,7 @@ namespace psychorientation
         public double coeffCompetenceEcrit;
         public double coeffEffortEcrit;
 
-        public static Config getInstance()
+        public static Config GetInstance()
         {
             if (Config.instance == null)
             {
@@ -33,22 +33,22 @@ namespace psychorientation
             }
         }
 
-        public double getCoeffEffortOral()
+        public double GetCoeffEffortOral()
         {
             return this.coeffEffortOral;
         }
 
-        public double getCoeffCompetenceOral()
+        public double GetCoeffCompetenceOral()
         {
             return this.coeffCompetenceOral;
         }
 
-        public double getCoeffCompetenceEcrit()
+        public double GetCoeffCompetenceEcrit()
         {
             return this.coeffCompetenceOral;
         }
 
-        public double getCoeffEffortEcrit()
+        public double GetCoeffEffortEcrit()
         {
             return this.coeffEffortEcrit;
         }

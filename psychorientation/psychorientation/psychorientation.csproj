@@ -51,11 +51,11 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="Eleve.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="InterfaceClasse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="InterfaceClasse.Designer.cs">
+      <DependentUpon>InterfaceClasse.cs</DependentUpon>
     </Compile>
     <Compile Include="ListeEleve.cs">
       <SubType>Form</SubType>
@@ -79,8 +79,8 @@
     <Compile Include="Note.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="InterfaceClasse.resx">
+      <DependentUpon>InterfaceClasse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeEleve.resx">
       <DependentUpon>ListeEleve.cs</DependentUpon>
