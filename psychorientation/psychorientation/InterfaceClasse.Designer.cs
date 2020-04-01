@@ -37,10 +37,13 @@
             // 
             // pb_action_suivante
             // 
-            this.pb_action_suivante.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pb_action_suivante.Location = new System.Drawing.Point(922, 471);
+            this.pb_action_suivante.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_action_suivante.BackgroundImage = global::psychorientation.Properties.Resources.passer;
+            this.pb_action_suivante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pb_action_suivante.InitialImage = null;
+            this.pb_action_suivante.Location = new System.Drawing.Point(1225, 651);
             this.pb_action_suivante.Name = "pb_action_suivante";
-            this.pb_action_suivante.Size = new System.Drawing.Size(90, 77);
+            this.pb_action_suivante.Size = new System.Drawing.Size(120, 120);
             this.pb_action_suivante.TabIndex = 0;
             this.pb_action_suivante.TabStop = false;
             this.pb_action_suivante.Click += new System.EventHandler(this.Pb_action_suivante_Click);
@@ -49,7 +52,7 @@
             // 
             this.pb_liste_eleves.Location = new System.Drawing.Point(12, 12);
             this.pb_liste_eleves.Name = "pb_liste_eleves";
-            this.pb_liste_eleves.Size = new System.Drawing.Size(90, 78);
+            this.pb_liste_eleves.Size = new System.Drawing.Size(100, 100);
             this.pb_liste_eleves.TabIndex = 1;
             this.pb_liste_eleves.TabStop = false;
             this.pb_liste_eleves.Click += new System.EventHandler(this.Pb_liste_eleves_Click);
@@ -57,10 +60,11 @@
             // lbl_date
             // 
             this.lbl_date.AutoSize = true;
-            this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_date.Location = new System.Drawing.Point(108, 12);
+            this.lbl_date.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_date.Location = new System.Drawing.Point(118, 12);
             this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(142, 24);
+            this.lbl_date.Size = new System.Drawing.Size(163, 29);
             this.lbl_date.TabIndex = 2;
             this.lbl_date.Text = "Chargement...";
             // 
@@ -68,16 +72,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 560);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::psychorientation.Properties.Resources.salleV1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1357, 783);
             this.Controls.Add(this.lbl_date);
             this.Controls.Add(this.pb_liste_eleves);
             this.Controls.Add(this.pb_action_suivante);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "InterfaceClasse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Psychorientation";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.SizeChanged += new System.EventHandler(this.InterfaceClasse_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_liste_eleves)).EndInit();
             this.ResumeLayout(false);

@@ -12,12 +12,9 @@ namespace psychorientation
 {
     public partial class InterfaceClasse : Form
     {
-        private List<String> libele_mois = new List<String>()
-        {"Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"};
-        private List<String> libele_niveau = new List<String>()
-        {"Seconde", "Première", "Terminale"};
-        private int mois_actuel = 8;
-        private int annee_actuelle = 0;
+        private Libelle libelle = Libelle.GetInstance();
+        private int moisActuel = 8;
+        private int anneeActuelle = 0;
 
         public InterfaceClasse()
         {
@@ -27,11 +24,10 @@ namespace psychorientation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lbl_date.Text = libele_mois[(mois_actuel % 12)] + " " + libele_niveau[annee_actuelle];
+            lbl_date.Text = libelle.Mois(moisActuel % 12) + " " + libelle.Niveau(anneeActuelle);
 
-            TypeMessage tm = TypeMessage.INFORMATION;
-            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ","Début",tm);
-            m.ShowDialog();
+            Message m_accueil = new Message(-1, "Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
+            m_accueil.ShowDialog();
         }
 
         private void Pb_action_suivante_Click(object sender, EventArgs e)
@@ -44,28 +40,42 @@ namespace psychorientation
             }
 
             // Passe au mois suivant.
-            mois_actuel++;
-            switch(mois_actuel)
+            moisActuel++;
+            switch(moisActuel)
             {
                 case 17: // Fin de la 1ère année : Début Juin.
-                    mois_actuel = 20;
-                    annee_actuelle = 1;
+                    moisActuel = 20;
+                    anneeActuelle = 1;
                     break;
                 case 29: // Fin de la 2nde année : Début Juin.
-                    mois_actuel = 32;
-                    annee_actuelle = 2;
+                    moisActuel = 32;
+                    anneeActuelle = 2;
                     break;
                 case 42: // Fin de la 3ème année : Debut Juillet.
                     // Fin de la partie.
+                    Message m_fin = new Message(-1, "Vous avez fini la phase bêta de ce jeu !\n" + 
+                                                "Bravo à vous et n'hésitez pas à essayer à nouveau pour " + 
+                                                "améliorer votre compréhension du monde extérieur.", 
+                                                "Félicitations", 
+                                                TypeMessage.INFORMATION
+                    );
+                    m_fin.ShowDialog();
+                    Close();
                     break;
             }
 
-            lbl_date.Text = libele_mois[(mois_actuel % 12)] + " " + libele_niveau[annee_actuelle];
+            lbl_date.Text = libelle.Mois(moisActuel % 12) + " " + libelle.Niveau(anneeActuelle);
         }
 
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void InterfaceClasse_SizeChanged(object sender, EventArgs e)
+        {
+            PictureBox pb = pb_action_suivante;
+            pb.Location = new Point(Size.Width - pb.Width - 32, Size.Height - pb.Height - 32);
         }
     }
 }
