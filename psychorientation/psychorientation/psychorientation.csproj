@@ -57,6 +57,12 @@
     <Compile Include="InterfaceClasse.Designer.cs">
       <DependentUpon>InterfaceClasse.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceInfoCompletEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceInfoCompletEleve.Designer.cs">
+      <DependentUpon>InterfaceInfoCompletEleve.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListeEleve.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,10 +86,13 @@
     <Compile Include="Note.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InterfaceClasse.resx">
-      <DependentUpon>InterfaceClasse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeEleve.resx">
+    <EmbeddedResource Include="InterfaceInfoCompletEleve.resx">
+      <DependentUpon>InterfaceInfoCompletEleve.cs</DependentUpon>
+    </EmbeddedResource>
       <DependentUpon>ListeEleve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceInfoEleve.resx">
@@ -99,8 +108,7 @@
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -114,13 +122,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\passer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\salleV1.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
