@@ -94,7 +94,7 @@ namespace psychorientation
             {
                foreach(Note n in listeNotes)
                 {
-                    res += n.getNote();
+                    res += n.GetNote();
                 }
             }
             return res / this.listeNotes.Count;
