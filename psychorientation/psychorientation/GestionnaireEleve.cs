@@ -14,76 +14,89 @@ namespace psychorientation
         {
         }
 
-        public void ajouterEleve(Eleve e)
+        public void AjouterEleve(Eleve e)
         {
             this.listEleve.Add(e);
         }
 
-        public void supprimerEleve(Eleve e)
+        public void SupprimerEleve(Eleve e)
         {
             this.listEleve.Remove(e);
         }
 
-        public void supprimerEleve(int indice)
+        public void SupprimerEleve(int indice)
         {
             this.listEleve.RemoveAt(indice);
         }
 
-        public List<Eleve> getListEleve()
+        public List<Eleve> GetListEleve()
         {
             return this.listEleve;
         }
 
-        public Eleve getEleve(int indice)
+        public Eleve GetEleve(int indice)
         {
             return this.listEleve[indice];
         }
 
-        public double getMoyenneClasse()
+        public double GetMoyenneClasse()
         {
             double res = -1;
             if (this.listEleve.Count > 0)
             {
                 foreach (Eleve el in this.listEleve)
                 {
-                    res += el.getMoyenne();
+                    res += el.GetMoyenne();
                 }
             }
             return res / this.listEleve.Count;
         }
 
-        public double getCompetenceClasse()
+        public double GetCompetenceClasse()
         {
             double res = -1;
             if (this.listEleve.Count > 0)
             {
                 foreach (Eleve el in this.listEleve)
                 {
-                    res += el.getCompetence();
+                    res += el.GetCompetence();
                 }
             }
             return res / this.listEleve.Count;
         }
 
-        public double getEffortClasse()
+        public double GetEffortClasse()
         {
             double res = -1;
             if (this.listEleve.Count > 0)
             {
                 foreach (Eleve el in this.listEleve)
                 {
-                    res += el.getEffort();
+                    res += el.GetEffort();
                 }
             }
             return res / this.listEleve.Count;
         }
 
-        public void faireControle(string nom)
+        public void FaireControle(string nom)
         {
-            foreach(Eleve e in this.listEleve)
+            foreach (Eleve e in this.listEleve)
             {
-                e.ajouterNote(nom);
+                e.AjouterNote(nom);
             }
+        }
+
+        public double GetAppreciationClasse()
+        {
+            double res = -1;
+            if (this.listEleve.Count > 0)
+            {
+                foreach (Eleve el in this.listEleve)
+                {
+                    res += el.GetAppreciation();
+                }
+            }
+            return res / this.listEleve.Count;
         }
 
     }
