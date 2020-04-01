@@ -43,16 +43,21 @@ namespace psychorientation
         private void Form1_Load(object sender, EventArgs e)
         {
             InitialiserTableau();
-            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ","Début");
+            CreerEleve(nombreEleve);
+
+            TypeMessage tm = TypeMessage.INFORMATION;
+            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ","Début",tm);
             m.ShowDialog();
             
-            CreerEleve(nombreEleve);
+            
             InterfaceInfoEleve ii = new InterfaceInfoEleve();
             ii.setParam(listEleve[0],listClasse);
             ii.Left = 0;
             ii.Top = 0;
             ii.BorderStyle = BorderStyle.Fixed3D;
             this.Controls.Add(ii);
+
+
         }
     }
 }

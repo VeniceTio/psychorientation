@@ -35,6 +35,8 @@ namespace psychorientation
         {
             lblEleve.Text = "Eleve n°"+eleve.getId();
             lblClasse.Text = listClasse[eleve.getClasse()];
+            lblEffort.Text = eleve.getEffort().ToString();
+            lblCompetence.Text = eleve.getCompetence().ToString();
             MajPanel(pnlCompetence,eleve.getCompetence());
             MajPanel(pnlEffort, eleve.getEffort());
         }
