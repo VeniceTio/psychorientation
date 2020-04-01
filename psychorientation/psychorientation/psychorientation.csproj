@@ -57,6 +57,12 @@
     <Compile Include="InterfaceClasse.Designer.cs">
       <DependentUpon>InterfaceClasse.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListeEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeEleve.Designer.cs">
+      <DependentUpon>ListeEleve.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionnaireEleve.cs" />
     <Compile Include="InterfaceInfoEleve.cs">
       <SubType>UserControl</SubType>
@@ -76,6 +82,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InterfaceClasse.resx">
       <DependentUpon>InterfaceClasse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeEleve.resx">
+      <DependentUpon>ListeEleve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceInfoEleve.resx">
       <DependentUpon>InterfaceInfoEleve.cs</DependentUpon>

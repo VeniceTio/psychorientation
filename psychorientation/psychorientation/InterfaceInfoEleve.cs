@@ -24,17 +24,17 @@ namespace psychorientation
 
         }
 
-        public void setParam(Eleve el, List<string> listClasse)
+        public void setParam(Eleve el)
         {
             this.eleve = el;
-            this.listClasse = listClasse;
             actualiser();
         }
 
         private void actualiser()
         {
+            Libelle lib = new Libelle();
             lblEleve.Text = "Eleve n°" + eleve.GetId();
-            lblClasse.Text = listClasse[eleve.GetClasse()];
+            lblClasse.Text = lib.Niveau(eleve.GetClasse());
             lblEffort.Text = eleve.GetEffort().ToString();
             lblCompetence.Text = eleve.GetCompetence().ToString();
             double moyenne = eleve.GetMoyenne();
