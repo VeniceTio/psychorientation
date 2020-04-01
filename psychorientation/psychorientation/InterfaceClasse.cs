@@ -28,6 +28,10 @@ namespace psychorientation
 
             Message m_accueil = new Message(-1, "Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
             m_accueil.ShowDialog();
+
+            InterfaceInfoCompletEleve iice = new InterfaceInfoCompletEleve();
+            iice.setParam(new Eleve(3));
+            iice.ShowDialog();
         }
 
         private void Pb_action_suivante_Click(object sender, EventArgs e)

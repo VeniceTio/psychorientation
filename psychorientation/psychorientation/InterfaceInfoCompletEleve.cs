@@ -28,7 +28,8 @@ namespace psychorientation
 
         }
 
-        private void InterfaceInfoCompletEleve_Load(object sender, EventArgs e, Eleve el)
+
+        public void setParam(Eleve el)
         {
             this.eleve = el;
             actualiser();
@@ -37,7 +38,9 @@ namespace psychorientation
         private void actualiser()
         {
             Libelle lib = new Libelle();
-            lblNomEleve.Text = "Eleve n°" + eleve.GetId();
+            string nom = "Eleve n°" + eleve.GetId();
+            this.Text = nom;
+            lblNomEleve.Text = nom;
             lblNiveau.Text = lib.Niveau(eleve.GetClasse());
             double moyenne = eleve.GetMoyenne();
             if (moyenne == -1)

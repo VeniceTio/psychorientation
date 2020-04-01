@@ -137,7 +137,7 @@
             this.pnlCompetence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pnlCompetence.Location = new System.Drawing.Point(3, 4);
             this.pnlCompetence.Name = "pnlCompetence";
-            this.pnlCompetence.Size = new System.Drawing.Size(125, 18);
+            this.pnlCompetence.Size = new System.Drawing.Size(133, 18);
             this.pnlCompetence.TabIndex = 7;
             // 
             // lblMoyenneNote
