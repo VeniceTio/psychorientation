@@ -12,7 +12,7 @@ namespace psychorientation
 {
     public partial class InterfaceClasse : Form
     {
-        private Libele libele = Libele.GetInstance();
+        private Libelle libelle = Libelle.GetInstance();
         private int moisActuel = 8;
         private int anneeActuelle = 0;
 
@@ -24,7 +24,7 @@ namespace psychorientation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lbl_date.Text = libele.Mois(moisActuel % 12) + " " + libele.Niveau(anneeActuelle);
+            lbl_date.Text = libelle.Mois(moisActuel % 12) + " " + libelle.Niveau(anneeActuelle);
 
             TypeMessage tm = TypeMessage.INFORMATION;
             Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", tm);
@@ -65,7 +65,7 @@ namespace psychorientation
                     break;
             }
 
-            lbl_date.Text = libele.Mois(moisActuel % 12) + " " + libele.Niveau(anneeActuelle);
+            lbl_date.Text = libelle.Mois(moisActuel % 12) + " " + libelle.Niveau(anneeActuelle);
         }
 
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
