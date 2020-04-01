@@ -13,7 +13,7 @@ namespace psychorientation
     public partial class Form1 : Form
     {
         List<string> listClasse = new List<string>();
-        List<Eleve> listEleve = new List<Eleve>();
+        GestionnaireEleve gestEleve = new GestionnaireEleve();
 
         int nombreEleve = 5;
 
@@ -35,7 +35,7 @@ namespace psychorientation
             for(int i = 0; i < nbEleve; i++)
             {
                 Eleve elev = new Eleve(i);
-                listEleve.Add(elev);
+                gestEleve.ajouterEleve(elev);
             }
         }
 
@@ -51,7 +51,7 @@ namespace psychorientation
             
             
             InterfaceInfoEleve ii = new InterfaceInfoEleve();
-            ii.setParam(listEleve[0],listClasse);
+            ii.setParam(gestEleve.getEleve(0),listClasse);
             ii.Left = 0;
             ii.Top = 0;
             ii.BorderStyle = BorderStyle.Fixed3D;
