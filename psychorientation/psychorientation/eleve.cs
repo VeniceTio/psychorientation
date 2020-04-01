@@ -14,7 +14,7 @@ namespace psychorientation
         private int orientation = 0;
         private int id;
         private List<Note> listNote = new List<Note>();
-
+        private double appreciation;
 
         public Eleve(int id)
         {
@@ -32,63 +32,90 @@ namespace psychorientation
             this.competence = competence;
             this.effort = effort;
             this.orientation = orientation;
+            this.appreciation = CalculerAppreciation();
         }
-
-        public void setClasse(int classe)
+        public void SetClasse(int classe)
         {
             this.classe = classe;
         }
 
-        public void setOrientation(int orientation)
+        public void SetOrientation(int orientation)
         {
             this.orientation = orientation;
         }
 
-        public void setEffort(double effort)
+        public void SetEffort(double effort)
         {
             this.effort = effort;
         }
 
-        public void setCompetence(double competence)
+        public void SetCompetence(double competence)
         {
             this.competence = competence;
         }
 
 
 
-        public double getCompetence()
+        public double GetCompetence()
         {
             return this.competence;
         }
-        public List<Note> getListNote()
+        public List<Note> GetListNote()
         {
             return this.listNote;
         }
-        public int getId()
+        public int GetId()
         {
             return this.id;
         }
-        public int getClasse()
+        public int GetClasse()
         {
             return this.classe;
         }
-        public int getOrientation()
+        public int GetOrientation()
         {
             return this.orientation;
         }
-        public double getEffort()
+        public double GetEffort()
         {
             return this.effort;
         }
 
-
-
-
-
-        public void ajouterNote(string nom, double note)
+        public double GetAppreciation()
         {
-            Note n = new Note(nom, note, this.competence, this.effort);
+            return this.appreciation;
+        }
+
+
+
+        public double GetMoyenne()
+        {
+            double res = -1;
+            if (this.listNote.Count > 0)
+            {
+               foreach(Note n in listNote)
+                {
+                    res += n.getNote();
+                }
+            }
+            return res/ this.listNote.Count;
+        }
+
+
+        public void AjouterNote(string nom)
+        {
+            Note n = new Note(nom,CalculerNote() , this.competence, this.effort);
             this.listNote.Add(n);
+        }
+
+        private double CalculerNote()
+        {
+            return (this.effort * Config.GetInstance().GetCoeffEffortEcrit() + this.competence * Config.GetInstance().GetCoeffCompetenceEcrit());
+        }
+
+        private double CalculerAppreciation()
+        {
+            return (this.effort * Config.GetInstance().GetCoeffEffortOral() + this.competence * Config.GetInstance().GetCoeffCompetenceOral());
         }
     }
 }
