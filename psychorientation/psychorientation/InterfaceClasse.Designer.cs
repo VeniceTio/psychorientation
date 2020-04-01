@@ -52,6 +52,8 @@
             // 
             // pb_liste_eleves
             // 
+            this.pb_liste_eleves.BackgroundImage = global::psychorientation.Properties.Resources.grp;
+            this.pb_liste_eleves.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_liste_eleves.Location = new System.Drawing.Point(12, 12);
             this.pb_liste_eleves.Name = "pb_liste_eleves";
             this.pb_liste_eleves.Size = new System.Drawing.Size(100, 100);
