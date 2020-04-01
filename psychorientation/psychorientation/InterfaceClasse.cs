@@ -28,11 +28,6 @@ namespace psychorientation
 
             Message m_accueil = new Message(-1, "Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
             m_accueil.ShowDialog();
-
-            
-
-            ListeEleve listE = new ListeEleve();
-            listE.ShowDialog();
         }
 
         private void Pb_action_suivante_Click(object sender, EventArgs e)
@@ -74,8 +69,7 @@ namespace psychorientation
 
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
         {
-            ListeEleve le = new ListeEleve();
-            le.Show();
+
         }
 
         private void InterfaceClasse_SizeChanged(object sender, EventArgs e)
