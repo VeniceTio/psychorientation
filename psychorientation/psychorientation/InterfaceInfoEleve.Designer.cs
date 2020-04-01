@@ -39,6 +39,8 @@
             this.pnlCompetence = new System.Windows.Forms.Panel();
             this.lblEffort = new System.Windows.Forms.Label();
             this.lblCompetence = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblMoyenne = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +58,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 105);
+            this.label1.Location = new System.Drawing.Point(60, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 1;
@@ -65,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 145);
+            this.label2.Location = new System.Drawing.Point(69, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 2;
@@ -74,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 186);
+            this.label3.Location = new System.Drawing.Point(34, 177);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 3;
@@ -83,7 +85,7 @@
             // lblClasse
             // 
             this.lblClasse.AutoSize = true;
-            this.lblClasse.Location = new System.Drawing.Point(99, 105);
+            this.lblClasse.Location = new System.Drawing.Point(116, 96);
             this.lblClasse.Name = "lblClasse";
             this.lblClasse.Size = new System.Drawing.Size(35, 13);
             this.lblClasse.TabIndex = 4;
@@ -93,7 +95,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.pnlEffort);
-            this.panel1.Location = new System.Drawing.Point(99, 140);
+            this.panel1.Location = new System.Drawing.Point(116, 131);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(139, 26);
             this.panel1.TabIndex = 5;
@@ -110,7 +112,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.pnlCompetence);
-            this.panel2.Location = new System.Drawing.Point(99, 182);
+            this.panel2.Location = new System.Drawing.Point(116, 173);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(139, 26);
             this.panel2.TabIndex = 6;
@@ -126,7 +128,7 @@
             // lblEffort
             // 
             this.lblEffort.AutoSize = true;
-            this.lblEffort.Location = new System.Drawing.Point(255, 144);
+            this.lblEffort.Location = new System.Drawing.Point(272, 144);
             this.lblEffort.Name = "lblEffort";
             this.lblEffort.Size = new System.Drawing.Size(0, 13);
             this.lblEffort.TabIndex = 7;
@@ -134,16 +136,35 @@
             // lblCompetence
             // 
             this.lblCompetence.AutoSize = true;
-            this.lblCompetence.Location = new System.Drawing.Point(254, 189);
+            this.lblCompetence.Location = new System.Drawing.Point(271, 189);
             this.lblCompetence.Name = "lblCompetence";
             this.lblCompetence.Size = new System.Drawing.Size(0, 13);
             this.lblCompetence.TabIndex = 8;
-            
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 215);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Moyenne général : ";
+            // 
+            // lblMoyenne
+            // 
+            this.lblMoyenne.AutoSize = true;
+            this.lblMoyenne.Location = new System.Drawing.Point(116, 215);
+            this.lblMoyenne.Name = "lblMoyenne";
+            this.lblMoyenne.Size = new System.Drawing.Size(35, 13);
+            this.lblMoyenne.TabIndex = 10;
+            this.lblMoyenne.Text = "label5";
             // 
             // InterfaceInfoEleve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblMoyenne);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblCompetence);
             this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.panel2);
@@ -176,5 +197,7 @@
         private System.Windows.Forms.Panel pnlCompetence;
         private System.Windows.Forms.Label lblEffort;
         private System.Windows.Forms.Label lblCompetence;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblMoyenne;
     }
 }
