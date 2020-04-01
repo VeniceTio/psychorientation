@@ -30,7 +30,7 @@ namespace psychorientation
             lbl_date.Text = libele_mois[(mois_actuel % 12)] + " " + libele_niveau[annee_actuelle];
 
             TypeMessage tm = TypeMessage.INFORMATION;
-            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ","Début",tm);
+            Message m = new Message(-1,"Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", tm);
             m.ShowDialog();
         }
 
@@ -57,6 +57,14 @@ namespace psychorientation
                     break;
                 case 42: // Fin de la 3ème année : Debut Juillet.
                     // Fin de la partie.
+                    Message m_fin = new Message(-1, "Vous avez fini la phase bêta de ce jeu !\n" + 
+                                                "Bravo à vous et n'hésitez pas à essayer à nouveau pour " + 
+                                                "améliorer votre compréhension du monde extérieur.", 
+                                                "Félicitations", 
+                                                TypeMessage.INFORMATION
+                    );
+                    m_fin.ShowDialog();
+                    Close();
                     break;
             }
 

@@ -37,10 +37,13 @@
             // 
             // pb_action_suivante
             // 
-            this.pb_action_suivante.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pb_action_suivante.Location = new System.Drawing.Point(922, 471);
+            this.pb_action_suivante.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_action_suivante.BackgroundImage = global::psychorientation.Properties.Resources.passer;
+            this.pb_action_suivante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pb_action_suivante.InitialImage = null;
+            this.pb_action_suivante.Location = new System.Drawing.Point(938, 473);
             this.pb_action_suivante.Name = "pb_action_suivante";
-            this.pb_action_suivante.Size = new System.Drawing.Size(90, 77);
+            this.pb_action_suivante.Size = new System.Drawing.Size(74, 75);
             this.pb_action_suivante.TabIndex = 0;
             this.pb_action_suivante.TabStop = false;
             this.pb_action_suivante.Click += new System.EventHandler(this.Pb_action_suivante_Click);
