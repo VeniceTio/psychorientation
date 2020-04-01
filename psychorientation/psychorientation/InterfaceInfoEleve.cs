@@ -33,22 +33,22 @@ namespace psychorientation
 
         private void actualiser()
         {
-            lblEleve.Text = "Eleve n°"+eleve.getId();
-            lblClasse.Text = listClasse[eleve.getClasse()];
-            lblEffort.Text = eleve.getEffort().ToString();
-            lblCompetence.Text = eleve.getCompetence().ToString();
-            double moyenne = eleve.getMoyenne();
+            lblEleve.Text = "Eleve n°" + eleve.GetId();
+            lblClasse.Text = listClasse[eleve.GetClasse()];
+            lblEffort.Text = eleve.GetEffort().ToString();
+            lblCompetence.Text = eleve.GetCompetence().ToString();
+            double moyenne = eleve.GetMoyenne();
             if (moyenne == -1)
             {
                 lblMoyenne.Text="Pas encore d'évaluation";
             }
             else
             {
-                lblMoyenne.Text = eleve.getMoyenne().ToString()+"/20";
+                lblMoyenne.Text = eleve.GetMoyenne().ToString()+"/20";
             }
             
-            MajPanel(pnlCompetence,eleve.getCompetence());
-            MajPanel(pnlEffort, eleve.getEffort());
+            MajPanel(pnlCompetence,eleve.GetCompetence());
+            MajPanel(pnlEffort, eleve.GetEffort());
         }
         private void MajPanel(Panel p, double valeur)
         {
