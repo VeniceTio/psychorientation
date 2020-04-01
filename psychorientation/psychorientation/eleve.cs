@@ -86,11 +86,10 @@ namespace psychorientation
             return this.appreciation;
         }
 
-
-
         public double GetMoyenne()
         {
-            double res = -1;
+            if (this.listeNotes.Count == 0) {return -1;}
+            double res = 0;
             if (this.listeNotes.Count > 0)
             {
                foreach(Note n in listeNotes)
@@ -98,13 +97,14 @@ namespace psychorientation
                     res += n.getNote();
                 }
             }
-            return res/ this.listeNotes.Count;
+            return res / this.listeNotes.Count;
         }
+
 
 
         public void AjouterNote(string nom)
         {
-            Note n = new Note(nom,CalculerNote() , this.competence, this.effort);
+            Note n = new Note(nom, CalculerNote(), this.competence, this.effort);
             this.listeNotes.Add(n);
         }
 

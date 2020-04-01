@@ -10,9 +10,7 @@ namespace psychorientation
     {
         private List<Eleve> listeEleves = new List<Eleve>();
 
-        public GestionnaireEleve()
-        {
-        }
+        public GestionnaireEleve() {}
 
         public void AjouterEleve(Eleve e)
         {
