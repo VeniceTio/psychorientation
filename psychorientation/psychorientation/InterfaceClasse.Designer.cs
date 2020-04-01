@@ -60,6 +60,7 @@
             // lbl_date
             // 
             this.lbl_date.AutoSize = true;
+            this.lbl_date.BackColor = System.Drawing.Color.Transparent;
             this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_date.Location = new System.Drawing.Point(118, 12);
             this.lbl_date.Name = "lbl_date";
@@ -71,10 +72,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::psychorientation.Properties.Resources.salleV1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
             this.Controls.Add(this.lbl_date);
             this.Controls.Add(this.pb_liste_eleves);
             this.Controls.Add(this.pb_action_suivante);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "InterfaceClasse";
