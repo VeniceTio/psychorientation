@@ -41,9 +41,11 @@
             this.lblMoyenneNote = new System.Windows.Forms.Label();
             this.pcbEleve = new System.Windows.Forms.PictureBox();
             this.pnlNote = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEleve)).BeginInit();
+            this.pnlNote.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNomEleve
@@ -161,10 +163,24 @@
             // 
             // pnlNote
             // 
+            this.pnlNote.Controls.Add(this.tableLayoutPanel1);
             this.pnlNote.Location = new System.Drawing.Point(98, 243);
             this.pnlNote.Name = "pnlNote";
             this.pnlNote.Size = new System.Drawing.Size(391, 134);
             this.pnlNote.TabIndex = 16;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 19);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(355, 50);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // InterfaceInfoCompletEleve
             // 
@@ -188,6 +204,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbEleve)).EndInit();
+            this.pnlNote.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +225,6 @@
         private System.Windows.Forms.Label lblMoyenneNote;
         private System.Windows.Forms.PictureBox pcbEleve;
         private System.Windows.Forms.Panel pnlNote;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

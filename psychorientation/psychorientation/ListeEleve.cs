@@ -24,10 +24,13 @@ namespace psychorientation
             Libelle lib = new Libelle();
 
             // TEST
-            //Eleve e1 = new Eleve(4);
-            //Eleve e2 = new Eleve(5);
-            //gestEleve.AjouterEleve(e1);
-            //gestEleve.AjouterEleve(e2);
+            Eleve e1 = new Eleve(4);
+            Eleve e2 = new Eleve(5);
+            e1.AjouterNote("une");
+            e1.AjouterNote("deux");
+            e1.AjouterNote("trois");
+            gestEleve.AjouterEleve(e1);
+            gestEleve.AjouterEleve(e2);
 
             List<Eleve> listEleve = gestEleve.GetListeEleves();
             int y = 0;
