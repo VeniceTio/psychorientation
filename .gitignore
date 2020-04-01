@@ -6,6 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+/.idea.psychorientation.dir/.idea/workspace.xml
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
