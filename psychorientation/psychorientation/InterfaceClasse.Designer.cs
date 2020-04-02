@@ -30,8 +30,9 @@
         {
             this.pb_action_suivante = new System.Windows.Forms.PictureBox();
             this.pb_liste_eleves = new System.Windows.Forms.PictureBox();
-            this.lbl_date = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.pb_sortir = new System.Windows.Forms.PictureBox();
+            this.lblClasse = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_liste_eleves)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).BeginInit();
@@ -62,16 +63,17 @@
             this.pb_liste_eleves.TabStop = false;
             this.pb_liste_eleves.Click += new System.EventHandler(this.Pb_liste_eleves_Click);
             // 
-            // lbl_date
+            // lblDate
             // 
-            this.lbl_date.AutoSize = true;
-            this.lbl_date.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_date.Location = new System.Drawing.Point(118, 12);
-            this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(163, 29);
-            this.lbl_date.TabIndex = 2;
-            this.lbl_date.Text = "Chargement...";
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Location = new System.Drawing.Point(269, 171);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(129, 24);
+            this.lblDate.TabIndex = 2;
+            this.lblDate.Text = "Chargement...";
             // 
             // pb_sortir
             // 
@@ -85,6 +87,18 @@
             this.pb_sortir.TabStop = false;
             this.pb_sortir.Click += new System.EventHandler(this.Pb_sortir_Click);
             // 
+            // lblClasse
+            // 
+            this.lblClasse.AutoSize = true;
+            this.lblClasse.BackColor = System.Drawing.Color.Transparent;
+            this.lblClasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClasse.ForeColor = System.Drawing.Color.White;
+            this.lblClasse.Location = new System.Drawing.Point(943, 171);
+            this.lblClasse.Name = "lblClasse";
+            this.lblClasse.Size = new System.Drawing.Size(129, 24);
+            this.lblClasse.TabIndex = 4;
+            this.lblClasse.Text = "Chargement...";
+            // 
             // InterfaceClasse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -93,8 +107,9 @@
             this.BackgroundImage = global::psychorientation.Properties.Resources.salleV11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
+            this.Controls.Add(this.lblClasse);
             this.Controls.Add(this.pb_sortir);
-            this.Controls.Add(this.lbl_date);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.pb_liste_eleves);
             this.Controls.Add(this.pb_action_suivante);
             this.DoubleBuffered = true;
@@ -103,7 +118,6 @@
             this.Name = "InterfaceClasse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Psychorientation";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.InterfaceClasse_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).EndInit();
@@ -118,8 +132,9 @@
 
         private System.Windows.Forms.PictureBox pb_action_suivante;
         private System.Windows.Forms.PictureBox pb_liste_eleves;
-        private System.Windows.Forms.Label lbl_date;
+        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.PictureBox pb_sortir;
+        private System.Windows.Forms.Label lblClasse;
     }
 }
 
