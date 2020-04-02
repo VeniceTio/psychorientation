@@ -46,7 +46,7 @@ namespace psychorientation
             }
 
 
-            Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
+            Message mAccueil = new Message("C'est la fin du mois, veuillez choisir le niveau de compétence du public cible de votre enseignement.", "Cours dispensés", TypeMessage.INFORMATION);
             mAccueil.ShowDialog();
         }
 
