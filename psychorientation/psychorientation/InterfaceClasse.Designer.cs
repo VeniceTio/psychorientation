@@ -169,6 +169,7 @@
             // 
             // lbl_barre_decisions
             // 
+            this.lbl_barre_decisions.BackColor = System.Drawing.Color.DimGray;
             this.lbl_barre_decisions.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_barre_decisions.Location = new System.Drawing.Point(-1, 185);
             this.lbl_barre_decisions.Name = "lbl_barre_decisions";
