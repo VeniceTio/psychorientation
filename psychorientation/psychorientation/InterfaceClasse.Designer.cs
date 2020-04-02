@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InterfaceClasse));
             this.pb_action_suivante = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
             this.pb_sortir = new System.Windows.Forms.PictureBox();
@@ -37,7 +38,6 @@
             this.lblEffort = new System.Windows.Forms.Label();
             this.pnlListeEleve = new System.Windows.Forms.Panel();
             this.lblListeEleve = new System.Windows.Forms.Label();
-
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).BeginInit();
             this.pnlListeEleve.SuspendLayout();
@@ -92,7 +92,6 @@
             this.lblClasse.TabIndex = 4;
             this.lblClasse.Text = "Chargement...";
             // 
-
             // lblMoyenne
             // 
             this.lblMoyenne.AutoSize = true;
@@ -128,7 +127,7 @@
             this.lblEffort.Size = new System.Drawing.Size(101, 18);
             this.lblEffort.TabIndex = 7;
             this.lblEffort.Text = "Chargement...";
-
+            // 
             // pnlListeEleve
             // 
             this.pnlListeEleve.AutoScroll = true;
@@ -154,16 +153,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::psychorientation.Properties.Resources.salleV11;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
-
             this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.lblCompetence);
             this.Controls.Add(this.lblMoyenne);
-
             this.Controls.Add(this.pnlListeEleve);
-
             this.Controls.Add(this.lblClasse);
             this.Controls.Add(this.pb_sortir);
             this.Controls.Add(this.lblDate);
