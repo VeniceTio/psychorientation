@@ -143,7 +143,7 @@ namespace psychorientation
             {
                 if (note > note_convenable)
                 {
-                    effort += 0.25;
+                    effort += 0.25 * (1 - (competence * 0.1));
                 }
                 else
                 {
@@ -158,7 +158,7 @@ namespace psychorientation
                 }
                 else
                 {
-                    if(competence > 5)
+                    if (competence > 5)
                     {
                         effort += 1;
                     }
