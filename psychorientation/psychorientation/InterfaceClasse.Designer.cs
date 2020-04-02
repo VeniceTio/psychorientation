@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InterfaceClasse));
             this.pb_action_suivante = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.lblEffort = new System.Windows.Forms.Label();
             this.pnlListeEleve = new System.Windows.Forms.Panel();
             this.lblListeEleve = new System.Windows.Forms.Label();
+            this.imgListPerso = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).BeginInit();
             this.pnlListeEleve.SuspendLayout();
@@ -148,6 +150,17 @@
             this.lblListeEleve.TabIndex = 0;
             this.lblListeEleve.Text = "Liste des élèves :";
             // 
+            // imgListPerso
+            // 
+            this.imgListPerso.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgListPerso.ImageStream")));
+            this.imgListPerso.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgListPerso.Images.SetKeyName(0, "personnage1.png");
+            this.imgListPerso.Images.SetKeyName(1, "personnage2.png");
+            this.imgListPerso.Images.SetKeyName(2, "personnage3.png");
+            this.imgListPerso.Images.SetKeyName(3, "personnage4.png");
+            this.imgListPerso.Images.SetKeyName(4, "prof1.png");
+            this.imgListPerso.Images.SetKeyName(5, "prof2.png");
+            // 
             // InterfaceClasse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,7 +207,7 @@
 
         private System.Windows.Forms.Panel pnlListeEleve;
         private System.Windows.Forms.Label lblListeEleve;
-
+        private System.Windows.Forms.ImageList imgListPerso;
     }
 }
 
