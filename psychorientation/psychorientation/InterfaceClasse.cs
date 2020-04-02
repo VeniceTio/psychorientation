@@ -99,14 +99,15 @@ namespace psychorientation
         private void Pb_action_suivante_Click(object sender, EventArgs e)
         {
             // Traite les actions à effectuer avant de passer au mois suivant.
-
+            /*
             if (false)
             {
                 // Lance l'interface appropriee.
                 return;
-            }
+            }*/
 
-            Message mControle = new Message("C'est la fin du mois, comme chaque mois, les eleves vont passer un contrôle, à vous de choisir le niveau de compétence de votre enseignement.", "Début", TypeMessage.NOTATION);
+            Message mControle = new Message("C'est la fin du mois, veuillez choisir le niveau de compétence du public cible de votre enseignement.", "Cours", TypeMessage.NOTATION);
+
             mControle.ShowDialog();
 
 
