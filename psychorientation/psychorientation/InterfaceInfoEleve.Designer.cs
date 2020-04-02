@@ -100,18 +100,18 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.pnlEffort);
-            this.panel1.Location = new System.Drawing.Point(96, 95);
+            this.panel1.Location = new System.Drawing.Point(110, 95);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(139, 26);
+            this.panel1.Size = new System.Drawing.Size(92, 26);
             this.panel1.TabIndex = 5;
             this.panel1.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             // 
             // pnlEffort
             // 
             this.pnlEffort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pnlEffort.Location = new System.Drawing.Point(3, 5);
+            this.pnlEffort.Location = new System.Drawing.Point(3, 4);
             this.pnlEffort.Name = "pnlEffort";
-            this.pnlEffort.Size = new System.Drawing.Size(133, 18);
+            this.pnlEffort.Size = new System.Drawing.Size(84, 18);
             this.pnlEffort.TabIndex = 6;
             this.pnlEffort.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             // 
@@ -119,9 +119,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.pnlCompetence);
-            this.panel2.Location = new System.Drawing.Point(96, 150);
+            this.panel2.Location = new System.Drawing.Point(110, 150);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(139, 26);
+            this.panel2.Size = new System.Drawing.Size(92, 26);
             this.panel2.TabIndex = 6;
             this.panel2.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             // 
@@ -130,7 +130,7 @@
             this.pnlCompetence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pnlCompetence.Location = new System.Drawing.Point(3, 4);
             this.pnlCompetence.Name = "pnlCompetence";
-            this.pnlCompetence.Size = new System.Drawing.Size(125, 18);
+            this.pnlCompetence.Size = new System.Drawing.Size(58, 18);
             this.pnlCompetence.TabIndex = 7;
             this.pnlCompetence.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             // 
@@ -174,6 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblMoyenne);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblCompetence);
@@ -186,7 +187,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblEleve);
             this.Name = "InterfaceInfoEleve";
-            this.Size = new System.Drawing.Size(246, 216);
+            this.Size = new System.Drawing.Size(216, 216);
             this.Load += new System.EventHandler(this.InterfaceInfoEleve_Load);
             this.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             this.panel1.ResumeLayout(false);
