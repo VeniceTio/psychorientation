@@ -29,12 +29,22 @@ namespace psychorientation
                 gestEleve.AjouterEleve(new Eleve(i));
             }
             gestEleve.AjouterEleve(new Eleve(3,0,10.0,10.0,0));
-
             lblDate.Text = libelle.Mois(moisActuel % 12);
             lblClasse.Text=libelle.Niveau(anneeActuelle);
             lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(),1).ToString();
             lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(),1).ToString();
             lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(),1).ToString();
+
+            Libelle lib = new Libelle();
+            int y = 20;
+            foreach (Eleve eleve in gestEleve.GetListeEleves())
+            {
+                InterfaceInfoEleve ii = new InterfaceInfoEleve();
+                ii.setParam(eleve);
+                ii.Location = new Point(0, y);
+                pnlListeEleve.Controls.Add(ii);
+                y += 220;
+            }
 
 
             Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
@@ -61,7 +71,7 @@ namespace psychorientation
             lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();
             lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 1).ToString();
             lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(), 1).ToString();
-
+            ActualiserEleveCoter();
 
             // Passe au mois suivant.
             moisActuel++;
@@ -101,6 +111,19 @@ namespace psychorientation
         {
             ListeEleve le = new ListeEleve(gestEleve);
             le.Show();
+        }
+
+        private void ActualiserEleveCoter()
+        {
+            foreach(Control c in pnlListeEleve.Controls)
+            {
+                if (c is InterfaceInfoEleve)
+                {
+                    InterfaceInfoEleve iie = (InterfaceInfoEleve)c;
+                    iie.actualiser();
+                }
+                
+            }
         }
 
         private void InterfaceClasse_SizeChanged(object sender, EventArgs e)

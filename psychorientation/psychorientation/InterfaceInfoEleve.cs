@@ -29,7 +29,7 @@ namespace psychorientation
             actualiser();
         }
 
-        private void actualiser()
+        public void actualiser()
         {
             Libelle lib = new Libelle();
             lblEleve.Text = "Eleve n°" + eleve.GetId();
