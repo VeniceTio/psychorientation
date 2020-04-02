@@ -1,0 +1,9 @@
+{
+
+'coeffEffortOral' : 1.8,
+'coeffCompetenceOral' : 0.2,
+
+'coeffCompetenceEcrit' : 1.5,
+'coeffEffortEcrit' : 0.5
+
+}
