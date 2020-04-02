@@ -17,6 +17,9 @@ namespace psychorientation
         private int anneeActuelle = 0;
         private GestionnaireEleve gestEleve = new GestionnaireEleve();
 
+        private int[] positionElevex = { 322, 571, 698, 951, 322, 571, 698, 951 };
+        private int[] positionElevey = { 398, 398, 398, 398, 505, 505, 505, 505 };
+        
         public InterfaceClasse()
         {
             InitializeComponent();
@@ -24,11 +27,7 @@ namespace psychorientation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i = 1; i < 3; i++)
-            {
-                gestEleve.AjouterEleve(new Eleve(i));
-            }
-            gestEleve.AjouterEleve(new Eleve(3,0,10.0,10.0,0));
+            AjouterEleveImage();
             lblDate.Text = libelle.Mois(moisActuel % 12);
             lblClasse.Text=libelle.Niveau(anneeActuelle);
             lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(),1).ToString();
@@ -49,6 +48,51 @@ namespace psychorientation
 
             Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
             mAccueil.ShowDialog();
+        }
+
+        private void AjouterEleveImage()
+        {
+            for (int i = 1; i < 5; i++)
+            {
+                gestEleve.AjouterEleve(new Eleve(i));
+            }
+
+            int nb = gestEleve.GetListeEleves().Count;
+
+            if (nb > 8)
+            {
+                nb = 8;
+            }
+            int indexImage = 0;
+            for (int i = 0; i < nb; i++)
+            {
+                PictureBox pbEleve = new PictureBox();
+
+                pbEleve.Location = new System.Drawing.Point(572, 396);
+                pbEleve.Size = new System.Drawing.Size(73, 85);
+                pbEleve.Image = imgListPerso.Images[indexImage];
+                pbEleve.Left = positionElevex[i];
+                pbEleve.Tag = gestEleve.GetEleve(i);
+                pbEleve.BackColor = System.Drawing.Color.Transparent;
+                pbEleve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+                pbEleve.Top = positionElevey[i];
+                pbEleve.Click += new System.EventHandler(PbOuvrirInfo);
+                indexImage++;
+                if (indexImage == 4)
+                {
+                    indexImage = 0;
+                }
+                this.Controls.Add(pbEleve);
+            }
+        }
+
+        private void PbOuvrirInfo(object sender, EventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            Eleve tag = (Eleve)pb.Tag;
+            InterfaceInfoCompletEleve iice = new InterfaceInfoCompletEleve();
+            iice.setParam(tag);
+            iice.ShowDialog();
         }
 
         private void Pb_action_suivante_Click(object sender, EventArgs e)
