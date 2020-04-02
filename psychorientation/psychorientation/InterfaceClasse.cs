@@ -21,11 +21,13 @@ namespace psychorientation
         private int[] positionElevex = { 322, 571, 698, 951, 322, 571, 698, 951 };
         private int[] positionElevey = { 398, 398, 398, 398, 505, 505, 505, 505 };
 
-        private string notaText = "Type de notation visant à aider les eleves de competence : ";
+        private string notaText = "Notation suivant les coefficients : ";
         private string coursText = "Type de cours visant à aider les eleves de competence : ";
 
         private double valCours = 5.0;
-        private double valNotation = 5.0;
+        private double valNotation = 10.0;
+        private Label lblValEffort = new Label();
+        private Label lblValCompetence = new Label();
 
         public InterfaceClasse()
         {
@@ -54,12 +56,22 @@ namespace psychorientation
 
             
             TrackBar tbNota = new TrackBar();
-            tbNota.Location = new System.Drawing.Point(0, 10 + lblNotation.Location.Y+lblNotation.Size.Height);
+            tbNota.Location = new System.Drawing.Point(0, lblNotation.Location.Y+lblNotation.Size.Height);
             tbNota.Size = new System.Drawing.Size(184, 45);
-            tbNota.Value = 5;
+            tbNota.Maximum = 20;
+            tbNota.Value = 10;
             tbNota.Scroll += new System.EventHandler(tbNota_Scroll);
             pnlChoix.Controls.Add(tbNota);
-            lblNotation.Text = notaText + tbNota.Value.ToString();
+            lblNotation.Text = notaText;
+
+            lblValEffort.Tag = "Effort : ";
+            lblValCompetence.Tag = "Compétence : ";
+            lblValEffort.Location = new Point(130, 5 + tbNota.Location.Y + tbNota.Size.Height);
+            lblValCompetence.Location = new Point(1, 5 + tbNota.Location.Y + tbNota.Size.Height);
+            lblValEffort.Text = lblValEffort.Tag + ( (20- tbNota.Value) / 10.0).ToString();
+            lblValCompetence.Text = lblValCompetence.Tag + (tbNota.Value / 10.0).ToString();
+            pnlChoix.Controls.Add(lblValEffort);
+            pnlChoix.Controls.Add(lblValCompetence);
 
             TrackBar tbCours = new TrackBar();
             tbCours.Location = new System.Drawing.Point(0, 10 + lblCours.Location.Y + lblCours.Size.Height);
@@ -121,23 +133,6 @@ namespace psychorientation
         private void Pb_action_suivante_Click(object sender, EventArgs e)
         {
             // Traite les actions à effectuer avant de passer au mois suivant.
-            /*
-            if (false)
-            {
-                // Lance l'interface appropriee.
-                return;
-            }*/
-
-            /*Message mControle = new Message("C'est la fin du mois, veuillez choisir le niveau de compétence du public cible de votre enseignement.", "Cours", TypeMessage.NOTATION);
-
-            mControle.ShowDialog();
-
-
-            foreach(Eleve el in gestEleve.GetListeEleves())
-            {
-                el.Progression(mControle.getReponseDouble);
-                el.AjouterNote("Controle " + lblClasse.Text + " " + lblDate.Text);
-            }*/
 
             foreach (Eleve el in gestEleve.GetListeEleves())
             {
@@ -226,7 +221,9 @@ namespace psychorientation
         {
             TrackBar tbNota = (TrackBar)sender;
             valNotation = (double)tbNota.Value;
-            lblNotation.Text = notaText + valNotation.ToString();
+
+            lblValEffort.Text = lblValEffort.Tag + ( (20 - valNotation) / 10.0).ToString();
+            lblValCompetence.Text = lblValCompetence.Tag + (valNotation / 10.0).ToString();
         }
 
         private void tbCours_Scroll(object sender, EventArgs e)
