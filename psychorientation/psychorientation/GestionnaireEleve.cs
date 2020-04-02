@@ -79,11 +79,11 @@ namespace psychorientation
             return res;
         }
 
-        public void FaireControle(string nom)
+        public void FaireControle(string nom, double coeff)
         {
             foreach (Eleve e in this.listeEleves)
             {
-                e.AjouterNote(nom);
+                e.AjouterNote(nom, coeff);
             }
         }
 

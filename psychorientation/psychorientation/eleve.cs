@@ -120,9 +120,9 @@ namespace psychorientation
         }
 
 
-        public void AjouterNote(string nom)
+        public void AjouterNote(string nom, double coeff)
         {
-            double note = CalculerNote();
+            double note = CalculerNote(coeff);
             
             double note_convenable = 10 + (competence - 5);
             if (effort > 5)
@@ -155,9 +155,9 @@ namespace psychorientation
             this.listeNotes.Add(n);
         }
 
-        private double CalculerNote()
+        private double CalculerNote(double coeff)
         {
-            return (this.effort * Config.GetInstance().GetCoeffEffortEcrit() + this.competence * Config.GetInstance().GetCoeffCompetenceEcrit());
+            return (this.effort * (2 - coeff) + this.competence * coeff);
         }
 
         private double CalculerAppreciation()

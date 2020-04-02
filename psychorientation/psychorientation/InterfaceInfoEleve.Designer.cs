@@ -35,9 +35,9 @@
             this.lblClasse = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlEffort = new System.Windows.Forms.Panel();
+            this.lblEffort = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlCompetence = new System.Windows.Forms.Panel();
-            this.lblEffort = new System.Windows.Forms.Label();
             this.lblCompetence = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblMoyenne = new System.Windows.Forms.Label();
@@ -100,6 +100,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.pnlEffort);
+            this.panel1.Controls.Add(this.lblEffort);
             this.panel1.Location = new System.Drawing.Point(110, 95);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(92, 26);
@@ -178,10 +179,10 @@
             this.Controls.Add(this.lblMoyenne);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblCompetence);
-            this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblClasse);
+            this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -190,6 +191,7 @@
             this.Size = new System.Drawing.Size(216, 216);
             this.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
