@@ -137,7 +137,7 @@
             // pnlListeEleve
             // 
             this.pnlListeEleve.AutoScroll = true;
-            this.pnlListeEleve.BackColor = System.Drawing.Color.White;
+            this.pnlListeEleve.BackColor = System.Drawing.Color.Transparent;
             this.pnlListeEleve.Controls.Add(this.lblListeEleve);
             this.pnlListeEleve.Location = new System.Drawing.Point(0, -1);
             this.pnlListeEleve.Name = "pnlListeEleve";
