@@ -39,41 +39,44 @@ namespace psychorientation
 
         public double GetMoyenneClasse()
         {
-            double res = -1;
+            double res = 0;
             if (this.listeEleves.Count > 0)
             {
                 foreach (Eleve el in this.listeEleves)
                 {
                     res += el.GetMoyenne();
                 }
+                res /= this.listeEleves.Count;
             }
-            return res / this.listeEleves.Count;
+            return res;
         }
 
         public double GetCompetenceClasse()
         {
-            double res = -1;
+            double res = 0;
             if (this.listeEleves.Count > 0)
             {
                 foreach (Eleve el in this.listeEleves)
                 {
                     res += el.GetCompetence();
                 }
+                res /= this.listeEleves.Count;
             }
-            return res / this.listeEleves.Count;
+            return res;
         }
 
         public double GetEffortClasse()
         {
-            double res = -1;
+            double res = 0;
             if (this.listeEleves.Count > 0)
             {
                 foreach (Eleve el in this.listeEleves)
                 {
                     res += el.GetEffort();
                 }
+                res /= this.listeEleves.Count;
             }
-            return res / this.listeEleves.Count;
+            return res;
         }
 
         public void FaireControle(string nom)
@@ -86,15 +89,16 @@ namespace psychorientation
 
         public double GetAppreciationClasse()
         {
-            double res = -1;
+            double res = 0;
             if (this.listeEleves.Count > 0)
             {
                 foreach (Eleve el in this.listeEleves)
                 {
                     res += el.GetAppreciation();
                 }
+                res /= this.listeEleves.Count;
             }
-            return res / this.listeEleves.Count;
+            return res;
         }
 
     }

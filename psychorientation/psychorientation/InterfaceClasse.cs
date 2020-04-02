@@ -24,18 +24,20 @@ namespace psychorientation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblDate.Text = libelle.Mois(moisActuel % 12);
-            lblClasse.Text=libelle.Niveau(anneeActuelle);
-
-            for(int i = 1; i < 5; i++)
+            for (int i = 1; i < 3; i++)
             {
                 gestEleve.AjouterEleve(new Eleve(i));
             }
-            Libelle lib = new Libelle();
+            gestEleve.AjouterEleve(new Eleve(3,0,10.0,10.0,0));
+            lblDate.Text = libelle.Mois(moisActuel % 12);
+            lblClasse.Text=libelle.Niveau(anneeActuelle);
+            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(),1).ToString();
+            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(),1).ToString();
+            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(),1).ToString();
 
-            List<Eleve> listEleve = gestEleve.GetListeEleves();
+            Libelle lib = new Libelle();
             int y = 20;
-            foreach (Eleve eleve in listEleve)
+            foreach (Eleve eleve in gestEleve.GetListeEleves())
             {
                 InterfaceInfoEleve ii = new InterfaceInfoEleve();
                 ii.setParam(eleve);
@@ -60,12 +62,16 @@ namespace psychorientation
             }
             Message mControle = new Message("C'est la fin du mois, comme chaque mois, les eleves vont passer un contrôle, à vous de choisir le niveau de compétence de votre enseignement.", "Début", TypeMessage.NOTATION);
             mControle.ShowDialog();
-            
             foreach(Eleve el in gestEleve.GetListeEleves())
             {
+                el.AjouterNote("Controle " +lblClasse.Text+" "+lblDate.Text);
                 el.Progression(mControle.getReponseDouble);
             }
 
+            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();
+            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 1).ToString();
+            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(), 1).ToString();
+            ActualiserEleveCoter();
 
             // Passe au mois suivant.
             moisActuel++;
@@ -103,8 +109,21 @@ namespace psychorientation
 
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
         {
-            ListeEleve le = new ListeEleve();
+            ListeEleve le = new ListeEleve(gestEleve);
             le.Show();
+        }
+
+        private void ActualiserEleveCoter()
+        {
+            foreach(Control c in pnlListeEleve.Controls)
+            {
+                if (c is InterfaceInfoEleve)
+                {
+                    InterfaceInfoEleve iie = (InterfaceInfoEleve)c;
+                    iie.actualiser();
+                }
+                
+            }
         }
 
         private void InterfaceClasse_SizeChanged(object sender, EventArgs e)

@@ -12,15 +12,17 @@ namespace psychorientation
 {
     public partial class ListeEleve : Form
     {
-        public ListeEleve()
+        GestionnaireEleve gestEleve;
+        public ListeEleve(GestionnaireEleve el)
         {
             InitializeComponent();
+            gestEleve = el;
         }
 
 
         private void ListeEleve_Load(object sender, EventArgs e)
         {
-            GestionnaireEleve gestEleve = new GestionnaireEleve();
+            
             Libelle lib = new Libelle();
 
             // TEST

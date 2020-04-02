@@ -29,13 +29,13 @@ namespace psychorientation
             actualiser();
         }
 
-        private void actualiser()
+        public void actualiser()
         {
             Libelle lib = new Libelle();
             lblEleve.Text = "Eleve n°" + eleve.GetId();
             lblClasse.Text = lib.Niveau(eleve.GetClasse());
-            lblEffort.Text = eleve.GetEffort().ToString();
-            lblCompetence.Text = eleve.GetCompetence().ToString();
+            lblEffort.Text = Math.Round(eleve.GetEffort(),1).ToString() ;
+            lblCompetence.Text = Math.Round(eleve.GetCompetence(),1).ToString();
             double moyenne = eleve.GetMoyenne();
             if (moyenne == -1)
             {
