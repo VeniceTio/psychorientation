@@ -111,26 +111,15 @@ namespace psychorientation
             if (competence < 0) { competence = 0; }
             else if (competence > 10) { competence = 10; }
 
-            var diff = Math.Abs(competence - effort);
-            if (diff < 3.0)
-            {
-                this.effort += Math.Pow(0.5, diff + 1);
-            }
+            if (t_competence != typeEducation)
+                this.effort += Math.Min(Math.Max(((1 / Math.Abs(t_competence - typeEducation)) - (1.0 / 3)) * 3, -1), 1) * 0.5;
             else
-            {
-                if (diff >= 6)
-                {
-                    this.effort -= 0.5;
-                }
-                else
-                {
-                    this.effort -= 0.125 * (diff - 3);
-                }
-            }
+                this.effort += 0.5;
 
             if (effort < 0) { effort = 0; }
             else if (effort > 10) { effort = 10; }
         }
+
 
         public void AjouterNote(string nom)
         {
