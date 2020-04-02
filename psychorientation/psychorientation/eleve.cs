@@ -113,7 +113,7 @@ namespace psychorientation
             if (effort < 0) { effort = 0; }
             else if (effort > 10) { effort = 10; }
 
-            this.competence += (((effort * 0.1) - 0.3) * (1.2 - (competence * 0.1)));
+            this.competence += (((effort * 0.1) - 0.5) * (1.2 - (competence * 0.1))) * (1.0 / 4);
 
             if (competence < 0) { competence = 0; }
             else if (competence > 10) { competence = 10; }
@@ -140,7 +140,7 @@ namespace psychorientation
             {
                 if (note >= note_convenable)
                 {
-                    effort -= 0.25;
+                    effort -= 0.5;
                 }
                 else
                 {
