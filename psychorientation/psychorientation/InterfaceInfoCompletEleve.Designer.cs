@@ -185,6 +185,7 @@
             this.Controls.Add(this.lblNomEleve);
             this.Name = "InterfaceInfoCompletEleve";
             this.Text = "InterfaceInfoCompletEleve";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.InterfaceInfoCompletEleve_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

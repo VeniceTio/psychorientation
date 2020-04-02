@@ -78,6 +78,12 @@
       <DependentUpon>InterfaceInfoEleve.cs</DependentUpon>
     </Compile>
     <Compile Include="Libelle.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Message.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceInfoEleve.resx">
       <DependentUpon>InterfaceInfoEleve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Message.resx">
       <DependentUpon>Message.cs</DependentUpon>
