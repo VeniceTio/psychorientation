@@ -40,9 +40,13 @@
             this.pnlListeEleve = new System.Windows.Forms.Panel();
             this.lblListeEleve = new System.Windows.Forms.Label();
             this.imgListPerso = new System.Windows.Forms.ImageList(this.components);
+            this.pnlChoix = new System.Windows.Forms.Panel();
+            this.lblNotation = new System.Windows.Forms.Label();
+            this.lblCours = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).BeginInit();
             this.pnlListeEleve.SuspendLayout();
+            this.pnlChoix.SuspendLayout();
             this.SuspendLayout();
             // 
             // pb_action_suivante
@@ -161,6 +165,33 @@
             this.imgListPerso.Images.SetKeyName(4, "prof1.png");
             this.imgListPerso.Images.SetKeyName(5, "prof2.png");
             // 
+            // pnlChoix
+            // 
+            this.pnlChoix.Controls.Add(this.lblCours);
+            this.pnlChoix.Controls.Add(this.lblNotation);
+            this.pnlChoix.Location = new System.Drawing.Point(1107, 99);
+            this.pnlChoix.Name = "pnlChoix";
+            this.pnlChoix.Size = new System.Drawing.Size(189, 528);
+            this.pnlChoix.TabIndex = 8;
+            // 
+            // lblNotation
+            // 
+            this.lblNotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblNotation.Location = new System.Drawing.Point(13, 87);
+            this.lblNotation.Name = "lblNotation";
+            this.lblNotation.Size = new System.Drawing.Size(164, 59);
+            this.lblNotation.TabIndex = 0;
+            this.lblNotation.Text = "Type de notation visant à aider les eleves de competence :";
+            // 
+            // lblCours
+            // 
+            this.lblCours.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblCours.Location = new System.Drawing.Point(13, 282);
+            this.lblCours.Name = "lblCours";
+            this.lblCours.Size = new System.Drawing.Size(164, 59);
+            this.lblCours.TabIndex = 1;
+            this.lblCours.Text = "Type de cours visant à aider les eleves de competence :";
+            // 
             // InterfaceClasse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +200,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
+            this.Controls.Add(this.pnlChoix);
             this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.lblCompetence);
             this.Controls.Add(this.lblMoyenne);
@@ -189,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).EndInit();
             this.pnlListeEleve.ResumeLayout(false);
             this.pnlListeEleve.PerformLayout();
+            this.pnlChoix.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,6 +241,9 @@
         private System.Windows.Forms.Panel pnlListeEleve;
         private System.Windows.Forms.Label lblListeEleve;
         private System.Windows.Forms.ImageList imgListPerso;
+        private System.Windows.Forms.Panel pnlChoix;
+        private System.Windows.Forms.Label lblNotation;
+        private System.Windows.Forms.Label lblCours;
     }
 }
 
