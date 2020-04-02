@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InterfaceClasse));
             this.pb_action_suivante = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
-            this.pb_sortir = new System.Windows.Forms.PictureBox();
             this.lblClasse = new System.Windows.Forms.Label();
             this.lblMoyenne = new System.Windows.Forms.Label();
             this.lblCompetence = new System.Windows.Forms.Label();
@@ -41,10 +40,9 @@
             this.lblListeEleve = new System.Windows.Forms.Label();
             this.imgListPerso = new System.Windows.Forms.ImageList(this.components);
             this.pnlChoix = new System.Windows.Forms.Panel();
-            this.lblNotation = new System.Windows.Forms.Label();
             this.lblCours = new System.Windows.Forms.Label();
+            this.lblNotation = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).BeginInit();
             this.pnlListeEleve.SuspendLayout();
             this.pnlChoix.SuspendLayout();
             this.SuspendLayout();
@@ -73,18 +71,6 @@
             this.lblDate.Size = new System.Drawing.Size(129, 24);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "Chargement...";
-            // 
-            // pb_sortir
-            // 
-            this.pb_sortir.BackColor = System.Drawing.Color.Transparent;
-            this.pb_sortir.BackgroundImage = global::psychorientation.Properties.Resources.sortir;
-            this.pb_sortir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_sortir.Location = new System.Drawing.Point(1283, -1);
-            this.pb_sortir.Name = "pb_sortir";
-            this.pb_sortir.Size = new System.Drawing.Size(75, 75);
-            this.pb_sortir.TabIndex = 3;
-            this.pb_sortir.TabStop = false;
-            this.pb_sortir.Click += new System.EventHandler(this.Pb_sortir_Click);
             // 
             // lblClasse
             // 
@@ -174,15 +160,6 @@
             this.pnlChoix.Size = new System.Drawing.Size(189, 528);
             this.pnlChoix.TabIndex = 8;
             // 
-            // lblNotation
-            // 
-            this.lblNotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblNotation.Location = new System.Drawing.Point(13, 87);
-            this.lblNotation.Name = "lblNotation";
-            this.lblNotation.Size = new System.Drawing.Size(164, 59);
-            this.lblNotation.TabIndex = 0;
-            this.lblNotation.Text = "Type de notation visant à aider les eleves de competence :";
-            // 
             // lblCours
             // 
             this.lblCours.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
@@ -191,6 +168,15 @@
             this.lblCours.Size = new System.Drawing.Size(164, 59);
             this.lblCours.TabIndex = 1;
             this.lblCours.Text = "Type de cours visant à aider les eleves de competence :";
+            // 
+            // lblNotation
+            // 
+            this.lblNotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblNotation.Location = new System.Drawing.Point(13, 87);
+            this.lblNotation.Name = "lblNotation";
+            this.lblNotation.Size = new System.Drawing.Size(164, 59);
+            this.lblNotation.TabIndex = 0;
+            this.lblNotation.Text = "Type de notation visant à aider les eleves de competence :";
             // 
             // InterfaceClasse
             // 
@@ -206,19 +192,18 @@
             this.Controls.Add(this.lblMoyenne);
             this.Controls.Add(this.pnlListeEleve);
             this.Controls.Add(this.lblClasse);
-            this.Controls.Add(this.pb_sortir);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.pb_action_suivante);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "InterfaceClasse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Psychorientation";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InterfaceClasse_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.InterfaceClasse_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).EndInit();
             this.pnlListeEleve.ResumeLayout(false);
             this.pnlListeEleve.PerformLayout();
             this.pnlChoix.ResumeLayout(false);
@@ -231,7 +216,6 @@
 
         private System.Windows.Forms.PictureBox pb_action_suivante;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.PictureBox pb_sortir;
         private System.Windows.Forms.Label lblClasse;
 
         private System.Windows.Forms.Label lblMoyenne;

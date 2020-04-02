@@ -29,20 +29,32 @@ namespace psychorientation
         private Label lblValEffort = new Label();
         private Label lblValCompetence = new Label();
 
-        public InterfaceClasse()
+        private bool isRandom=true;
+
+        public InterfaceClasse(bool isRandom)
         {
             InitializeComponent();
+            this.isRandom = isRandom;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             AjouterEleveImage();
+            GenererBase();
+            
+            /*
+            Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
+            mAccueil.ShowDialog();
+            */
+        }
 
+        private void GenererBase()
+        {
             lblDate.Text = libelle.Mois(moisActuel % 12);
-            lblClasse.Text=libelle.Niveau(anneeActuelle);
-            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(),1).ToString();
-            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(),1).ToString();
-            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(),1).ToString();
+            lblClasse.Text = libelle.Niveau(anneeActuelle);
+            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();
+            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 1).ToString();
+            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(), 1).ToString();
 
             Libelle lib = new Libelle();
             int y = 20;
@@ -55,7 +67,7 @@ namespace psychorientation
                 y += 220;
             }
 
-            
+
             TrackBar tbNota = new TrackBar();
             tbNota.Location = new System.Drawing.Point(0, lblNotation.Location.Y + lblNotation.Size.Height);
             tbNota.Size = new System.Drawing.Size(184, 45);
@@ -69,7 +81,7 @@ namespace psychorientation
             lblValCompetence.Tag = "Compétence : ";
             lblValEffort.Location = new Point(130, 5 + tbNota.Location.Y + tbNota.Size.Height);
             lblValCompetence.Location = new Point(1, 5 + tbNota.Location.Y + tbNota.Size.Height);
-            lblValEffort.Text = lblValEffort.Tag + ( (20 - tbNota.Value) / 10.0).ToString();
+            lblValEffort.Text = lblValEffort.Tag + ((20 - tbNota.Value) / 10.0).ToString();
             lblValCompetence.Text = lblValCompetence.Tag + (tbNota.Value / 10.0).ToString();
             pnlChoix.Controls.Add(lblValEffort);
             pnlChoix.Controls.Add(lblValCompetence);
@@ -81,31 +93,17 @@ namespace psychorientation
             tbCours.Scroll += new System.EventHandler(tbCours_Scroll);
             pnlChoix.Controls.Add(tbCours);
             lblCours.Text = coursText + tbCours.Value.ToString();
-
-            Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
-            mAccueil.ShowDialog();
         }
 
-        private void AjouterEleveImage()
+        private void AjouterPictureboxEleve()
         {
-            for (int i = 1; i < 4; i++)
-            {
-                gestEleve.AjouterEleve(new Eleve(i));
-            }
-
-            int nb = gestEleve.GetListeEleves().Count;
-
-            if (nb > 8)
-            {
-                nb = 8;
-            }
-            for (int i = 0; i < nb; i++)
+            for (int i = 0; i < gestEleve.GetListeEleves().Count; i++)
             {
                 PictureBox pbEleve = new PictureBox();
 
                 pbEleve.Location = new System.Drawing.Point(572, 396);
                 pbEleve.Size = new System.Drawing.Size(73, 85);
-                pbEleve.Image = imgListPerso.Images[r.Next(0,4)];
+                pbEleve.Image = imgListPerso.Images[r.Next(0, 4)];
                 pbEleve.Left = positionElevex[i];
                 pbEleve.Tag = gestEleve.GetEleve(i);
                 pbEleve.BackColor = System.Drawing.Color.Transparent;
@@ -115,7 +113,24 @@ namespace psychorientation
 
                 this.Controls.Add(pbEleve);
             }
+        }
 
+        private void AjouterEleveImage()
+        {
+            if (isRandom)
+            {
+                for (int i = 1; i < r.Next(3,9); i++)
+                {
+                    gestEleve.AjouterEleve(new Eleve(i));
+                }
+            }
+            else
+            {
+                gestEleve.AjouterEleve(new Eleve(1,0,1.0,9.0,0));
+                gestEleve.AjouterEleve(new Eleve(2,0,5.0,5.0,0));
+                gestEleve.AjouterEleve(new Eleve(3,0,9.0,1.0,0));
+            }
+            AjouterPictureboxEleve();
             gestEleve.FaireControle("Controle " + lblClasse.Text + " " + lblDate.Text, valNotation / 10.0);
         }
 
@@ -125,7 +140,7 @@ namespace psychorientation
             Eleve tag = (Eleve)pb.Tag;
             InterfaceInfoCompletEleve iice = new InterfaceInfoCompletEleve();
             iice.setParam(tag);
-            iice.ShowDialog();
+            iice.Show();
         }
 
         private void Pb_action_suivante_Click(object sender, EventArgs e)
@@ -201,19 +216,14 @@ namespace psychorientation
         {
             PictureBox pb1 = pb_action_suivante;
             pb1.Location = new Point(Size.Width - pb1.Width - 32, Size.Height - pb1.Height - 32);
-
-            PictureBox pb2 = pb_sortir;
-            pb2.Location = new Point(Size.Width - pb2.Width, 0);
         }
-
-        private void Pb_sortir_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Souhaitez-vous quitter le jeu ?\nVous perdrez alors votre progression dans la partie en cours.",
+        /*
+         if (MessageBox.Show("Souhaitez-vous quitter le jeu ?\nVous perdrez alors votre progression dans la partie en cours.",
                                 "Confirmation de fermeture", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
             {
                 Close();
-            }
-        }
+            } 
+         */
 
         private void tbNota_Scroll(object sender, EventArgs e)
         {
@@ -229,6 +239,16 @@ namespace psychorientation
             TrackBar tbCours = (TrackBar)sender;
             valCours = (double)tbCours.Value;
             lblCours.Text = coursText + valCours.ToString();
+        }
+
+        private void InterfaceClasse_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
+            if (MessageBox.Show("Souhaitez-vous quitter le jeu ?\nVous perdrez alors votre progression dans la partie en cours.",
+                                "Confirmation de fermeture", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
