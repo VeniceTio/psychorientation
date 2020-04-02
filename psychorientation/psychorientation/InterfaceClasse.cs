@@ -15,6 +15,7 @@ namespace psychorientation
         private Libelle libelle = Libelle.GetInstance();
         private int moisActuel = 8;
         private int anneeActuelle = 0;
+        private GestionnaireEleve gestEleve = new GestionnaireEleve();
 
         public InterfaceClasse()
         {
@@ -23,20 +24,35 @@ namespace psychorientation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lbl_date.Text = libelle.Mois(moisActuel % 12) + " " + libelle.Niveau(anneeActuelle);
+            lblDate.Text = libelle.Mois(moisActuel % 12);
+            lblClasse.Text=libelle.Niveau(anneeActuelle);
 
-            Message m_accueil = new Message(-1, "Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
-            m_accueil.ShowDialog();
+            for(int i = 1; i < 5; i++)
+            {
+                gestEleve.AjouterEleve(new Eleve(i));
+            }
+
+            Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
+            mAccueil.ShowDialog();
         }
 
         private void Pb_action_suivante_Click(object sender, EventArgs e)
         {
             // Traite les actions à effectuer avant de passer au mois suivant.
+
             if (false)
             {
                 // Lance l'interface appropriee.
                 return;
             }
+            Message mControle = new Message("C'est la fin du mois, comme chaque mois, les eleves vont passer un contrôle, à vous de choisir le niveau de compétence de votre enseignement.", "Début", TypeMessage.NOTATION);
+            mControle.ShowDialog();
+            
+            foreach(Eleve el in gestEleve.GetListeEleves())
+            {
+                el.Progression(mControle.getReponseDouble);
+            }
+
 
             // Passe au mois suivant.
             moisActuel++;
@@ -52,8 +68,7 @@ namespace psychorientation
                     break;
                 case 42: // Fin de la 3ème année : Debut Juillet.
                     // Fin de la partie.
-                    Message m_fin = new Message(
-                        -1, 
+                    Message m_fin = new Message( 
                         "Vous avez fini la phase bêta de ce jeu !\n" + 
                         "Bravo à vous et n'hésitez pas à essayer à nouveau pour " + 
                         "améliorer votre compréhension du monde extérieur.", 
@@ -69,7 +84,8 @@ namespace psychorientation
             // Notation.
             // Cours particuliers.
 
-            lbl_date.Text = libelle.Mois(moisActuel % 12) + " " + libelle.Niveau(anneeActuelle);
+            lblDate.Text = libelle.Mois(moisActuel % 12);
+            lblClasse.Text= libelle.Niveau(anneeActuelle);
         }
 
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
