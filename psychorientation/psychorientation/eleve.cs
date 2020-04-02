@@ -15,13 +15,14 @@ namespace psychorientation
         private int id;
         private List<Note> listeNotes = new List<Note>();
         private double appreciation;
-
+        private static Random r = new Random();
         public Eleve(int id)
         {
+            
             this.id = id;
             this.classe = 0;
-            this.competence = 5;
-            this.effort = 5;
+            this.competence = Eleve.r.NextDouble()*10;
+            this.effort = Eleve.r.NextDouble()*10;
             this.orientation = 0;
             this.appreciation=CalculerAppreciation();
         }
@@ -123,11 +124,10 @@ namespace psychorientation
 
         public void AjouterNote(string nom)
         {
-            Note n = new Note(nom, CalculerNote(), this.competence, this.effort);
-            this.listeNotes.Add(n);
+            double note = CalculerNote();
+            
 
-            double note = n.GetNote();
-            double note_convenable = 10 + (competence - 5);
+            double note_convenable = 10 + (competence - 5)*2;
             if (effort > 5)
             {
                 if (note > note_convenable)
@@ -160,6 +160,9 @@ namespace psychorientation
 
             if (effort < 0) { effort = 0; }
             else if (effort > 10) { effort = 10; }
+
+            Note n = new Note(nom, note, this.competence, this.effort);
+            this.listeNotes.Add(n);
         }
 
         private double CalculerNote()
