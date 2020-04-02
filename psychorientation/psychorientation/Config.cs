@@ -45,7 +45,7 @@ namespace psychorientation
 
         public double GetCoeffCompetenceEcrit()
         {
-            return this.coeffCompetenceOral;
+            return this.coeffCompetenceEcrit;
         }
 
         public double GetCoeffEffortEcrit()

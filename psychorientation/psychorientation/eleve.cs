@@ -20,9 +20,10 @@ namespace psychorientation
         {
             this.id = id;
             this.classe = 0;
-            this.competence = 10;
-            this.effort = 10;
+            this.competence = 5;
+            this.effort = 5;
             this.orientation = 0;
+            this.appreciation=CalculerAppreciation();
         }
 
         public Eleve(int id,int classe, double competence, double effort, int orientation)
@@ -88,7 +89,7 @@ namespace psychorientation
 
         public double GetMoyenne()
         {
-            if (this.listeNotes.Count == 0) {return -1;}
+            if (this.listeNotes.Count == 0) {return 0;}
             double res = 0;
             if (this.listeNotes.Count > 0)
             {
@@ -110,10 +111,22 @@ namespace psychorientation
             if (competence < 0) { competence = 0; }
             else if (competence > 10) { competence = 10; }
 
-            if (t_competence != typeEducation)
-                this.effort += Math.Min(Math.Max(((1 / Math.Abs(t_competence - typeEducation)) - (1.0 / 3)) * 3, -1), 1) * 0.5;
+            var diff = Math.Abs(competence - effort);
+            if (diff < 3.0)
+            {
+                this.effort += Math.Pow(0.5, diff + 1);
+            }
             else
-                this.effort += 0.5;
+            {
+                if (diff >= 6)
+                {
+                    this.effort -= 0.5;
+                }
+                else
+                {
+                    this.effort -= 0.125 * (diff - 3);
+                }
+            }
 
             if (effort < 0) { effort = 0; }
             else if (effort > 10) { effort = 10; }

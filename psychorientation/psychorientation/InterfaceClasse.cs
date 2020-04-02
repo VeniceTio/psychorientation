@@ -24,13 +24,18 @@ namespace psychorientation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblDate.Text = libelle.Mois(moisActuel % 12);
-            lblClasse.Text=libelle.Niveau(anneeActuelle);
-
-            for(int i = 1; i < 5; i++)
+            for (int i = 1; i < 3; i++)
             {
                 gestEleve.AjouterEleve(new Eleve(i));
             }
+            gestEleve.AjouterEleve(new Eleve(3,0,10.0,10.0,0));
+
+            lblDate.Text = libelle.Mois(moisActuel % 12);
+            lblClasse.Text=libelle.Niveau(anneeActuelle);
+            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(),1).ToString();
+            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(),1).ToString();
+            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(),1).ToString();
+
 
             Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
             mAccueil.ShowDialog();
@@ -47,11 +52,15 @@ namespace psychorientation
             }
             Message mControle = new Message("C'est la fin du mois, comme chaque mois, les eleves vont passer un contrôle, à vous de choisir le niveau de compétence de votre enseignement.", "Début", TypeMessage.NOTATION);
             mControle.ShowDialog();
-            
             foreach(Eleve el in gestEleve.GetListeEleves())
             {
+                el.AjouterNote("Controle " +lblClasse.Text+" "+lblDate.Text);
                 el.Progression(mControle.getReponseDouble);
             }
+
+            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();
+            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 1).ToString();
+            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(), 1).ToString();
 
 
             // Passe au mois suivant.
@@ -90,7 +99,7 @@ namespace psychorientation
 
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
         {
-            ListeEleve le = new ListeEleve();
+            ListeEleve le = new ListeEleve(gestEleve);
             le.Show();
         }
 

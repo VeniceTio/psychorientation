@@ -33,6 +33,9 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.pb_sortir = new System.Windows.Forms.PictureBox();
             this.lblClasse = new System.Windows.Forms.Label();
+            this.lblMoyenne = new System.Windows.Forms.Label();
+            this.lblCompetence = new System.Windows.Forms.Label();
+            this.lblEffort = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_liste_eleves)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).BeginInit();
@@ -99,6 +102,42 @@
             this.lblClasse.TabIndex = 4;
             this.lblClasse.Text = "Chargement...";
             // 
+            // lblMoyenne
+            // 
+            this.lblMoyenne.AutoSize = true;
+            this.lblMoyenne.BackColor = System.Drawing.Color.Transparent;
+            this.lblMoyenne.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoyenne.ForeColor = System.Drawing.Color.White;
+            this.lblMoyenne.Location = new System.Drawing.Point(544, 154);
+            this.lblMoyenne.Name = "lblMoyenne";
+            this.lblMoyenne.Size = new System.Drawing.Size(101, 18);
+            this.lblMoyenne.TabIndex = 5;
+            this.lblMoyenne.Text = "Chargement...";
+            // 
+            // lblCompetence
+            // 
+            this.lblCompetence.AutoSize = true;
+            this.lblCompetence.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompetence.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompetence.ForeColor = System.Drawing.Color.White;
+            this.lblCompetence.Location = new System.Drawing.Point(544, 175);
+            this.lblCompetence.Name = "lblCompetence";
+            this.lblCompetence.Size = new System.Drawing.Size(101, 18);
+            this.lblCompetence.TabIndex = 6;
+            this.lblCompetence.Text = "Chargement...";
+            // 
+            // lblEffort
+            // 
+            this.lblEffort.AutoSize = true;
+            this.lblEffort.BackColor = System.Drawing.Color.Transparent;
+            this.lblEffort.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEffort.ForeColor = System.Drawing.Color.White;
+            this.lblEffort.Location = new System.Drawing.Point(544, 196);
+            this.lblEffort.Name = "lblEffort";
+            this.lblEffort.Size = new System.Drawing.Size(101, 18);
+            this.lblEffort.TabIndex = 7;
+            this.lblEffort.Text = "Chargement...";
+            // 
             // InterfaceClasse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,6 +146,9 @@
             this.BackgroundImage = global::psychorientation.Properties.Resources.salleV11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
+            this.Controls.Add(this.lblEffort);
+            this.Controls.Add(this.lblCompetence);
+            this.Controls.Add(this.lblMoyenne);
             this.Controls.Add(this.lblClasse);
             this.Controls.Add(this.pb_sortir);
             this.Controls.Add(this.lblDate);
@@ -135,6 +177,9 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.PictureBox pb_sortir;
         private System.Windows.Forms.Label lblClasse;
+        private System.Windows.Forms.Label lblMoyenne;
+        private System.Windows.Forms.Label lblCompetence;
+        private System.Windows.Forms.Label lblEffort;
     }
 }
 

@@ -69,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 105);
+            this.label2.Location = new System.Drawing.Point(34, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 150);
+            this.label3.Location = new System.Drawing.Point(4, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 3;
@@ -137,7 +137,7 @@
             // lblEffort
             // 
             this.lblEffort.AutoSize = true;
-            this.lblEffort.Location = new System.Drawing.Point(272, 144);
+            this.lblEffort.Location = new System.Drawing.Point(79, 107);
             this.lblEffort.Name = "lblEffort";
             this.lblEffort.Size = new System.Drawing.Size(0, 13);
             this.lblEffort.TabIndex = 7;
@@ -145,7 +145,7 @@
             // lblCompetence
             // 
             this.lblCompetence.AutoSize = true;
-            this.lblCompetence.Location = new System.Drawing.Point(271, 189);
+            this.lblCompetence.Location = new System.Drawing.Point(78, 152);
             this.lblCompetence.Name = "lblCompetence";
             this.lblCompetence.Size = new System.Drawing.Size(0, 13);
             this.lblCompetence.TabIndex = 8;
@@ -186,7 +186,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblEleve);
             this.Name = "InterfaceInfoEleve";
-            this.Size = new System.Drawing.Size(246, 216);
+            this.Size = new System.Drawing.Size(253, 226);
             this.Load += new System.EventHandler(this.InterfaceInfoEleve_Load);
             this.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             this.panel1.ResumeLayout(false);

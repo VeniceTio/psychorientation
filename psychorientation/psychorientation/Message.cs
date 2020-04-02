@@ -94,14 +94,16 @@ namespace psychorientation
                     l.Location = new System.Drawing.Point(10, 279);
                     l.Size = new System.Drawing.Size(477, 20);
                     l.TabIndex = 5;
-                   l.Text = "Type de notation visant à aider les eleves de competence :";
-                    this.Controls.Add(l);
+                   
                     TrackBar tb = new TrackBar();
                     tb.Location = new System.Drawing.Point(533, 279);
                     tb.Size = new System.Drawing.Size(184, 45);
                     tb.Tag = l;
+                    tb.Value = 5;
                     tb.Scroll += new System.EventHandler(tb_Scroll);
                     tb.TabIndex = 3;
+                    l.Text = "Type de notation visant à aider les eleves de competence : "+tb.Value;
+                    this.Controls.Add(l);
                     this.Controls.Add(tb);
                     break;
             }
