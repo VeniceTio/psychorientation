@@ -127,7 +127,7 @@
             // 
             // pnlCompetence
             // 
-            this.pnlCompetence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.pnlCompetence.BackColor = System.Drawing.Color.Blue;
             this.pnlCompetence.Location = new System.Drawing.Point(3, 4);
             this.pnlCompetence.Name = "pnlCompetence";
             this.pnlCompetence.Size = new System.Drawing.Size(58, 18);
@@ -155,15 +155,15 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 13);
+            this.label4.Size = new System.Drawing.Size(104, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Moyenne général : ";
+            this.label4.Text = "Moyenne générale : ";
             this.label4.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             // 
             // lblMoyenne
             // 
             this.lblMoyenne.AutoSize = true;
-            this.lblMoyenne.Location = new System.Drawing.Point(96, 189);
+            this.lblMoyenne.Location = new System.Drawing.Point(107, 189);
             this.lblMoyenne.Name = "lblMoyenne";
             this.lblMoyenne.Size = new System.Drawing.Size(35, 13);
             this.lblMoyenne.TabIndex = 10;

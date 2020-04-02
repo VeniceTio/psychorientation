@@ -106,18 +106,17 @@ namespace psychorientation
 
         public void Progression(double typeEducation)
         {
-            double t_competence = competence;
-            this.competence += this.effort * 0.1 * (1 - (t_competence * 0.1)) * (1.0 / 12);
+            if (competence != typeEducation)
+                this.effort += Math.Min(Math.Max(((1 / Math.Abs(competence - typeEducation)) - (1.0 / 3)) * 3, -1), 1);
+            else
+                this.effort += 1;
+            if (effort < 0) { effort = 0; }
+            else if (effort > 10) { effort = 10; }
+
+            this.competence += (((effort * 0.1) - 0.3) * (1.2 - (competence * 0.1)));
 
             if (competence < 0) { competence = 0; }
             else if (competence > 10) { competence = 10; }
-
-            if (t_competence != typeEducation)
-                this.effort += Math.Min(Math.Max(((1 / Math.Abs(t_competence - typeEducation)) - (1.0 / 3)) * 3, -1), 1) * 1;
-            else
-                this.effort += 0.5;
-            if (effort < 0) { effort = 0; }
-            else if (effort > 10) { effort = 10; }
         }
 
 
@@ -126,7 +125,6 @@ namespace psychorientation
             double note = CalculerNote();
             
             double note_convenable = 10 + (competence - 5);
-            /*
             if (effort > 5)
             {
                 if (note >= note_convenable)
@@ -146,25 +144,13 @@ namespace psychorientation
                 }
                 else
                 {
-                    if (competence > 5)
-                    {
-                        effort += 0.25;
-                    }
-                    else
-                    {
-                        effort -= 0.25;
-                    }
+                    effort += 0.25;
                 }
-            }*/
-            /*
-            if (note_convenable <= note) 
-            {
-                this.effort -= 0.5*this.competence*0.3;
             }
 
             if (effort < 0) { effort = 0; }
             else if (effort > 10) { effort = 10; }
-            */
+
             Note n = new Note(nom, note, this.competence, this.effort);
             this.listeNotes.Add(n);
         }
