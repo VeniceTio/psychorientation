@@ -65,6 +65,7 @@ namespace psychorientation
 
         private void InitNote()
         {
+            int largeurLigne = 25;
             List<Note> listNote = this.eleve.GetlisteNotes();
             TableLayoutPanel tlp = new TableLayoutPanel();
             tlp.ColumnCount = 4;
@@ -73,23 +74,35 @@ namespace psychorientation
             tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             tlp.RowCount = 1 + listNote.Count;
-            for(int i=0; i<tlp.RowCount; i++)
-            {
-                tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            }
-            pnlNote.Controls.Add(tlp);
 
-            /*this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 19);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(413, 50);
-            this.tableLayoutPanel1.TabIndex = 0;*/
+            // Initialise la première ligne d'en-tête
+            tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            tlp.Controls.Add(CreerLabel("Nom :"), 0, 0);
+            tlp.Controls.Add(CreerLabel("Note :"), 1, 0);
+            tlp.Controls.Add(CreerLabel("Compétence :"), 2, 0);
+            tlp.Controls.Add(CreerLabel("Effort :"), 3, 0);
+
+            // Rajoute les lignes supplémentaires
+            for (int i=1; i<tlp.RowCount; i++)
+            {
+                tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+                Note note = listNote[i - 1];
+                tlp.Controls.Add(CreerLabel(note.GetNom()), 0, i);
+                tlp.Controls.Add(CreerLabel(note.GetNote().ToString()), 1, i);
+                tlp.Controls.Add(CreerLabel(note.GetCompetence().ToString()), 2, i);
+                tlp.Controls.Add(CreerLabel(note.GetEffort().ToString()), 3, i);
+            }
+
+            tlp.Size = new System.Drawing.Size(413, largeurLigne* tlp.RowCount);
+            tlp.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            pnlNote.Controls.Add(tlp);
+        }
+
+        private Label CreerLabel(string contenu)
+        {
+            Label lbl = new Label();
+            lbl.Text = contenu;
+            return lbl;
         }
 
 
