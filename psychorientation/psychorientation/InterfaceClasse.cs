@@ -31,6 +31,19 @@ namespace psychorientation
             {
                 gestEleve.AjouterEleve(new Eleve(i));
             }
+            Libelle lib = new Libelle();
+
+            List<Eleve> listEleve = gestEleve.GetListeEleves();
+            int y = 20;
+            foreach (Eleve eleve in listEleve)
+            {
+                InterfaceInfoEleve ii = new InterfaceInfoEleve();
+                ii.setParam(eleve);
+                ii.Location = new Point(0, y);
+                pnlListeEleve.Controls.Add(ii);
+                y += 220;
+            }
+
 
             Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
             mAccueil.ShowDialog();
