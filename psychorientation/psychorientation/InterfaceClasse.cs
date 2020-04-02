@@ -46,7 +46,7 @@ namespace psychorientation
             }
 
 
-            Message mAccueil = new Message("C'est la fin du mois, veuillez choisir le niveau de compétence du public cible de votre enseignement.", "Cours dispensés", TypeMessage.INFORMATION);
+            Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
             mAccueil.ShowDialog();
         }
 
@@ -104,7 +104,7 @@ namespace psychorientation
                 // Lance l'interface appropriee.
                 return;
             }
-            Message mControle = new Message("C'est la fin du mois, comme chaque mois, les eleves vont passer un contrôle, à vous de choisir le niveau de compétence de votre enseignement.", "Début", TypeMessage.NOTATION);
+            Message mControle = new Message("C'est la fin du mois, veuillez choisir le niveau de compétence du public cible de votre enseignement.", "Cours", TypeMessage.NOTATION);
             mControle.ShowDialog();
             foreach(Eleve el in gestEleve.GetListeEleves())
             {
