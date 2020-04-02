@@ -82,6 +82,7 @@
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Menu_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

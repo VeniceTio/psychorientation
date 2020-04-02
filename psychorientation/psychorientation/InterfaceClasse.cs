@@ -41,7 +41,9 @@ namespace psychorientation
         {
             AjouterEleveImage();
             GenererBase();
-            
+
+            TransmitKeyDown();
+
             /*
             Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
             mAccueil.ShowDialog();
@@ -66,7 +68,6 @@ namespace psychorientation
                 pnlListeEleve.Controls.Add(ii);
                 y += 220;
             }
-
 
             TrackBar tbNota = new TrackBar();
             tbNota.Location = new System.Drawing.Point(0, lblNotation.Location.Y + lblNotation.Size.Height);
@@ -250,9 +251,37 @@ namespace psychorientation
         {
            
             if (MessageBox.Show("Souhaitez-vous quitter le jeu ?\nVous perdrez alors votre progression dans la partie en cours.",
-                                "Confirmation de fermeture", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+                                "Confirmation de fermeture", 
+                                MessageBoxButtons.YesNo, 
+                                MessageBoxIcon.Warning, 
+                                MessageBoxDefaultButton.Button2
+                                )
+                == DialogResult.No)
             {
                 e.Cancel = true;
+            }
+        }
+
+        private void TransmitKeyDown()
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel)
+                {
+                    foreach (Control c2 in (c as Panel).Controls)
+                    {
+                        c2.KeyDown += new System.Windows.Forms.KeyEventHandler(InterfaceClasse_KeyDown);
+                    }
+                }
+                c.KeyDown += new System.Windows.Forms.KeyEventHandler(InterfaceClasse_KeyDown);
+            }
+        }
+
+        private void InterfaceClasse_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Close();
             }
         }
     }

@@ -24,7 +24,6 @@ namespace psychorientation
             {
 
                 Config.instance = JsonConvert.DeserializeObject<Config>(File.ReadAllText("config.json"));
-                Console.WriteLine(Config.instance.coeffEffortOral);
                 return Config.instance;
             }
             else

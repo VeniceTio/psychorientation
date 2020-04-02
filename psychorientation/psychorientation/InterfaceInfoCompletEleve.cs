@@ -108,5 +108,13 @@ namespace psychorientation
             lbl.Text = contenu;
             return lbl;
         }
+
+        private void InterfaceInfoCompletEleve_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 27) // Echap
+            {
+                Close();
+            }
+        }
     }
 }

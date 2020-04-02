@@ -236,6 +236,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InterfaceClasse_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.InterfaceClasse_SizeChanged);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InterfaceClasse_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).EndInit();
             this.pnlListeEleve.ResumeLayout(false);
             this.pnlListeEleve.PerformLayout();

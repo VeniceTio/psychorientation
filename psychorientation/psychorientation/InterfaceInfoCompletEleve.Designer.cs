@@ -189,6 +189,7 @@
             this.Text = "InterfaceInfoCompletEleve";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.InterfaceInfoCompletEleve_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InterfaceInfoCompletEleve_KeyPress);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbEleve)).EndInit();
