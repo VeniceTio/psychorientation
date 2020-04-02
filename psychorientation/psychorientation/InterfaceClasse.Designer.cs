@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.pb_action_suivante = new System.Windows.Forms.PictureBox();
-            this.pb_liste_eleves = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
             this.pb_sortir = new System.Windows.Forms.PictureBox();
             this.lblClasse = new System.Windows.Forms.Label();
+            this.pnlListeEleve = new System.Windows.Forms.Panel();
+            this.lblListeEleve = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_liste_eleves)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).BeginInit();
+            this.pnlListeEleve.SuspendLayout();
             this.SuspendLayout();
             // 
             // pb_action_suivante
@@ -50,18 +51,6 @@
             this.pb_action_suivante.TabIndex = 0;
             this.pb_action_suivante.TabStop = false;
             this.pb_action_suivante.Click += new System.EventHandler(this.Pb_action_suivante_Click);
-            // 
-            // pb_liste_eleves
-            // 
-            this.pb_liste_eleves.BackColor = System.Drawing.Color.Transparent;
-            this.pb_liste_eleves.BackgroundImage = global::psychorientation.Properties.Resources.grp;
-            this.pb_liste_eleves.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_liste_eleves.Location = new System.Drawing.Point(12, 12);
-            this.pb_liste_eleves.Name = "pb_liste_eleves";
-            this.pb_liste_eleves.Size = new System.Drawing.Size(100, 100);
-            this.pb_liste_eleves.TabIndex = 1;
-            this.pb_liste_eleves.TabStop = false;
-            this.pb_liste_eleves.Click += new System.EventHandler(this.Pb_liste_eleves_Click);
             // 
             // lblDate
             // 
@@ -99,6 +88,26 @@
             this.lblClasse.TabIndex = 4;
             this.lblClasse.Text = "Chargement...";
             // 
+            // pnlListeEleve
+            // 
+            this.pnlListeEleve.AutoScroll = true;
+            this.pnlListeEleve.BackColor = System.Drawing.Color.White;
+            this.pnlListeEleve.Controls.Add(this.lblListeEleve);
+            this.pnlListeEleve.Location = new System.Drawing.Point(0, -1);
+            this.pnlListeEleve.Name = "pnlListeEleve";
+            this.pnlListeEleve.Size = new System.Drawing.Size(241, 783);
+            this.pnlListeEleve.TabIndex = 5;
+            // 
+            // lblListeEleve
+            // 
+            this.lblListeEleve.AutoSize = true;
+            this.lblListeEleve.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListeEleve.Location = new System.Drawing.Point(3, 0);
+            this.lblListeEleve.Name = "lblListeEleve";
+            this.lblListeEleve.Size = new System.Drawing.Size(217, 29);
+            this.lblListeEleve.TabIndex = 0;
+            this.lblListeEleve.Text = "Liste des élèves :";
+            // 
             // InterfaceClasse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,10 +116,10 @@
             this.BackgroundImage = global::psychorientation.Properties.Resources.salleV11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
+            this.Controls.Add(this.pnlListeEleve);
             this.Controls.Add(this.lblClasse);
             this.Controls.Add(this.pb_sortir);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.pb_liste_eleves);
             this.Controls.Add(this.pb_action_suivante);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -121,8 +130,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.InterfaceClasse_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_liste_eleves)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sortir)).EndInit();
+            this.pnlListeEleve.ResumeLayout(false);
+            this.pnlListeEleve.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,10 +141,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pb_action_suivante;
-        private System.Windows.Forms.PictureBox pb_liste_eleves;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.PictureBox pb_sortir;
         private System.Windows.Forms.Label lblClasse;
+        private System.Windows.Forms.Panel pnlListeEleve;
+        private System.Windows.Forms.Label lblListeEleve;
     }
 }
 
