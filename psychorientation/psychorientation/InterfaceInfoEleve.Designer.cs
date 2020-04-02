@@ -100,6 +100,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.pnlEffort);
+            this.panel1.Controls.Add(this.lblEffort);
             this.panel1.Location = new System.Drawing.Point(96, 95);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(139, 26);
@@ -137,7 +138,7 @@
             // lblEffort
             // 
             this.lblEffort.AutoSize = true;
-            this.lblEffort.Location = new System.Drawing.Point(49, 109);
+            this.lblEffort.Location = new System.Drawing.Point(3, 5);
             this.lblEffort.Name = "lblEffort";
             this.lblEffort.Size = new System.Drawing.Size(0, 13);
             this.lblEffort.TabIndex = 7;
@@ -177,7 +178,6 @@
             this.Controls.Add(this.lblMoyenne);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblCompetence);
-            this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblClasse);
@@ -186,10 +186,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblEleve);
             this.Name = "InterfaceInfoEleve";
-            this.Size = new System.Drawing.Size(246, 216);
+            this.Size = new System.Drawing.Size(239, 216);
             this.Load += new System.EventHandler(this.InterfaceInfoEleve_Load);
             this.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

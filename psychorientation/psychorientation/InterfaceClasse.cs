@@ -20,7 +20,13 @@ namespace psychorientation
 
         private int[] positionElevex = { 322, 571, 698, 951, 322, 571, 698, 951 };
         private int[] positionElevey = { 398, 398, 398, 398, 505, 505, 505, 505 };
-        
+
+        private string notaText = "Type de notation visant à aider les eleves de competence : ";
+        private string coursText = "Type de cours visant à aider les eleves de competence : ";
+
+        private double valCours = 5.0;
+        private double valNotation = 5.0;
+
         public InterfaceClasse()
         {
             InitializeComponent();
@@ -46,6 +52,22 @@ namespace psychorientation
                 y += 220;
             }
 
+            
+            TrackBar tbNota = new TrackBar();
+            tbNota.Location = new System.Drawing.Point(0, 10 + lblNotation.Location.Y+lblNotation.Size.Height);
+            tbNota.Size = new System.Drawing.Size(184, 45);
+            tbNota.Value = 5;
+            tbNota.Scroll += new System.EventHandler(tbNota_Scroll);
+            pnlChoix.Controls.Add(tbNota);
+            lblNotation.Text = notaText + tbNota.Value.ToString();
+
+            TrackBar tbCours = new TrackBar();
+            tbCours.Location = new System.Drawing.Point(0, 10 + lblCours.Location.Y + lblCours.Size.Height);
+            tbCours.Size = new System.Drawing.Size(184, 45);
+            tbCours.Value = 5;
+            tbCours.Scroll += new System.EventHandler(tbCours_Scroll);
+            pnlChoix.Controls.Add(tbCours);
+            lblCours.Text = coursText + tbCours.Value.ToString();
 
             Message mAccueil = new Message("Bonjour apprenti prof, vous allez apprendre à éduquer des joueurs !! ", "Début", TypeMessage.INFORMATION);
             mAccueil.ShowDialog();
@@ -106,7 +128,7 @@ namespace psychorientation
                 return;
             }*/
 
-            Message mControle = new Message("C'est la fin du mois, veuillez choisir le niveau de compétence du public cible de votre enseignement.", "Cours", TypeMessage.NOTATION);
+            /*Message mControle = new Message("C'est la fin du mois, veuillez choisir le niveau de compétence du public cible de votre enseignement.", "Cours", TypeMessage.NOTATION);
 
             mControle.ShowDialog();
 
@@ -115,7 +137,14 @@ namespace psychorientation
             {
                 el.Progression(mControle.getReponseDouble);
                 el.AjouterNote("Controle " + lblClasse.Text + " " + lblDate.Text);
+            }*/
+
+            foreach (Eleve el in gestEleve.GetListeEleves())
+            {
+                el.Progression(valCours);
+                el.AjouterNote("Controle " + lblClasse.Text + " " + lblDate.Text);
             }
+
 
             lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();
             lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 1).ToString();
@@ -191,6 +220,20 @@ namespace psychorientation
             {
                 Close();
             }
+        }
+
+        private void tbNota_Scroll(object sender, EventArgs e)
+        {
+            TrackBar tbNota = (TrackBar)sender;
+            valNotation = (double)tbNota.Value;
+            lblNotation.Text = notaText + valNotation.ToString();
+        }
+
+        private void tbCours_Scroll(object sender, EventArgs e)
+        {
+            TrackBar tbCours = (TrackBar)sender;
+            valCours = (double)tbCours.Value;
+            lblCours.Text = coursText + valCours.ToString();
         }
     }
 }
