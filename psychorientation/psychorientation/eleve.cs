@@ -124,7 +124,7 @@ namespace psychorientation
         {
             double note = CalculerNote(coeff);
             
-            double note_convenable = 10 + (competence - 5);
+            double note_convenable = 10 + (competence - 5);//((competence + effort) / 2 - 5);
             if (effort > 5)
             {
                 if (note >= note_convenable)
@@ -144,10 +144,10 @@ namespace psychorientation
                 }
                 else
                 {
-                    effort += 0.25;
+                    effort -= 0.25;
                 }
             }
-
+            
             if (effort < 0) { effort = 0; }
             else if (effort > 10) { effort = 10; }
 

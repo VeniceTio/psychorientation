@@ -131,6 +131,7 @@ namespace psychorientation
                 gestEleve.AjouterEleve(new Eleve(3,0,9.0,1.0,0));
             }
             AjouterPictureboxEleve();
+            
             gestEleve.FaireControle("Controle " + lblClasse.Text + " " + lblDate.Text, valNotation / 10.0);
         }
 
@@ -152,7 +153,6 @@ namespace psychorientation
                 el.Progression(valCours);
             }
             gestEleve.FaireControle("Controle " + lblClasse.Text + " " + lblDate.Text, valNotation / 10.0);
-
 
             lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();
             lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 1).ToString();
@@ -181,7 +181,7 @@ namespace psychorientation
                         TypeMessage.INFORMATION
                     );
                     m_fin.ShowDialog();
-                    Close();
+                    pb_action_suivante.Click -= new System.EventHandler(Pb_action_suivante_Click);
                     break;
             }
 
