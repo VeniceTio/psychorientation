@@ -69,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 108);
+            this.label2.Location = new System.Drawing.Point(3, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 155);
+            this.label3.Location = new System.Drawing.Point(3, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 3;
@@ -137,7 +137,7 @@
             // lblEffort
             // 
             this.lblEffort.AutoSize = true;
-            this.lblEffort.Location = new System.Drawing.Point(49, 109);
+            this.lblEffort.Location = new System.Drawing.Point(53, 104);
             this.lblEffort.Name = "lblEffort";
             this.lblEffort.Size = new System.Drawing.Size(0, 13);
             this.lblEffort.TabIndex = 7;
@@ -145,7 +145,7 @@
             // lblCompetence
             // 
             this.lblCompetence.AutoSize = true;
-            this.lblCompetence.Location = new System.Drawing.Point(85, 154);
+            this.lblCompetence.Location = new System.Drawing.Point(79, 159);
             this.lblCompetence.Name = "lblCompetence";
             this.lblCompetence.Size = new System.Drawing.Size(0, 13);
             this.lblCompetence.TabIndex = 8;
@@ -155,15 +155,15 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 13);
+            this.label4.Size = new System.Drawing.Size(80, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Moyenne générale : ";
+            this.label4.Text = "Dernière note : ";
             this.label4.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             // 
             // lblMoyenne
             // 
             this.lblMoyenne.AutoSize = true;
-            this.lblMoyenne.Location = new System.Drawing.Point(107, 189);
+            this.lblMoyenne.Location = new System.Drawing.Point(89, 189);
             this.lblMoyenne.Name = "lblMoyenne";
             this.lblMoyenne.Size = new System.Drawing.Size(35, 13);
             this.lblMoyenne.TabIndex = 10;
@@ -188,7 +188,6 @@
             this.Controls.Add(this.lblEleve);
             this.Name = "InterfaceInfoEleve";
             this.Size = new System.Drawing.Size(216, 216);
-            this.Load += new System.EventHandler(this.InterfaceInfoEleve_Load);
             this.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

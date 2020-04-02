@@ -18,11 +18,6 @@ namespace psychorientation
             InitializeComponent();
         }
 
-        private void InterfaceInfoEleve_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         public void setParam(Eleve el)
         {
             this.eleve = el;
@@ -34,17 +29,10 @@ namespace psychorientation
             Libelle lib = new Libelle();
             lblEleve.Text = "Eleve n°" + eleve.GetId();
             lblClasse.Text = lib.Niveau(eleve.GetClasse());
-            lblEffort.Text = Math.Round(eleve.GetEffort(),1).ToString() ;
-            lblCompetence.Text = Math.Round(eleve.GetCompetence(),1).ToString();
-            double moyenne = eleve.GetMoyenne();
-            if (moyenne == -1)
-            {
-                lblMoyenne.Text="Pas encore d'évaluation";
-            }
-            else
-            {
-                lblMoyenne.Text = Math.Round(eleve.GetMoyenne(),1).ToString()+"/20";
-            }
+            lblEffort.Text = Math.Round(eleve.GetEffort(), 2).ToString() ;
+            lblCompetence.Text = Math.Round(eleve.GetCompetence(), 2).ToString();
+
+            lblMoyenne.Text = Math.Round(eleve.GetListeNotes().Last().GetNote(), 2).ToString()+"/20";
             
             MajPanel(pnlCompetence,eleve.GetCompetence());
             MajPanel(pnlEffort, eleve.GetEffort());

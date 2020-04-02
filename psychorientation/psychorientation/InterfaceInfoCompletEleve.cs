@@ -49,7 +49,7 @@ namespace psychorientation
             }
             else
             {
-                lblMoyenneNote.Text = Math.Round(eleve.GetMoyenne(),1).ToString() + "/20";
+                lblMoyenneNote.Text = Math.Round(eleve.GetMoyenne(), 2).ToString() + "/20";
             }
 
             MajPanel(pnlCompetence, eleve.GetCompetence());
@@ -66,7 +66,7 @@ namespace psychorientation
         private void InitNote()
         {
             int largeurLigne = 25;
-            List<Note> listNote = this.eleve.GetlisteNotes();
+            List<Note> listNote = this.eleve.GetListeNotes();
             TableLayoutPanel tlp = new TableLayoutPanel();
             tlp.ColumnCount = 4;
             tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -88,9 +88,9 @@ namespace psychorientation
                 tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
                 Note note = listNote[i - 1];
                 tlp.Controls.Add(CreerLabel(note.GetNom()), 0, i);
-                tlp.Controls.Add(CreerLabel( Math.Round(note.GetNote(),1).ToString()), 1, i);
-                tlp.Controls.Add(CreerLabel(Math.Round(note.GetCompetence(),1).ToString()), 2, i);
-                tlp.Controls.Add(CreerLabel(Math.Round(note.GetEffort(),1).ToString()), 3, i);
+                tlp.Controls.Add(CreerLabel( Math.Round(note.GetNote(), 2).ToString()), 1, i);
+                tlp.Controls.Add(CreerLabel(Math.Round(note.GetCompetence(), 2).ToString()), 2, i);
+                tlp.Controls.Add(CreerLabel(Math.Round(note.GetEffort(), 2).ToString()), 3, i);
             }
 
             tlp.Size = new System.Drawing.Size(413, largeurLigne* tlp.RowCount);

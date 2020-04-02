@@ -62,7 +62,7 @@ namespace psychorientation
         {
             return this.competence;
         }
-        public List<Note> GetlisteNotes()
+        public List<Note> GetListeNotes()
         {
             return this.listeNotes;
         }
