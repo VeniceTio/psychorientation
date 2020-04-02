@@ -40,6 +40,7 @@
             this.lblListeEleve = new System.Windows.Forms.Label();
             this.imgListPerso = new System.Windows.Forms.ImageList(this.components);
             this.pnlChoix = new System.Windows.Forms.Panel();
+            this.lbl_barre_decisions = new System.Windows.Forms.Label();
             this.lblCours = new System.Windows.Forms.Label();
             this.lblNotation = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
@@ -64,11 +65,11 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(269, 171);
+            this.lblDate.Location = new System.Drawing.Point(277, 171);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(129, 24);
+            this.lblDate.Size = new System.Drawing.Size(140, 22);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "Chargement...";
             // 
@@ -76,11 +77,11 @@
             // 
             this.lblClasse.AutoSize = true;
             this.lblClasse.BackColor = System.Drawing.Color.Transparent;
-            this.lblClasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClasse.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClasse.ForeColor = System.Drawing.Color.White;
-            this.lblClasse.Location = new System.Drawing.Point(943, 171);
+            this.lblClasse.Location = new System.Drawing.Point(951, 171);
             this.lblClasse.Name = "lblClasse";
-            this.lblClasse.Size = new System.Drawing.Size(129, 24);
+            this.lblClasse.Size = new System.Drawing.Size(140, 22);
             this.lblClasse.TabIndex = 4;
             this.lblClasse.Text = "Chargement...";
             // 
@@ -127,14 +128,16 @@
             this.pnlListeEleve.Controls.Add(this.lblListeEleve);
             this.pnlListeEleve.Location = new System.Drawing.Point(0, -1);
             this.pnlListeEleve.Name = "pnlListeEleve";
-            this.pnlListeEleve.Size = new System.Drawing.Size(241, 783);
+            this.pnlListeEleve.Size = new System.Drawing.Size(245, 783);
             this.pnlListeEleve.TabIndex = 5;
             // 
             // lblListeEleve
             // 
             this.lblListeEleve.AutoSize = true;
+            this.lblListeEleve.BackColor = System.Drawing.Color.Transparent;
             this.lblListeEleve.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListeEleve.Location = new System.Drawing.Point(3, 0);
+            this.lblListeEleve.ForeColor = System.Drawing.Color.Black;
+            this.lblListeEleve.Location = new System.Drawing.Point(10, 4);
             this.lblListeEleve.Name = "lblListeEleve";
             this.lblListeEleve.Size = new System.Drawing.Size(217, 29);
             this.lblListeEleve.TabIndex = 0;
@@ -153,30 +156,45 @@
             // 
             // pnlChoix
             // 
+            this.pnlChoix.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlChoix.Controls.Add(this.lbl_barre_decisions);
             this.pnlChoix.Controls.Add(this.lblCours);
             this.pnlChoix.Controls.Add(this.lblNotation);
             this.pnlChoix.Location = new System.Drawing.Point(1107, 99);
             this.pnlChoix.Name = "pnlChoix";
-            this.pnlChoix.Size = new System.Drawing.Size(189, 528);
+            this.pnlChoix.Size = new System.Drawing.Size(189, 323);
             this.pnlChoix.TabIndex = 8;
+            // 
+            // lbl_barre_decisions
+            // 
+            this.lbl_barre_decisions.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbl_barre_decisions.Location = new System.Drawing.Point(-1, 185);
+            this.lbl_barre_decisions.Name = "lbl_barre_decisions";
+            this.lbl_barre_decisions.Size = new System.Drawing.Size(189, 10);
+            this.lbl_barre_decisions.TabIndex = 2;
+            this.lbl_barre_decisions.Text = " ";
             // 
             // lblCours
             // 
+            this.lblCours.BackColor = System.Drawing.Color.Transparent;
             this.lblCours.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblCours.Location = new System.Drawing.Point(13, 282);
+            this.lblCours.ForeColor = System.Drawing.Color.Black;
+            this.lblCours.Location = new System.Drawing.Point(13, 204);
             this.lblCours.Name = "lblCours";
             this.lblCours.Size = new System.Drawing.Size(164, 59);
             this.lblCours.TabIndex = 1;
-            this.lblCours.Text = "Type de cours visant à aider les eleves de competence :";
+            this.lblCours.Text = "Type de cours visant à aider les élèves de compétence :";
             // 
             // lblNotation
             // 
+            this.lblNotation.BackColor = System.Drawing.Color.Transparent;
             this.lblNotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblNotation.Location = new System.Drawing.Point(13, 87);
+            this.lblNotation.ForeColor = System.Drawing.Color.Black;
+            this.lblNotation.Location = new System.Drawing.Point(13, 20);
             this.lblNotation.Name = "lblNotation";
-            this.lblNotation.Size = new System.Drawing.Size(164, 59);
+            this.lblNotation.Size = new System.Drawing.Size(164, 74);
             this.lblNotation.TabIndex = 0;
-            this.lblNotation.Text = "Type de notation visant à aider les eleves de competence :";
+            this.lblNotation.Text = "Coefficients de prise en compte de l\'effort et de la compétence pour noter :";
             // 
             // InterfaceClasse
             // 
@@ -228,6 +246,7 @@
         private System.Windows.Forms.Panel pnlChoix;
         private System.Windows.Forms.Label lblNotation;
         private System.Windows.Forms.Label lblCours;
+        private System.Windows.Forms.Label lbl_barre_decisions;
     }
 }
 

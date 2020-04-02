@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="salleV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salleV1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="grp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salleV11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salleV11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sortir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sortir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,7 +130,10 @@
   <data name="passer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\passer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="salleV11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salleV11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="salleV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salleV1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paternFeuille" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\patern\paternFeuille.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

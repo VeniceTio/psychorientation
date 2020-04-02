@@ -40,7 +40,7 @@ namespace psychorientation
             lblEffort.Text = "Effort : " + Math.Round(eleve.GetEffort(),1);
             lblCompetence.Text = "Compétence : " + Math.Round(eleve.GetCompetence(),1);
             Libelle lib = new Libelle();
-            string nom = "Eleve n°" + eleve.GetId();
+            string nom = "Élève n°" + eleve.GetId();
             this.Text = nom;
             lblNomEleve.Text = nom;
             lblNiveau.Text = lib.Niveau(eleve.GetClasse());
@@ -97,7 +97,7 @@ namespace psychorientation
                 tlp.Controls.Add(CreerLabel(Math.Round(note.GetEffort(), 2).ToString()), 3, i);
             }
 
-            tlp.Size = new System.Drawing.Size(413, largeurLigne* tlp.RowCount+1);
+            tlp.Size = new System.Drawing.Size(320, largeurLigne * tlp.RowCount + 10);
             tlp.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             pnlNote.Controls.Add(tlp);
         }
@@ -108,7 +108,5 @@ namespace psychorientation
             lbl.Text = contenu;
             return lbl;
         }
-
-
     }
 }

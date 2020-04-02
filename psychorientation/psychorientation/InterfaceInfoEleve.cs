@@ -27,7 +27,7 @@ namespace psychorientation
         public void actualiser()
         {
             Libelle lib = new Libelle();
-            lblEleve.Text = "Eleve n°" + eleve.GetId();
+            lblEleve.Text = "Élève n°" + eleve.GetId();
             lblClasse.Text = lib.Niveau(eleve.GetClasse());
             lblEffort.Text = Math.Round(eleve.GetEffort(), 2).ToString() ;
             lblCompetence.Text = Math.Round(eleve.GetCompetence(), 2).ToString();

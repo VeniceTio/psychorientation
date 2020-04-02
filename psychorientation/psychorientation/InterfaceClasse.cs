@@ -21,8 +21,8 @@ namespace psychorientation
         private int[] positionElevex = { 322, 571, 698, 951, 322, 571, 698, 951 };
         private int[] positionElevey = { 398, 398, 398, 398, 505, 505, 505, 505 };
 
-        private string notaText = "Notation suivant les coefficients : ";
-        private string coursText = "Type de cours visant à aider les eleves de competence : ";
+        private string notaText = "Coefficients de prise en compte de l'effort et de la compétence pour noter :";
+        private string coursText = "Type de cours visant à aider les élèves de compétence : ";
 
         private double valCours = 5.0;
         private double valNotation = 10.0;
@@ -57,12 +57,12 @@ namespace psychorientation
             lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(), 1).ToString();
 
             Libelle lib = new Libelle();
-            int y = 20;
+            int y = 40;
             foreach (Eleve eleve in gestEleve.GetListeEleves())
             {
                 InterfaceInfoEleve ii = new InterfaceInfoEleve();
                 ii.setParam(eleve);
-                ii.Location = new Point(0, y);
+                ii.Location = new Point(6, y);
                 pnlListeEleve.Controls.Add(ii);
                 y += 220;
             }
@@ -73,6 +73,8 @@ namespace psychorientation
             tbNota.Size = new System.Drawing.Size(184, 45);
             tbNota.Maximum = 20;
             tbNota.Value = 10;
+            tbNota.SmallChange = 1;
+            tbNota.LargeChange = 1;
             tbNota.Scroll += new System.EventHandler(tbNota_Scroll);
             pnlChoix.Controls.Add(tbNota);
             lblNotation.Text = notaText;
@@ -90,6 +92,8 @@ namespace psychorientation
             tbCours.Location = new System.Drawing.Point(0, 10 + lblCours.Location.Y + lblCours.Size.Height);
             tbCours.Size = new System.Drawing.Size(184, 45);
             tbCours.Value = 5;
+            tbCours.SmallChange = 1;
+            tbCours.LargeChange = 1;
             tbCours.Scroll += new System.EventHandler(tbCours_Scroll);
             pnlChoix.Controls.Add(tbCours);
             lblCours.Text = coursText + tbCours.Value.ToString();
