@@ -52,7 +52,7 @@ namespace psychorientation
         private void MajPanel(Panel p, double valeur)
         {
             int val = (int)valeur;
-            p.Size = new Size(val * 133 / 10, p.Height);
+            p.Size = new Size(val * 84 / 10, p.Height);
         }
 
         private void InterfaceInfoEleve_Click(object sender, EventArgs e)
