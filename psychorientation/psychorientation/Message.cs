@@ -120,7 +120,7 @@ namespace psychorientation
             TrackBar tb = (TrackBar)sender;
             Label tag = (Label)tb.Tag;
             this.reponseDouble = (double)tb.Value;
-            tag.Text= "Type de notation visant à aider les eleves de competence : "+this.reponseDouble;
+            tag.Text= "Type de cours visant à aider les élèves de compétence : " + this.reponseDouble;
         }
     }
 }
