@@ -75,6 +75,7 @@ namespace psychorientation
             tbNota.Value = 10;
             tbNota.SmallChange = 1;
             tbNota.LargeChange = 1;
+            tbNota.TickStyle = TickStyle.TopLeft;
             tbNota.Scroll += new System.EventHandler(tbNota_Scroll);
             pnlChoix.Controls.Add(tbNota);
             lblNotation.Text = notaText;
