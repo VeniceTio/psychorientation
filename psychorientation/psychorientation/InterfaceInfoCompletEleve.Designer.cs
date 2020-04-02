@@ -164,7 +164,7 @@
             this.pnlNote.AutoScroll = true;
             this.pnlNote.Location = new System.Drawing.Point(85, 243);
             this.pnlNote.Name = "pnlNote";
-            this.pnlNote.Size = new System.Drawing.Size(448, 134);
+            this.pnlNote.Size = new System.Drawing.Size(448, 143);
             this.pnlNote.TabIndex = 16;
             // 
             // InterfaceInfoCompletEleve
@@ -183,7 +183,10 @@
             this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.lblClasse);
             this.Controls.Add(this.lblNomEleve);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "InterfaceInfoCompletEleve";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "InterfaceInfoCompletEleve";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.InterfaceInfoCompletEleve_Load);

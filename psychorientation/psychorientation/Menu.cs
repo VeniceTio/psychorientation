@@ -20,21 +20,13 @@ namespace psychorientation
         private void button1_Click(object sender, EventArgs e)
         {
             InterfaceClasse iC = new InterfaceClasse(false);
-            iC.FormClosing += new FormClosingEventHandler(f_FormClosing);
-            this.Hide();
             iC.Show();
         }
 
-        private void f_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Close();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
             InterfaceClasse iC = new InterfaceClasse(true);
-            iC.FormClosing += new FormClosingEventHandler(f_FormClosing);
-            this.Hide();
             iC.Show();
         }
     }
