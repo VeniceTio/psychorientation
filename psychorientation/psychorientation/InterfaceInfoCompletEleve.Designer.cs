@@ -70,7 +70,7 @@
             // 
             this.lblEffort.AutoSize = true;
             this.lblEffort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblEffort.Location = new System.Drawing.Point(254, 126);
+            this.lblEffort.Location = new System.Drawing.Point(225, 126);
             this.lblEffort.Name = "lblEffort";
             this.lblEffort.Size = new System.Drawing.Size(44, 15);
             this.lblEffort.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             this.lblCompetence.AutoSize = true;
             this.lblCompetence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblCompetence.Location = new System.Drawing.Point(212, 160);
+            this.lblCompetence.Location = new System.Drawing.Point(183, 160);
             this.lblCompetence.Name = "lblCompetence";
             this.lblCompetence.Size = new System.Drawing.Size(86, 15);
             this.lblCompetence.TabIndex = 4;

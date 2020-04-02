@@ -12,6 +12,7 @@ namespace psychorientation
 {
     public partial class InterfaceClasse : Form
     {
+        private Random r = new Random();
         private Libelle libelle = Libelle.GetInstance();
         private int moisActuel = 8;
         private int anneeActuelle = 0;
@@ -52,7 +53,7 @@ namespace psychorientation
 
         private void AjouterEleveImage()
         {
-            for (int i = 1; i < 5; i++)
+            for (int i = 1; i < 4; i++)
             {
                 gestEleve.AjouterEleve(new Eleve(i));
             }
@@ -63,26 +64,26 @@ namespace psychorientation
             {
                 nb = 8;
             }
-            int indexImage = 0;
             for (int i = 0; i < nb; i++)
             {
                 PictureBox pbEleve = new PictureBox();
 
                 pbEleve.Location = new System.Drawing.Point(572, 396);
                 pbEleve.Size = new System.Drawing.Size(73, 85);
-                pbEleve.Image = imgListPerso.Images[indexImage];
+                pbEleve.Image = imgListPerso.Images[r.Next(0,4)];
                 pbEleve.Left = positionElevex[i];
                 pbEleve.Tag = gestEleve.GetEleve(i);
                 pbEleve.BackColor = System.Drawing.Color.Transparent;
                 pbEleve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
                 pbEleve.Top = positionElevey[i];
                 pbEleve.Click += new System.EventHandler(PbOuvrirInfo);
-                indexImage++;
-                if (indexImage == 4)
-                {
-                    indexImage = 0;
-                }
+
                 this.Controls.Add(pbEleve);
+            }
+
+            foreach (Eleve el in gestEleve.GetListeEleves())
+            {
+                el.AjouterNote("Controle " + lblClasse.Text + " " + lblDate.Text);
             }
         }
 
@@ -104,12 +105,15 @@ namespace psychorientation
                 // Lance l'interface appropriee.
                 return;
             }
+
             Message mControle = new Message("C'est la fin du mois, comme chaque mois, les eleves vont passer un contrôle, à vous de choisir le niveau de compétence de votre enseignement.", "Début", TypeMessage.NOTATION);
             mControle.ShowDialog();
+
+
             foreach(Eleve el in gestEleve.GetListeEleves())
             {
-                el.AjouterNote("Controle " +lblClasse.Text+" "+lblDate.Text);
                 el.Progression(mControle.getReponseDouble);
+                el.AjouterNote("Controle " + lblClasse.Text + " " + lblDate.Text);
             }
 
             lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();

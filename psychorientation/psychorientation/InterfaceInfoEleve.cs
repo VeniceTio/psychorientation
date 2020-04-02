@@ -43,7 +43,7 @@ namespace psychorientation
             }
             else
             {
-                lblMoyenne.Text = eleve.GetMoyenne().ToString()+"/20";
+                lblMoyenne.Text = Math.Round(eleve.GetMoyenne(),1).ToString()+"/20";
             }
             
             MajPanel(pnlCompetence,eleve.GetCompetence());
