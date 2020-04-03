@@ -34,10 +34,10 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Il y a eu un défaut d'implication T2.
 
 ### Résultat T2
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point: 
-- Total d'item « Insatisfaisant » (0 point) :
-- Note sur 10 : 
+- Total d'item « Excellent » (2 point) : 10
+- Total d'item « Satisfaisant » (1 point: 0
+- Total d'item « Insatisfaisant » (0 point) : 0
+- Note sur 10 : 10
 
 # Propositions d'amélioration du jeu
 
