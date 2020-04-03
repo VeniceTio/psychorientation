@@ -16,6 +16,7 @@ namespace psychorientation
         private List<Note> listeNotes = new List<Note>();
         private double appreciation;
         private static Random r = new Random();
+        
         public Eleve(int id)
         {
             

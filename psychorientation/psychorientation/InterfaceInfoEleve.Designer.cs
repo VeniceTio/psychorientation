@@ -54,7 +54,7 @@
             this.lblEleve.Size = new System.Drawing.Size(99, 33);
             this.lblEleve.TabIndex = 0;
             this.lblEleve.Text = "label1";
-            this.lblEleve.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // label1
             // 
@@ -64,7 +64,7 @@
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Classe  : ";
-            this.label1.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // label2
             // 
@@ -74,7 +74,7 @@
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Effort : ";
-            this.label2.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // label3
             // 
@@ -84,7 +84,7 @@
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Compétence : ";
-            this.label3.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // lblClasse
             // 
@@ -94,7 +94,7 @@
             this.lblClasse.Size = new System.Drawing.Size(35, 13);
             this.lblClasse.TabIndex = 4;
             this.lblClasse.Text = "label4";
-            this.lblClasse.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // panel1
             // 
@@ -104,7 +104,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(92, 26);
             this.panel1.TabIndex = 5;
-            this.panel1.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // pnlEffort
             // 
@@ -113,7 +113,7 @@
             this.pnlEffort.Name = "pnlEffort";
             this.pnlEffort.Size = new System.Drawing.Size(84, 18);
             this.pnlEffort.TabIndex = 6;
-            this.pnlEffort.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // lblEffort
             // 
@@ -131,7 +131,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(92, 26);
             this.panel2.TabIndex = 6;
-            this.panel2.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // pnlCompetence
             // 
@@ -140,7 +140,7 @@
             this.pnlCompetence.Name = "pnlCompetence";
             this.pnlCompetence.Size = new System.Drawing.Size(58, 18);
             this.pnlCompetence.TabIndex = 7;
-            this.pnlCompetence.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // lblCompetence
             // 
@@ -158,7 +158,7 @@
             this.label4.Size = new System.Drawing.Size(80, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Dernière note : ";
-            this.label4.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // lblMoyenne
             // 
@@ -168,7 +168,7 @@
             this.lblMoyenne.Size = new System.Drawing.Size(35, 13);
             this.lblMoyenne.TabIndex = 10;
             this.lblMoyenne.Text = "label5";
-            this.lblMoyenne.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             // 
             // InterfaceInfoEleve
             // 
@@ -189,7 +189,7 @@
             this.Controls.Add(this.lblEleve);
             this.Name = "InterfaceInfoEleve";
             this.Size = new System.Drawing.Size(214, 214);
-            this.Click += new System.EventHandler(this.InterfaceInfoEleve_Click);
+
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);

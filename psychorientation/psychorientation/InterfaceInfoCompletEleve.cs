@@ -29,9 +29,11 @@ namespace psychorientation
         }
 
 
-        public void setParam(Eleve el)
+        public void setParam(Eleve el,Image pb)
         {
             this.eleve = el;
+            
+            pcbEleve.Image = pb;
             actualiser();
         }
 

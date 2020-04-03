@@ -20,6 +20,7 @@ namespace psychorientation
 
         private int[] positionElevex = { 322, 571, 698, 951, 322, 571, 698, 951 };
         private int[] positionElevey = { 398, 398, 398, 398, 505, 505, 505, 505 };
+        private Image[] imageEleve;
 
         private string notaText = "Coefficients de prise en compte de l'effort et de la compétence pour noter :";
         private string coursText = "Type de cours visant à aider les élèves de compétence : ";
@@ -41,7 +42,6 @@ namespace psychorientation
         {
             AjouterEleveImage();
             GenererBase();
-
             TransmitKeyDown();
 
             /*
@@ -64,7 +64,9 @@ namespace psychorientation
             {
                 InterfaceInfoEleve ii = new InterfaceInfoEleve();
                 ii.setParam(eleve);
+                ii.Tag = eleve;
                 ii.Location = new Point(6, y);
+                ii.Click += new System.EventHandler(PbOuvrirInfo);
                 pnlListeEleve.Controls.Add(ii);
                 y += 220;
             }
@@ -103,6 +105,7 @@ namespace psychorientation
 
         private void AjouterPictureboxEleve()
         {
+            imageEleve = new Image[gestEleve.GetListeEleves().Count];
             for (int i = 0; i < gestEleve.GetListeEleves().Count; i++)
             {
                 PictureBox pbEleve = new PictureBox();
@@ -116,7 +119,7 @@ namespace psychorientation
                 pbEleve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
                 pbEleve.Top = positionElevey[i];
                 pbEleve.Click += new System.EventHandler(PbOuvrirInfo);
-
+                imageEleve[i] = pbEleve.Image;
                 this.Controls.Add(pbEleve);
             }
         }
@@ -125,7 +128,7 @@ namespace psychorientation
         {
             if (isRandom)
             {
-                for (int i = 1; i < r.Next(3,9); i++)
+                for (int i = 1; i < r.Next(6,9); i++)
                 {
                     gestEleve.AjouterEleve(new Eleve(i));
                 }
@@ -143,10 +146,18 @@ namespace psychorientation
 
         private void PbOuvrirInfo(object sender, EventArgs e)
         {
-            PictureBox pb = (PictureBox)sender;
-            Eleve tag = (Eleve)pb.Tag;
+            Eleve tag;
+            if (sender is PictureBox)
+            {
+                tag = (Eleve)(sender as PictureBox).Tag;
+            }
+            else
+            {
+                tag = (Eleve)(sender as InterfaceInfoEleve).Tag;
+            }
+            int id = tag.GetId();
             InterfaceInfoCompletEleve iice = new InterfaceInfoCompletEleve();
-            iice.setParam(tag);
+            iice.setParam(tag,imageEleve[id-1]);
             iice.Show();
         }
 

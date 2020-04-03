@@ -153,9 +153,10 @@
             // 
             // pcbEleve
             // 
-            this.pcbEleve.Location = new System.Drawing.Point(12, 12);
+            this.pcbEleve.Location = new System.Drawing.Point(25, 12);
             this.pcbEleve.Name = "pcbEleve";
-            this.pcbEleve.Size = new System.Drawing.Size(100, 88);
+            this.pcbEleve.Size = new System.Drawing.Size(78, 106);
+            this.pcbEleve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbEleve.TabIndex = 15;
             this.pcbEleve.TabStop = false;
             // 
