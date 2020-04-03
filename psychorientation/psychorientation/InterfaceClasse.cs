@@ -222,13 +222,15 @@ namespace psychorientation
                         competenceFinal,
                         moyenneFinale
                     );
-                    m_fin.ShowDialog();
                     UntransmitKeyDown();
                     pb_action_suivante.Click -= new System.EventHandler(Pb_action_suivante_Click);
                     this.FormClosing -= new System.Windows.Forms.FormClosingEventHandler(InterfaceClasse_FormClosing);
                     Close();
-                    InterfaceClasse iC = new InterfaceClasse(isRandom);
-                    iC.ShowDialog();
+                    if (m_fin.ShowDialog()==DialogResult.Retry)
+                    {
+                        InterfaceClasse iC = new InterfaceClasse(isRandom);
+                        iC.Show();
+                    }
                     break;
             }
 

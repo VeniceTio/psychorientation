@@ -205,7 +205,7 @@ namespace psychorientation
 
         private void btnRejouer_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
+            this.DialogResult = DialogResult.Retry;
         }
     }
 }
