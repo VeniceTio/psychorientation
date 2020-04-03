@@ -48,7 +48,7 @@ namespace psychorientation
             titre = titreAffiche;
         }
 
-        public void setParamRes(double effortInitial, double competenceInitial, double moyenneInitiale, double effortFinal, double competenceFinal, double moyenneFinale,bool isRandom)
+        public void setParamRes(double effortInitial, double competenceInitial, double moyenneInitiale, double effortFinal, double competenceFinal, double moyenneFinale)
         {
             effortScore = Math.Round(100 * (effortFinal - effortInitial) / effortInitial, 1);
             competenceScore = Math.Round(100 * (competenceFinal - competenceInitial) / competenceInitial, 1); 
@@ -206,8 +206,6 @@ namespace psychorientation
         private void btnRejouer_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
-            InterfaceClasse iC = new InterfaceClasse(isRandom);
-            iC.Show();
         }
     }
 }
