@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs" />
     <Compile Include="Eleve.cs" />
     <Compile Include="InterfaceClasse.cs">
       <SubType>Form</SubType>
