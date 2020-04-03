@@ -36,6 +36,9 @@ namespace psychorientation
         private Label lblValEffort = new Label();
         private Label lblValCompetence = new Label();
 
+        private List<Eleve> listEleveOuvert = new List<Eleve>();
+        private List<InterfaceInfoCompletEleve> listInterfaceOuvert = new List<InterfaceInfoCompletEleve>();
+
         private bool isRandom=true;
 
         public InterfaceClasse(bool isRandom)
@@ -169,10 +172,37 @@ namespace psychorientation
                 tag = (Eleve)(sender as InterfaceInfoEleve).Tag;
             }
             int id = tag.GetId();
+
             InterfaceInfoCompletEleve iice = new InterfaceInfoCompletEleve();
-            iice.setParam(tag,imageEleve[id-1]);
-            iice.Show();
+            InterfaceInfoCompletEleve aSuppr=null;
+            if (listEleveOuvert.Contains(tag))
+            {
+                listEleveOuvert.Remove(tag);
+                foreach(InterfaceInfoCompletEleve c2 in listInterfaceOuvert)
+                {
+
+                    if (c2.getEleve() == tag)
+                    {
+                        c2.Close();
+                        aSuppr = c2;
+                        
+                    }
+                }
+                listInterfaceOuvert.Remove(aSuppr);
+            }
+            else
+            {
+                listInterfaceOuvert.Add(iice);
+                listEleveOuvert.Add(tag);
+                iice.setParam(tag, imageEleve[id - 1]);
+                iice.Show();
+            }
+            
+  
+            
         }
+
+
 
         private void ActionSuivante()
         {

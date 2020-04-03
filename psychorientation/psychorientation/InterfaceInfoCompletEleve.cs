@@ -36,6 +36,10 @@ namespace psychorientation
             pcbEleve.Image = pb;
             actualiser();
         }
+        public Eleve getEleve()
+        {
+            return this.eleve;
+        }
 
         private void actualiser()
         {
