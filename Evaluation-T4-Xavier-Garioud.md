@@ -120,6 +120,9 @@ Justifications :
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
 Justifications : 
+<br>    -Modèle de document: Le modèle est parfaitement respecter, voir modèle.
+<br>    -Description: La description permet de se donner une idée précise de l'application et de son fonctionnement.
+<br>    -Modèle: Le mcd est donné, mais il manque à certain endroit de précision
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
