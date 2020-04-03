@@ -41,8 +41,10 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Propositions d'amélioration du jeu
 
-- Proposition 1
-- Proposition 2
+- Proposition 1 : Ajouter un tutoriel ou des indications sur chaque élément du jeu.
+- Proposition 2 : Mettre un code couleur sur les éléments donnés au tableau.
+- Proposition 3 : Ajouter un bouton pour recommencer le jeu plutôt que e le faire dans deux fenêtres différentes.
+- Proposition 4 : Proposer un mode où l'utilisateur choisit un niveau de difficulté, ou où il choisit les caractéristiques de chaque élève et leur nombre par partie.
 
 # Grille d'évaluation T4
 
