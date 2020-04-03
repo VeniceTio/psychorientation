@@ -25,7 +25,7 @@ namespace psychorientation
             this.competence = Eleve.r.NextDouble()*10;
             this.effort = Eleve.r.NextDouble()*10;
             this.orientation = 0;
-            this.appreciation=CalculerAppreciation();
+            this.appreciation=CalculerAppreciation(1);
         }
 
         public Eleve(int id,int classe, double competence, double effort, int orientation)
@@ -35,7 +35,7 @@ namespace psychorientation
             this.competence = competence;
             this.effort = effort;
             this.orientation = orientation;
-            this.appreciation = CalculerAppreciation();
+            this.appreciation = CalculerAppreciation(1);
         }
         public void SetClasse(int classe)
         {
@@ -161,9 +161,9 @@ namespace psychorientation
             return (this.effort * (2 - coeff) + this.competence * coeff);
         }
 
-        private double CalculerAppreciation()
+        private double CalculerAppreciation(double coeff)
         {
-            return (this.effort * Config.GetInstance().GetCoeffEffortOral() + this.competence * Config.GetInstance().GetCoeffCompetenceOral());
+            return (this.effort * (2 - coeff) + this.competence * coeff);
         }
     }
 }
