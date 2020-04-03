@@ -114,36 +114,36 @@ Justifications :
 ### Fonctionnalités
 - Entrées / Actions du joueur
   - [ ] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
-  - [ ] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des entrées ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
+  - [ ] La description des entrées ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Sorties / Infomations au joueur
   - [ ] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
-  - [ ] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des sorties ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
+  - [ ] La description des sorties ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Description du moteur interne
   - [ ] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
-  - [ ] La description du moteur interne permet de comprendre le fonctionnement de l'application.
-  - [x] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
+  - [x] La description du moteur interne permet de comprendre le fonctionnement de l'application.
+  - [ ] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
 - Découpage modulaire 
   - [ ] L'application est couverte par des modules pertinents et pleinement décrits.
   - [ ] L'application est découpée en modules pertinents.
   - [x] L'application n'est pas découpée en modules pertinents.
 - Granularité des fonctionnalités
   - [ ] Les fonctionnalités sont très fines.
-  - [ ] Les fonctionnalités sont fines.
-  - [x] Les fonctionnalités sont grossières.
+  - [x] Les fonctionnalités sont fines.
+  - [ ] Les fonctionnalités sont grossières.
 - Exhaustivité des fonctionnalités
-  - [ ] Les fonctionnalités couvrent la totalité de l'application.
+  - [x] Les fonctionnalités couvrent la totalité de l'application.
   - [ ] Les fonctionnalités couvrent globalement l'application.
-  - [x] Les fonctionnalités ne couvrent pas l'application.
+  - [ ] Les fonctionnalités ne couvrent pas l'application.
 - Description des fonctionnalités
   - [ ] Les fonctionnalités sont précisément décrites.
-  - [ ] Les fonctionnalités sont décrites.
-  - [x] Les fonctionnalités ne sont pas bien décrites.
+  - [x] Les fonctionnalités sont décrites.
+  - [ ] Les fonctionnalités ne sont pas bien décrites.
 - Priorisation des fonctionnalités
   - [ ] Les fonctionnalités sont classées par priorités de façon pertinentes.
-  - [ ] Les fonctionnalités sont classées par priorités.
-  - [x] Les fonctionnalités ne sont pas classées par priorités.
+  - [x] Les fonctionnalités sont classées par priorités.
+  - [ ] Les fonctionnalités ne sont pas classées par priorités.
 - Difficulté des fonctionnalités
   - [ ] Les fonctionnalités sont annotées par une difficulté pertinente.
   - [ ] Les fonctionnalités sont annotées par une difficulté.
@@ -157,13 +157,13 @@ Justifications :
   - [ ] Un scénario est pleinement développé.
   - [ ] Un scénario n'est pas pleinement développé.
 - Exhaustivité
-  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités.
+  - [x] Le scénario développé s'appuie sur toutes les fonctionnalités.
   - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
-  - [x] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
+  - [ ] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
 - Scénarios additionnels 
-  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
+  - [x] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
   - [ ] Des scénarios additionnels sont proposés. 
-  - [x] Des scénarios additionnels ne sont pas proposés.
+  - [ ] Des scénarios additionnels ne sont pas proposés.
 
 Justifications :
 
