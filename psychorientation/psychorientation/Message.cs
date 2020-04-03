@@ -32,9 +32,11 @@ namespace psychorientation
         bool competenceScoreRouge = false;
 
         double effortScore;
-        double moyenneScore;
         double competenceScore;
-
+        double moyenneScore;
+        double effortLimite;
+        double competenceLimite;
+        double moyenneLimite;
 
         public Message(string messageAffiche,string titreAffiche,TypeMessage typeMessage)
         {
@@ -44,14 +46,17 @@ namespace psychorientation
             titre = titreAffiche;
         }
 
-        public void setParamRes(double resEffort, double resCompetence, double resMoyenne,bool effortRouge, bool competenceRouge, bool moyenneRouge)
+        public void setParamRes(double effortInitial, double competenceInitial, double moyenneInitiale, double effortFinal, double competenceFinal, double moyenneFinale)
         {
-            effortScore = resEffort;
-            moyenneScore = resMoyenne;
-            competenceScore = resCompetence; 
-             effortScoreRouge = effortRouge;
-            competenceScoreRouge = competenceRouge;
-            moyenneScoreRouge = moyenneRouge;
+            effortScore = Math.Round(100 * (effortFinal - effortInitial) / effortInitial, 1);
+            competenceScore = Math.Round(100 * (competenceFinal - competenceInitial) / competenceInitial, 1); 
+            moyenneScore = Math.Round(100 * (moyenneFinale - moyenneInitiale) / moyenneInitiale, 1);
+            effortLimite = Math.Round(100 * ((10 - effortInitial) / 3) / effortInitial, 1);
+            competenceLimite = Math.Round(100 * ((10 - competenceInitial) / 3) / competenceInitial, 1);
+            moyenneLimite = 0;
+            effortScoreRouge = effortFinal > ((10 - effortInitial) / 3) + effortInitial;
+            competenceScoreRouge = competenceFinal > ((10 - competenceInitial) / 3) + competenceInitial;
+            moyenneScoreRouge = moyenneFinale > moyenneInitiale;
         }
 
         public bool getReponseBool
@@ -100,9 +105,9 @@ namespace psychorientation
                     lblEffort.Visible = true;
                     lblMoyenen.Visible = true;
                     lblScore.Visible = true;
-                    lblCompetence.Text = "L'évolution des compétences de vos élèves est de : " + competenceScore+" %";
-                    lblEffort.Text = "L'évolution des efforts de vos élèves est de : " + effortScore + " %";
-                    lblMoyenen.Text = "L'évolution des moyennes de vos élèves est de : " + moyenneScore + " %";
+                    lblCompetence.Text = "L'évolution des compétences de vos élèves est de : " + competenceScore + " % pour " + competenceLimite + " % nécessaires.";
+                    lblEffort.Text = "L'évolution des efforts de vos élèves est de : " + effortScore + " % pour " + effortLimite + " % nécessaires.";
+                    lblMoyenen.Text = "L'évolution des moyennes de vos élèves est de : " + moyenneScore + " % pour " + moyenneLimite + " % nécessaires.";
                     if (!effortScoreRouge)
                     {
                         lblEffort.ForeColor = Color.Red;

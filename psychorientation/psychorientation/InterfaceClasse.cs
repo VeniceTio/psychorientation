@@ -15,7 +15,7 @@ namespace psychorientation
 
         double effortInitial = 0.0;
         double competenceInitial = 0.0;
-        double moyenenInitial = 0.0;
+        double moyenneInitiale = 0.0;
 
 
         private Random r = new Random();
@@ -62,10 +62,10 @@ namespace psychorientation
             lblClasse.Text = libelle.Niveau(anneeActuelle);
             effortInitial = Math.Round(gestEleve.GetEffortClasse(), 1);
             competenceInitial = Math.Round(gestEleve.GetCompetenceClasse(), 1);
-            moyenenInitial = Math.Round(gestEleve.GetMoyenneClasse(), 1);
+            moyenneInitiale = Math.Round(gestEleve.GetMoyenneClasse(), 1);
             lblEffort.Text = "Effort de la classe : " + effortInitial.ToString();
             lblCompetence.Text = "Competence de la classe : " + competenceInitial.ToString();
-            lblMoyenne.Text = "Moyenne de la classe : " + moyenenInitial.ToString();
+            lblMoyenne.Text = "Moyenne de la classe : " + moyenneInitiale.ToString();
 
             Libelle lib = new Libelle();
             int y = 40;
@@ -184,9 +184,9 @@ namespace psychorientation
             }
             gestEleve.FaireControle("Controle " + lblClasse.Text + " " + lblDate.Text, valNotation / 10.0);
 
-            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();
-            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 1).ToString();
-            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(), 1).ToString();
+            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 2).ToString();
+            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 2).ToString();
+            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(), 2).ToString();
             ActualiserEleveCoter();
 
             // Passe au mois suivant.
@@ -203,12 +203,9 @@ namespace psychorientation
                     break;
                 case 42: // Fin de la 3ème année : Debut Juillet.
                     // Fin de la partie.
-                    double moyenneFinal = Math.Round(gestEleve.GetMoyenneClasse(), 1);
-                    double effortFinal = Math.Round(gestEleve.GetEffortClasse(), 1);
-                    double competenceFinal = Math.Round(gestEleve.GetCompetenceClasse(), 1);
-                    double diffEffort = effortFinal - effortInitial;
-                    double diffCompetence = competenceFinal - competenceInitial;
-                    double diffMoyenne= moyenneFinal-moyenenInitial;
+                    double moyenneFinale = gestEleve.GetMoyenneClasse();
+                    double effortFinal = gestEleve.GetEffortClasse();
+                    double competenceFinal = gestEleve.GetCompetenceClasse();
 
                     Message m_fin = new Message(
                         "Vous avez fini la phase bêta de ce jeu !\n" +
@@ -217,7 +214,14 @@ namespace psychorientation
                         "Félicitations",
                         TypeMessage.RESULTAT
                     );
-                    m_fin.setParamRes(Math.Round(100*diffEffort/effortInitial,1), Math.Round(100 *diffCompetence/competenceInitial,1), Math.Round(100 *diffMoyenne/moyenenInitial,1),moyenneFinal>moyenenInitial,effortFinal>effortInitial+(10-effortInitial)/2,competenceFinal>competenceInitial+(10-competenceInitial)/2);
+                    m_fin.setParamRes(
+                        effortInitial,
+                        competenceInitial,
+                        moyenneInitiale,
+                        effortFinal,
+                        competenceFinal,
+                        moyenneFinale
+                    );
                     m_fin.ShowDialog();
                     UntransmitKeyDown();
                     pb_action_suivante.Click -= new System.EventHandler(Pb_action_suivante_Click);
