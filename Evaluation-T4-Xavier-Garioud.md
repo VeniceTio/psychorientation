@@ -126,8 +126,8 @@ Justifications :
   - [ ] La description du moteur interne permet de comprendre le fonctionnement de l'application.
   - [ ] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
 - Découpage modulaire 
-  - [x] L'application est couverte par des modules pertinents et pleinement décrits.
-  - [ ] L'application est découpée en modules pertinents.
+  - [ ] L'application est couverte par des modules pertinents et pleinement décrits.
+  - [x] L'application est découpée en modules pertinents.
   - [ ] L'application n'est pas découpée en modules pertinents.
 - Granularité des fonctionnalités
   - [ ] Les fonctionnalités sont très fines.
@@ -151,10 +151,16 @@ Justifications :
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
 Justifications : 
--Entrées/Actions du joueur: Ils permettents de se faire une idée parfaite des intéractions, on comprend chacun des élèments et leur utilités.
--Sorties/Actions du joueur: On voit facilement les informations données au joueurs. Ils sont clairement affichés sur l'interface de jeu.
--Description du moteur interne: Permet parfaitement la compréhension du moteur de jeu et de comment il fonctionne, en montrant les différentes étapes.
--Découpage modulaire:
+    -Entrées/Actions du joueur: Ils permettents de se faire une idée parfaite des intéractions, on comprend chacun des élèments et leur utilités.
+    -Sorties/Actions du joueur: On voit facilement les informations données au joueurs. Ils sont clairement affichés sur l'interface de jeu.
+    -Description du moteur interne: Permet parfaitement la compréhension du moteur de jeu et de comment il fonctionne, en montrant les différentes étapes.
+    -Découpage modulaire: Différents modules sont utilisé pour l'application, différentes classes, différents forms, mais ceux-ci ne sont pas décrits.
+    -Granularité des fonctionnalités:
+    -Exhaustivité des fonctionnalités:
+    -Description des fonctionnalités:
+    -Priorisation des fonctionnalités:
+    -Difficulté des fonctionnalités: Aucune fonctionnalité est annoté.
+
 ### Scénarios
 - Nombre
   - [x] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
