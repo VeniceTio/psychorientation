@@ -1,7 +1,7 @@
 # Psychorientation
 
-- Rédacteurs : Antoine FÉLIX, Loïc GROSS, Yoann LOUAZEL, Antoine Tritschberger, Grégory Adam
-- URL GIT : https://git.unistra.fr/m.a.t.h.s.-manieurs-de-l-avenir-technologique-des-humains-stup-faits/psychorientation
+- Rédacteurs : Antoine FÉLIX, Loïc GROSS, Yoann LOUAZEL, Antoine TRITSCHBERGER et Grégory ADAM.
+- [URL GIT](https://git.unistra.fr/m.a.t.h.s.-manieurs-de-l-avenir-technologique-des-humains-stup-faits/psychorientation)
 
 ![Illustration](/images/fenetrePrincipale.PNG)
 
@@ -12,23 +12,7 @@ Une fois téléchargé, le jeu est prêt à être démarré.
 
 ## Décisions prises
 
-- Public cible : Enseignants en formation.
-- Le joueur incarne un enseignant qui a à sa charge une unique classe évoluant avec lui de la seconde à la terminale.
-- Prototype :
-    - 2D.
-    - Vue du dessus de la classe (coupée).
-    - Langage choisi : C#
-    - Framework choisi : .NET
-    - Mise en commun via Git.
-    - Fin du jeu sur l’orientation des élèves.
-    - Points de score attribués selon l’homogénéité de l’orientation des élèves. (correspondant aux proportions “réelles”)
-    - Pas d’aléatoire au départ, sauf pour les valeurs initiales (on peut les mettre une fois le prototype stable).
-    - Types de choix :
-        - Méthodes de notation. (+ Note de vie scolaire / participation au choix)
-        - Vitesse d’enseignement.
-        - Choix de l’orientation en fin de classe de seconde. (Places limitées par filière)
-        - Cours supplémentaires personnalisés.
-        - Charge de travail en dehors des cours.
+[Lien vers le CDC](./CDC.md)
 
 ## Question
 
