@@ -13,31 +13,31 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Procédure
-  - [x] La procédure a été suivie à la lettre sans le moindre écart.
+  - [ ] La procédure a été suivie à la lettre sans le moindre écart.
   - [ ] La procédure a été globalement suivie.
-  - [ ] La procédure n'a pas été bien suivie.
+  - [x] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du jeu
-  - [x] Au moins trois propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
   - [ ] Au moins trois propositions d'améliorations sont faites.
-  - [ ] Moins de trois propositions d'améliorations sont faites.
+  - [x] Moins de trois propositions d'améliorations sont faites.
 - Propositions d'amélioration du Cahier des charges
-  - [x] Au moins cinq propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
   - [ ] Au moins cinq propositions d'améliorations sont faites.
-  - [ ] Moins de cinq propositions d'améliorations sont faites.
+  - [x] Moins de cinq propositions d'améliorations sont faites.
 - Grille d'évaluation T4 / critères
-  - [x] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
+  - [ ] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
   - [ ] Certain critères ont été remplis un peu à l'arrache.
-  - [ ] Des critères n'ont pas été remplis
+  - [x] Des critères n'ont pas été remplis
 - Implication
-  - [x] L'implication T2 été vraiment été cruciale dans le processus du T4.
+  - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
-  - [ ] Il y a eu un défaut d'implication T2.
+  - [x] Il y a eu un défaut d'implication T2.
 
 ### Résultat T2
-- Total d'item « Excellent » (2 point) : 10
-- Total d'item « Satisfaisant » (1 point: 0
-- Total d'item « Insatisfaisant » (0 point) : 0
-- Note sur 10 : 10
+- Total d'item « Excellent » (2 point) : 
+- Total d'item « Satisfaisant » (1 point: 
+- Total d'item « Insatisfaisant » (0 point) :
+- Note sur 10 : 
 
 # Propositions d'amélioration du jeu
 
@@ -60,8 +60,8 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
   - [ ] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README.md
-  - [x] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
-  - [ ] Le README n'est pas complet.
+  - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
+  - [x] Le README n'est pas complet.
   - [ ] Il n'y a pas de README.
 - CDC.md
   - [x] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
@@ -70,6 +70,12 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 
 Justifications :
+Organisation: Les noms des fichiers permettent de comprendre directement de quoi il s'agit et ils sont bien répartis dans des dossiers.
+Versioning: Les descriptions des commit sont claires et ils sont réguliers.
+Droit d'accès: Oui, (Maintainer) et le GIT est public
+README.md: Le fichier n'est pas complet à l'heure actuelle.
+CDC.md: /
+
 
 ## Prototype
 - Installation
@@ -94,6 +100,11 @@ Justifications :
   - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
 Justifications :
+Installation: Seulement un téléchargement est nécessaire.
+Exécution: Il suffit d'éxecuter pour que l'application se lance.
+Stabilité: Je n'ai jamais eu de bug, et pourtant j'ai essayé d'en faire apparaître.
+Affordabilité: Il n'y a pas de tutoriel ou d'explications des règles.
+Transmission du concept: On comprend le concept globalement mais pas dans les détails.
  
 ## Cahier des charges
 - Modèle de document
@@ -110,6 +121,9 @@ Justifications :
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
 Justifications : 
+Modèle de document: Le CdC respecte le modèle.
+Description de l'application: On comprend comment jouer mais pas forcément les impacts de nos décisions dans la partie.
+Modèle conceptuel: Le MCD est clair et semble complet.
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
@@ -150,6 +164,15 @@ Justifications :
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
 Justifications : 
+Entrées: Les actions sont détaillées et énumérées.
+Sorties: Les actions sont détaillées et énumérées.
+Description du moteur: /
+Découpage modulaire: Les modules ne sont pas décrits
+Granularité des fonctionnalités: les fonctionnalités sont réussies sans pour autant être optimales.
+Exhaustivité des fonctionnalités: /
+Description des fonctionnalités: /
+Priorisation des fonctionnalités: /
+Difficulté des fonctionnalités: Aucunes annotations de difficultés.
 
 ### Scénarios
 - Nombre
@@ -166,6 +189,9 @@ Justifications :
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
 Justifications :
+Nombre: Un scénario bien développé et un seul autre.
+Exhaustivité: Oui.
+Scénarios additionnels: Un scénario en plus dont l'intérêt est expliqué dans le CdC.
 
 ## Résultat T4
 - Total d'item « Excellent » (2 point) : 
