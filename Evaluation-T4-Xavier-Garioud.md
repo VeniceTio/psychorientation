@@ -71,6 +71,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 
 Justifications :
+-Organisation:
 
 ## Prototype
 - Installation
