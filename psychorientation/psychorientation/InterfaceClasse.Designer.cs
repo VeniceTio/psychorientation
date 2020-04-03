@@ -69,7 +69,7 @@
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(277, 171);
+            this.lblDate.Location = new System.Drawing.Point(275, 171);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(140, 22);
             this.lblDate.TabIndex = 2;
@@ -81,7 +81,7 @@
             this.lblClasse.BackColor = System.Drawing.Color.Transparent;
             this.lblClasse.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClasse.ForeColor = System.Drawing.Color.White;
-            this.lblClasse.Location = new System.Drawing.Point(951, 171);
+            this.lblClasse.Location = new System.Drawing.Point(949, 171);
             this.lblClasse.Name = "lblClasse";
             this.lblClasse.Size = new System.Drawing.Size(140, 22);
             this.lblClasse.TabIndex = 4;

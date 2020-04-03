@@ -35,6 +35,7 @@
             this.lblEffort = new System.Windows.Forms.Label();
             this.lblCompetence = new System.Windows.Forms.Label();
             this.lblMoyenen = new System.Windows.Forms.Label();
+            this.btnRejouer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMessage
@@ -115,12 +116,25 @@
             this.lblMoyenen.Visible = false;
             this.lblMoyenen.Click += new System.EventHandler(this.lblMoyenen_Click);
             // 
+            // btnRejouer
+            // 
+            this.btnRejouer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRejouer.Location = new System.Drawing.Point(548, 284);
+            this.btnRejouer.Name = "btnRejouer";
+            this.btnRejouer.Size = new System.Drawing.Size(172, 51);
+            this.btnRejouer.TabIndex = 9;
+            this.btnRejouer.Text = "Rejouer";
+            this.btnRejouer.UseVisualStyleBackColor = true;
+            this.btnRejouer.Visible = false;
+            this.btnRejouer.Click += new System.EventHandler(this.btnRejouer_Click);
+            // 
             // Message
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::psychorientation.Properties.Resources.paternFeuille;
             this.ClientSize = new System.Drawing.Size(986, 347);
+            this.Controls.Add(this.btnRejouer);
             this.Controls.Add(this.lblMoyenen);
             this.Controls.Add(this.lblCompetence);
             this.Controls.Add(this.lblEffort);
@@ -148,5 +162,6 @@
         private System.Windows.Forms.Label lblEffort;
         private System.Windows.Forms.Label lblCompetence;
         private System.Windows.Forms.Label lblMoyenen;
+        private System.Windows.Forms.Button btnRejouer;
     }
 }

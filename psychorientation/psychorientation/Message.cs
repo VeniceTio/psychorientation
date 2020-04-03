@@ -38,6 +38,8 @@ namespace psychorientation
         double competenceLimite;
         double moyenneLimite;
 
+        bool isRandom;
+
         public Message(string messageAffiche,string titreAffiche,TypeMessage typeMessage)
         {
             InitializeComponent();
@@ -57,6 +59,7 @@ namespace psychorientation
             effortScoreRouge = effortFinal > ((10 - effortInitial) / 3) + effortInitial;
             competenceScoreRouge = competenceFinal > ((10 - competenceInitial) / 4) + competenceInitial;
             moyenneScoreRouge = moyenneFinale > moyenneInitiale;
+            this.isRandom = isRandom;
         }
 
         public bool getReponseBool
@@ -82,6 +85,8 @@ namespace psychorientation
 
         private void Message_Load(object sender, EventArgs e)
         {
+            btnRejouer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             lblMessage.Text = message;
             lblScore.Text = message;
             lblTitre.Text = titre;
@@ -101,6 +106,7 @@ namespace psychorientation
                     this.Controls.Add(b);
                     break;
                 case TypeMessage.RESULTAT:
+                    btnRejouer.Visible = true;
                     lblCompetence.Visible = true;
                     lblEffort.Visible = true;
                     lblMoyenen.Visible = true;
@@ -195,6 +201,11 @@ namespace psychorientation
         private void lblMoyenen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRejouer_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Retry;
         }
     }
 }

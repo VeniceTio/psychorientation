@@ -73,8 +73,8 @@ Justifications :
 
 ## Prototype
 - Installation
-  - [x] Le prototype s'installe sans effort.
-  - [ ] Le prototype s'installe en suivant une procédure.
+  - [ ] Le prototype s'installe sans effort.
+  - [x] Le prototype s'installe en suivant une procédure.
   - [ ] Le prototype ne s'installe pas.
 - Exécution
   - [x] Le prototype s'exécute en cliquant sur une icône.
@@ -168,7 +168,7 @@ Justifications :
 Justifications :
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 22
-- Total d'item « Satisfaisant » (1 point: 1
-- Total d'item « Insatisfaisant » (0 point) : 1
-- Note sur 10 : 9.375
+- Total d'item « Excellent » (2 point) : 20
+- Total d'item « Satisfaisant » (1 point: 2
+- Total d'item « Insatisfaisant » (0 point) : 2
+- Note sur 10 : 8.75
