@@ -192,7 +192,7 @@ Justifications :
 <br>    -Exhaustivité: Le scéniaro principal utilise tout les fonctionnalités proposés: Les efforts et compétences sont bien prix en compte.
 <br>    -Scénario additionnels: Un scénario additionnel est proposé, et son interêt est explicite.
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point: 
-- Total d'item « Insatisfaisant » (0 point) :
+- Total d'item « Excellent » (2 point) : 15
+- Total d'item « Satisfaisant » (1 point: 5
+- Total d'item « Insatisfaisant » (0 point) :3
 - Note totale  : 
