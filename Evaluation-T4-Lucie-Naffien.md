@@ -64,8 +64,8 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [x] Le README n'est pas complet.
   - [ ] Il n'y a pas de README.
 - CDC.md
-  - [x] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
-  - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
+  - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
+  - [x] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
   - [ ] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
 
 
@@ -169,6 +169,6 @@ Justifications :
 
 ## Résultat T4
 - Total d'item « Excellent » (2 point) : 22
-- Total d'item « Satisfaisant » (1 point: 1
+- Total d'item « Satisfaisant » (1 point) : 1
 - Total d'item « Insatisfaisant » (0 point) : 1
 - Note sur 10 : 9.375
