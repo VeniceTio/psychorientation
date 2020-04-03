@@ -41,8 +41,10 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Propositions d'amélioration du jeu
 
-- Proposition 1
-- Proposition 2
+- Proposition 1 : Ajouter un tutoriel ou des indications sur chaque élément du jeu.
+- Proposition 2 : Mettre un code couleur sur les éléments donnés au tableau.
+- Proposition 3 : Ajouter un bouton pour recommencer le jeu plutôt que e le faire dans deux fenêtres différentes.
+- Proposition 4 : Proposer un mode où l'utilisateur choisit un niveau de difficulté, ou où il choisit les caractéristiques de chaque élève et leur nombre par partie.
 
 # Grille d'évaluation T4
 
@@ -64,12 +66,12 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [x] Le README n'est pas complet.
   - [ ] Il n'y a pas de README.
 - CDC.md
-  - [x] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
-  - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
+  - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
+  - [x] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
   - [ ] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
 
 
-Justifications :
+Justifications : Le README étant existant mais vide, le cahier des charges ne peut pas y être lié.
 
 ## Prototype
 - Installation
@@ -93,7 +95,7 @@ Justifications :
   - [ ] Le prototype permet de transmettre le concept-cible au joueur.
   - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
-Justifications :
+Justifications : L'installation et l'exécution du prototype est simple et rapide. Il est stable et transmet parfaitement bien le concept-cible au joueur. Cependant, il manque d'explications sur la manipulation du prototype, même si finalement celle-ci se découvre et se prend en main assez rapidement.
  
 ## Cahier des charges
 - Modèle de document
@@ -109,7 +111,7 @@ Justifications :
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
-Justifications : 
+Justifications : Le cahier des charges est claire et semble complet. La description du jeu était claire et concise et le modèle  conceptuel applicatif est bien détaillé et exhaustif.
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
@@ -149,7 +151,7 @@ Justifications :
   - [ ] Les fonctionnalités sont annotées par une difficulté.
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
-Justifications : 
+Justifications : Les entrées et les sorties sont claires. La difficulté des fonctionnalités étant générée aléatoirement, elle n'est pas annotée.
 
 ### Scénarios
 - Nombre
@@ -165,10 +167,10 @@ Justifications :
   - [ ] Des scénarios additionnels sont proposés. 
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
-Justifications :
+Justifications : Le scénario changeant en fonction des choix du joueur, il propose de nombreuses alternatives qui s'appuient sur toutes les fonctionnalités porposées. Le scénario additionnel est porposé sous différents modes de jeux, dont l'intérêt paraît évident en y jouant.
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 22
-- Total d'item « Satisfaisant » (1 point: 1
+- Total d'item « Excellent » (2 point) : 21
+- Total d'item « Satisfaisant » (1 point) : 3
 - Total d'item « Insatisfaisant » (0 point) : 1
-- Note sur 10 : 9.375
+- Note sur 10 : 8.4
