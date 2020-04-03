@@ -193,6 +193,6 @@ Justifications :
 <br>    -Scénario additionnels: Un scénario additionnel est proposé, et son interêt est explicite.
 ## Résultat T4
 - Total d'item « Excellent » (2 point) : 15
-- Total d'item « Satisfaisant » (1 point: 5
+- Total d'item « Satisfaisant » (1 point: 6
 - Total d'item « Insatisfaisant » (0 point) :3
 - Note totale  : 
