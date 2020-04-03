@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "psychorientation", "psychorientation\psychorientation.csproj", "{73981980-53AE-4EC6-80AB-471E136663DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psychorientation", "psychorientation\Psychorientation.csproj", "{73981980-53AE-4EC6-80AB-471E136663DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

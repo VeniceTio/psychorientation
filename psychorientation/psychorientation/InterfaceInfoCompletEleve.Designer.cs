@@ -50,7 +50,7 @@
             // 
             this.lblNomEleve.AutoSize = true;
             this.lblNomEleve.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblNomEleve.Location = new System.Drawing.Point(253, 14);
+            this.lblNomEleve.Location = new System.Drawing.Point(125, 17);
             this.lblNomEleve.Name = "lblNomEleve";
             this.lblNomEleve.Size = new System.Drawing.Size(118, 24);
             this.lblNomEleve.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             this.lblClasse.AutoSize = true;
             this.lblClasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblClasse.Location = new System.Drawing.Point(254, 71);
+            this.lblClasse.Location = new System.Drawing.Point(126, 74);
             this.lblClasse.Name = "lblClasse";
             this.lblClasse.Size = new System.Drawing.Size(70, 18);
             this.lblClasse.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             this.lblEffort.AutoSize = true;
             this.lblEffort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblEffort.Location = new System.Drawing.Point(225, 126);
+            this.lblEffort.Location = new System.Drawing.Point(97, 129);
             this.lblEffort.Name = "lblEffort";
             this.lblEffort.Size = new System.Drawing.Size(44, 15);
             this.lblEffort.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             this.lblCompetence.AutoSize = true;
             this.lblCompetence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblCompetence.Location = new System.Drawing.Point(183, 160);
+            this.lblCompetence.Location = new System.Drawing.Point(55, 163);
             this.lblCompetence.Name = "lblCompetence";
             this.lblCompetence.Size = new System.Drawing.Size(86, 15);
             this.lblCompetence.TabIndex = 4;
@@ -90,17 +90,17 @@
             // 
             this.lblMoyenne.AutoSize = true;
             this.lblMoyenne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblMoyenne.Location = new System.Drawing.Point(186, 195);
+            this.lblMoyenne.Location = new System.Drawing.Point(22, 198);
             this.lblMoyenne.Name = "lblMoyenne";
-            this.lblMoyenne.Size = new System.Drawing.Size(112, 15);
+            this.lblMoyenne.Size = new System.Drawing.Size(119, 15);
             this.lblMoyenne.TabIndex = 10;
-            this.lblMoyenne.Text = "Moyenne général : ";
+            this.lblMoyenne.Text = "Moyenne générale : ";
             // 
             // lblNiveau
             // 
             this.lblNiveau.AutoSize = true;
             this.lblNiveau.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblNiveau.Location = new System.Drawing.Point(330, 71);
+            this.lblNiveau.Location = new System.Drawing.Point(202, 74);
             this.lblNiveau.Name = "lblNiveau";
             this.lblNiveau.Size = new System.Drawing.Size(67, 18);
             this.lblNiveau.TabIndex = 11;
@@ -111,7 +111,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.pnlEffort);
-            this.panel1.Location = new System.Drawing.Point(320, 121);
+            this.panel1.Location = new System.Drawing.Point(192, 124);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(139, 26);
             this.panel1.TabIndex = 12;
@@ -128,7 +128,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.pnlCompetence);
-            this.panel2.Location = new System.Drawing.Point(320, 156);
+            this.panel2.Location = new System.Drawing.Point(192, 159);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(139, 26);
             this.panel2.TabIndex = 13;
@@ -145,7 +145,7 @@
             // 
             this.lblMoyenneNote.AutoSize = true;
             this.lblMoyenneNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblMoyenneNote.Location = new System.Drawing.Point(317, 195);
+            this.lblMoyenneNote.Location = new System.Drawing.Point(189, 198);
             this.lblMoyenneNote.Name = "lblMoyenneNote";
             this.lblMoyenneNote.Size = new System.Drawing.Size(97, 15);
             this.lblMoyenneNote.TabIndex = 14;
@@ -153,25 +153,26 @@
             // 
             // pcbEleve
             // 
-            this.pcbEleve.Location = new System.Drawing.Point(32, 24);
+            this.pcbEleve.Location = new System.Drawing.Point(25, 12);
             this.pcbEleve.Name = "pcbEleve";
-            this.pcbEleve.Size = new System.Drawing.Size(109, 97);
+            this.pcbEleve.Size = new System.Drawing.Size(78, 106);
+            this.pcbEleve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbEleve.TabIndex = 15;
             this.pcbEleve.TabStop = false;
             // 
             // pnlNote
             // 
             this.pnlNote.AutoScroll = true;
-            this.pnlNote.Location = new System.Drawing.Point(85, 243);
+            this.pnlNote.Location = new System.Drawing.Point(12, 253);
             this.pnlNote.Name = "pnlNote";
-            this.pnlNote.Size = new System.Drawing.Size(448, 134);
+            this.pnlNote.Size = new System.Drawing.Size(328, 143);
             this.pnlNote.TabIndex = 16;
             // 
             // InterfaceInfoCompletEleve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 408);
+            this.ClientSize = new System.Drawing.Size(351, 408);
             this.Controls.Add(this.pnlNote);
             this.Controls.Add(this.pcbEleve);
             this.Controls.Add(this.lblMoyenneNote);
@@ -183,10 +184,13 @@
             this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.lblClasse);
             this.Controls.Add(this.lblNomEleve);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "InterfaceInfoCompletEleve";
             this.Text = "InterfaceInfoCompletEleve";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.InterfaceInfoCompletEleve_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InterfaceInfoCompletEleve_KeyPress);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbEleve)).EndInit();

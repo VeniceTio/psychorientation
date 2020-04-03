@@ -124,13 +124,22 @@
   <data name="grp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="paternFeuille" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\patern\paternFeuille.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sortir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sortir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="passer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\passer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="prof2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prof2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="salleV11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salleV11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paternFeuille1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paternFeuille.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

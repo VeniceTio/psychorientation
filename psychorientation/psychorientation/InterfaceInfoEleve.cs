@@ -27,7 +27,7 @@ namespace psychorientation
         public void actualiser()
         {
             Libelle lib = new Libelle();
-            lblEleve.Text = "Eleve n°" + eleve.GetId();
+            lblEleve.Text = "Élève n°" + eleve.GetId();
             lblClasse.Text = lib.Niveau(eleve.GetClasse());
             lblEffort.Text = Math.Round(eleve.GetEffort(), 2).ToString() ;
             lblCompetence.Text = Math.Round(eleve.GetCompetence(), 2).ToString();
@@ -41,13 +41,6 @@ namespace psychorientation
         {
             int val = (int)valeur;
             p.Size = new Size(val * 84 / 10, p.Height);
-        }
-
-        private void InterfaceInfoEleve_Click(object sender, EventArgs e)
-        {
-            InterfaceInfoCompletEleve iice = new InterfaceInfoCompletEleve();
-            iice.setParam(this.eleve);
-            iice.Show();
         }
     }
 }
