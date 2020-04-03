@@ -42,7 +42,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 # Propositions d'amélioration du jeu
 
 - Ajouter différentes matières, avec pour chacun des élèves. Pour chaque matière, l'élève aura son propre effort/sa compétence.
-- Proposition 2
+- Pouvoir virer les élèves trop fainéant, incompétent.
 
 # Grille d'évaluation T4
 
