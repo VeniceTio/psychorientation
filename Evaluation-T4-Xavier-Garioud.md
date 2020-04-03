@@ -100,7 +100,11 @@ Justifications :
   - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
 Justifications :
- 
+    -Installation: Pas d'installation à faire, il s'installe donc sans effort.
+    -Exécution: Il s'éxécute s'implement en cliquant sur un .exe
+    -Stabilité: Aucune problème n'a été rencontré lors des différents test
+    -Affordabilité: Aucune instruction n'est disponible pour le jeu
+    -Transmission du concept: Il permet de comprendre facilement le concepte, et de manière précise.
 ## Cahier des charges
 - Modèle de document
   - [x] Le CdC respecte parfaitement le modèle de document.
@@ -148,8 +152,8 @@ Justifications :
   - [ ] Les fonctionnalités ne sont pas bien décrites.
 - Priorisation des fonctionnalités
   - [ ] Les fonctionnalités sont classées par priorités de façon pertinentes.
-  - [x] Les fonctionnalités sont classées par priorités.
-  - [ ] Les fonctionnalités ne sont pas classées par priorités.
+  - [ ] Les fonctionnalités sont classées par priorités.
+  - [x] Les fonctionnalités ne sont pas classées par priorités.
 - Difficulté des fonctionnalités
   - [ ] Les fonctionnalités sont annotées par une difficulté pertinente.
   - [ ] Les fonctionnalités sont annotées par une difficulté.
@@ -160,10 +164,10 @@ Justifications :
     -Sorties/Actions du joueur: On voit facilement les informations données au joueurs. Ils sont clairement affichés sur l'interface de jeu.
     -Description du moteur interne: Permet parfaitement la compréhension du moteur de jeu et de comment il fonctionne, en montrant les différentes étapes.
     -Découpage modulaire: Différents modules sont utilisé pour l'application, différentes classes, différents forms, mais ceux-ci ne sont pas décrits.
-    -Granularité des fonctionnalités:
-    -Exhaustivité des fonctionnalités:
-    -Description des fonctionnalités:
-    -Priorisation des fonctionnalités:
+    -Granularité des fonctionnalités: Les formules utilisés sont fines et complexes.
+    -Exhaustivité des fonctionnalités: Les fonctionnalité couvrent la totalité de l'application et ont toutes utilisés par celle-ci.
+    -Description des fonctionnalités: Les fonctionnalités sont décrites, mais pas précisement.
+    -Priorisation des fonctionnalités: Elles ne sont pas classés par priorités.
     -Difficulté des fonctionnalités: Aucune fonctionnalité est annoté.
 
 ### Scénarios
