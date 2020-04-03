@@ -79,6 +79,17 @@ namespace psychorientation
                 ii.Tag = eleve;
                 ii.Location = new Point(6, y);
                 ii.Click += new System.EventHandler(PbOuvrirInfo);
+                foreach (Control c in ii.Controls)
+                {
+                    if (c is Panel)
+                    {
+                        foreach (Control c2 in (c as Panel).Controls)
+                        {
+                            c2.Click += new System.EventHandler(PbOuvrirInfo);
+                        }
+                    }
+                    c.Click += new System.EventHandler(PbOuvrirInfo);
+                }
                 pnlListeEleve.Controls.Add(ii);
                 y += 220;
             }
@@ -167,9 +178,9 @@ namespace psychorientation
             {
                 tag = (Eleve)(sender as PictureBox).Tag;
             }
-            else
+            else 
             {
-                tag = (Eleve)(sender as InterfaceInfoEleve).Tag;
+                tag = (Eleve)(sender as Control).Tag;
             }
             int id = tag.GetId();
 

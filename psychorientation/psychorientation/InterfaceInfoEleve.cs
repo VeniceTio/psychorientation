@@ -42,5 +42,20 @@ namespace psychorientation
             int val = (int)valeur;
             p.Size = new Size(val * 84 / 10, p.Height);
         }
+
+        private void InterfaceInfoEleve_Load(object sender, EventArgs e)
+        {
+            foreach(Control c in this.Controls)
+            {
+                if(c is Panel)
+                {
+                    foreach(Control c2 in (c as Panel).Controls)
+                    {
+                        c2.Tag = eleve;
+                    }
+                }
+                c.Tag = eleve;
+            }
+        }
     }
 }

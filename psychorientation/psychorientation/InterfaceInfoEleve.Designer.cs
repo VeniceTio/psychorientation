@@ -54,7 +54,6 @@
             this.lblEleve.Size = new System.Drawing.Size(99, 33);
             this.lblEleve.TabIndex = 0;
             this.lblEleve.Text = "label1";
-
             // 
             // label1
             // 
@@ -64,7 +63,6 @@
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Classe  : ";
-
             // 
             // label2
             // 
@@ -74,7 +72,6 @@
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Effort : ";
-
             // 
             // label3
             // 
@@ -84,7 +81,6 @@
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Compétence : ";
-
             // 
             // lblClasse
             // 
@@ -94,7 +90,6 @@
             this.lblClasse.Size = new System.Drawing.Size(35, 13);
             this.lblClasse.TabIndex = 4;
             this.lblClasse.Text = "label4";
-
             // 
             // panel1
             // 
@@ -104,7 +99,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(92, 26);
             this.panel1.TabIndex = 5;
-
             // 
             // pnlEffort
             // 
@@ -113,7 +107,6 @@
             this.pnlEffort.Name = "pnlEffort";
             this.pnlEffort.Size = new System.Drawing.Size(84, 18);
             this.pnlEffort.TabIndex = 6;
-
             // 
             // lblEffort
             // 
@@ -131,7 +124,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(92, 26);
             this.panel2.TabIndex = 6;
-
             // 
             // pnlCompetence
             // 
@@ -140,7 +132,6 @@
             this.pnlCompetence.Name = "pnlCompetence";
             this.pnlCompetence.Size = new System.Drawing.Size(58, 18);
             this.pnlCompetence.TabIndex = 7;
-
             // 
             // lblCompetence
             // 
@@ -158,7 +149,6 @@
             this.label4.Size = new System.Drawing.Size(80, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Dernière note : ";
-
             // 
             // lblMoyenne
             // 
@@ -168,7 +158,6 @@
             this.lblMoyenne.Size = new System.Drawing.Size(35, 13);
             this.lblMoyenne.TabIndex = 10;
             this.lblMoyenne.Text = "label5";
-
             // 
             // InterfaceInfoEleve
             // 
@@ -189,7 +178,7 @@
             this.Controls.Add(this.lblEleve);
             this.Name = "InterfaceInfoEleve";
             this.Size = new System.Drawing.Size(214, 214);
-
+            this.Load += new System.EventHandler(this.InterfaceInfoEleve_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
