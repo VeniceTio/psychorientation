@@ -5,6 +5,11 @@
 
 ![Illustration](/images/fenetrePrincipale.PNG)
 
+## Procédure d'installation
+
+[Cliquez ici pour télécharger le jeu](https://git.unistra.fr/m.a.t.h.s.-manieurs-de-l-avenir-technologique-des-humains-stup-faits/psychorientation/-/raw/master/historique_prototypes/Psychorientation_V7.exe?inline=false)<br/>
+Une fois téléchargé, le jeu est prêt à être démarré.
+
 ## Décisions prises
 
 - Public cible : Enseignants en formation.
@@ -24,6 +29,12 @@
         - Choix de l’orientation en fin de classe de seconde. (Places limitées par filière)
         - Cours supplémentaires personnalisés.
         - Charge de travail en dehors des cours.
+
+## Question
+
+*Est-ce que vous avez des questions sur le déroulement de la partie que nous venons de vous montrer ?*<br/>
+J’ai trouvé votre jeu intéressant avec la possibilité de laisser le choix de noter plus l’effort ou la compétence.
+
 
 ## Description des objectifs pédagogiques du jeu
 ### Objectif pédagogique général
@@ -125,84 +136,87 @@ Partie scénarisée avec trois élèves, avec des attributs prédéfinis (pour s
 __Déroulement gagnant :__<br>
 
 
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 3.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 3.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 3.<br>
-le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 3.<br>
-le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 3.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 3.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 3.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1.6 et de compétence à 0.4, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1.4 et de compétence à 0.6, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 1.4 et de compétence à 0.6, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 0.5 et de compétence à 1.5, et comme type de cours 6.<br>
-le joueur assigne le coefficient de notation d'effort à 0.5 et de compétence à 1.5, et comme type de cours 6.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 5.<br>
+1)  Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 3.<br>
+2)  Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 3.<br>
+3)  Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 4.<br>
+4)  Le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 3.<br>
+5)  Le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 3.<br>
+6)  Le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 3.<br>
+7)  Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 3.<br>
+8)  Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 3.<br>
+9)  Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
+10) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
+11) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
+12) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
+13) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 4.<br>
+14) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 4.<br>
+15) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 5.<br>
+16) Le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 4.<br>
+17) Le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 4.<br>
+18) Le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 5.<br>
+19) Le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 5.<br>
+20) Le joueur assigne le coefficient de notation d'effort à 2 et de compétence à 0, et comme type de cours 5.<br>
+21) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 7.<br>
+22) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 7.<br>
+23) Le joueur assigne le coefficient de notation d'effort à 1.6 et de compétence à 0.4, et comme type de cours 7.<br>
+24) Le joueur assigne le coefficient de notation d'effort à 1.4 et de compétence à 0.6, et comme type de cours 5.<br>
+25) Le joueur assigne le coefficient de notation d'effort à 1.4 et de compétence à 0.6, et comme type de cours 5.<br>
+26) Le joueur assigne le coefficient de notation d'effort à 0.5 et de compétence à 1.5, et comme type de cours 6.<br>
+27) Le joueur assigne le coefficient de notation d'effort à 0.5 et de compétence à 1.5, et comme type de cours 6.<br>
+28) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 5.<br>
 
 __Vous avez gagné :__
 
-- ***Effort moyen : 7.34***
-- ***Compétence moyenne : 6.295***
-- ***Notes moyennes : 12.33***
-- ***L’effort a augmenté de : 46.8% / 33.3%***
-- ***Les compétences ont augmentés de : 25.9% / 25%***
-- ***La moyenne a augmenté de : 23.3% / 0% (Au moins autant de moyenne)***
+- :white_check_mark: ***Effort moyen : 7.34***
+- :white_check_mark: ***Compétence moyenne : 6.295***
+- :white_check_mark: ***Notes moyennes : 12.33***
+- :white_check_mark: ***L’effort a augmenté de : 46.8% / 33.3%***
+- :white_check_mark: ***Les compétences ont augmentés de : 25.9% / 25%***
+- :white_check_mark: ***La moyenne a augmenté de : 23.3% / 0% (Au moins autant de moyenne)***
 
 
 __Déroulement perdant :__
 
-le joueur assigne le coefficient de notation d'effort à 0.2 et de compétence à 1.8, et comme type de cours 8.<br>
-le joueur assigne le coefficient de notation d'effort à 0.2 et de compétence à 1.8, et comme type de cours 8.<br>
-le joueur assigne le coefficient de notation d'effort à 1.2 et de compétence à 0.8, et comme type de cours 2.<br>
-le joueur assigne le coefficient de notation d'effort à 1.2 et de compétence à 0.8, et comme type de cours 2.<br>
-le joueur assigne le coefficient de notation d'effort à 1.2 et de compétence à 0.8, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 0.5 et de compétence à 1.5, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 0.5 et de compétence à 1.5, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 8.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 8.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 3.<br>
-le joueur assigne le coefficient de notation d'effort à 1.3 et de compétence à 0.7, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1.3 et de compétence à 0.7, et comme type de cours 7.<br>
-le joueur assigne le coefficient de notation d'effort à 1.3 et de compétence à 0.7, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1.3 et de compétence à 0.7, et comme type de cours 4.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 8.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 8.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 8.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 5.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 6.<br>
-le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 6.<br>
-le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 5.<br>
+1)  Le joueur assigne le coefficient de notation d'effort à 0.2 et de compétence à 1.8, et comme type de cours 8.<br>
+2)  Le joueur assigne le coefficient de notation d'effort à 0.2 et de compétence à 1.8, et comme type de cours 8.<br>
+3)  Le joueur assigne le coefficient de notation d'effort à 1.2 et de compétence à 0.8, et comme type de cours 2.<br>
+4)  Le joueur assigne le coefficient de notation d'effort à 1.2 et de compétence à 0.8, et comme type de cours 2.<br>
+5)  Le joueur assigne le coefficient de notation d'effort à 1.2 et de compétence à 0.8, et comme type de cours 5.<br>
+6)  Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 7.<br>
+7)  Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 7.<br>
+8)  Le joueur assigne le coefficient de notation d'effort à 0.5 et de compétence à 1.5, et comme type de cours 7.<br>
+9)  Le joueur assigne le coefficient de notation d'effort à 0.5 et de compétence à 1.5, et comme type de cours 7.<br>
+10) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
+11) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 4.<br>
+12) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 7.<br>
+13) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 7.<br>
+14) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 8.<br>
+15) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 8.<br>
+16) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 3.<br>
+17) Le joueur assigne le coefficient de notation d'effort à 1.3 et de compétence à 0.7, et comme type de cours 7.<br>
+18) Le joueur assigne le coefficient de notation d'effort à 1.3 et de compétence à 0.7, et comme type de cours 7.<br>
+19) Le joueur assigne le coefficient de notation d'effort à 1.3 et de compétence à 0.7, et comme type de cours 4.<br>
+20) Le joueur assigne le coefficient de notation d'effort à 1.3 et de compétence à 0.7, et comme type de cours 4.<br>
+21) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 8.<br>
+22) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 8.<br>
+23) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 8.<br>
+24) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 5.<br>
+25) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 5.<br>
+26) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 6.<br>
+27) Le joueur assigne le coefficient de notation d'effort à 1.5 et de compétence à 0.5, et comme type de cours 6.<br>
+28) Le joueur assigne le coefficient de notation d'effort à 1 et de compétence à 1, et comme type de cours 5.<br>
 
 __Vous avez perdu car les compétences de la classe ne sont pas suffisantes :__
 
-- ***Effort moyen : 7.49***
-- ***Compétence moyenne : 6.24***
-- ***Notes moyennes : 11.85***
-- ***L’effort a augmenté de : 56% / 33.3%***
-- ***Les compétences ont augmentés de : 24.8% / 25%***
-- ***La moyenne a augmenté de : 18.5% / 0% (Au moins autant de moyenne)***
+- :white_check_mark: ***Effort moyen : 7.49***
+- :x: ***Compétence moyenne : 6.24***
+- :white_check_mark: ***Notes moyennes : 11.85***
+- :white_check_mark: ***L’effort a augmenté de : 56% / 33.3%***
+- :x: ***Les compétences ont augmentés de : 24.8% / 25%***
+- :white_check_mark: ***La moyenne a augmenté de : 18.5% / 0% (Au moins autant de moyenne)***
+
+Il est nécessaire de se trouver dans des intervalles valides à la fin de la partie sur ces trois seuils simultanément afin de gagner celle-ci.<br/>
+Dans le cas présent, un de ces trois intervalles n’est pas validé, ce qui cause l’échec du joueur.
 
 
 ### Scénarios complémentaires
@@ -226,9 +240,4 @@ nombre de tours : 28
 - Ajout d’un système de gestion de plusieurs classes.
 - Paramétrage d’une partie pour pouvoir avoir une partie personnalisée.
 - Rendre les élèves peu motivés moins enclins à aller en cours.
-
-## Procédure d'installation
-
-cliquer sur le lien suivant pour télécharger le jeu : https://git.unistra.fr/m.a.t.h.s.-manieurs-de-l-avenir-technologique-des-humains-stup-faits/psychorientation/-/raw/master/historique_prototypes/Psychorientation_V7.exe?inline=false
-Une fois téléchargé le jeu est prêt à être démarrer.
 
