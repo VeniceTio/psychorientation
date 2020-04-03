@@ -72,11 +72,15 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 
 Justifications :
-    Organisation : camelCase
-    Versioning : 145 commits rensignés avec des commentaires qui décrit les modifications apportées
-    Droits d'accès : voir members
-    README : voir le README 
 
+    Organisation : camelCase
+    
+    Versioning : 145 commits renseignés avec des commentaires qui décrit les modifications apportées
+    
+    Droits d'accès : voir members
+    
+    README : voir le README 
+    
 ## Prototype
 - Installation
   - [x] Le prototype s'installe sans effort.
@@ -100,10 +104,15 @@ Justifications :
   - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
 Justifications :
+
     Installation : le prototype ce telecharge en cliquant sur un simple lien
+    
     Exécution : pour lancer le prototype, il suffit de cliqué sur le .exe telecharger au prealable 
+    
     Stabilité : aucun bug de n'est apparut meme apres un long essai
-    Affordabilité : les instructions sont données a l'endroit ou l'ont change les curseurs 
+    
+    Affordabilité : les instructions sont données a l'endroit ou l'ont change les curseurs
+    
     Transmission du concept : le prototype transmet le concept-cible au joueur grace aux actions qu'il effectue sur la classe
     
  
@@ -122,9 +131,13 @@ Justifications :
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
 Justifications :
+
     Modèle de document : 
+    
     Description de l'application :
+    
     Modèles conceptuel : present dans le CDC
+    
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
@@ -165,11 +178,13 @@ Justifications :
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
 Justifications : 
+
     Entrées / Actions du joueur : On vois des le debut de la partie les 2 curseurs et la fleche verte de continuation
+    
     Sorties / Infomations au joueur : lors de la fin de la partie, on sais si on a gagné ou non, grâce a des indicateurs de couleur
+    
     Découpage modulaire : plusieur forms s'entremelent 
     
-
 ### Scénarios
 - Nombre
   - [x] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
@@ -185,8 +200,11 @@ Justifications :
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
 Justifications :
+
     Nombre : Il y a 2 scénarios diférent et tous les 2 aboutis
+    
     Exhaustivité : Les scénarios developpé s'appuient sur toute les fonctionnalités definies
+    
     Scénarios additionnels : 2 sceanrios presentés mais sans explications explicite or du CDD
 
 ## Résultat T4
