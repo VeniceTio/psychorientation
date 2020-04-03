@@ -22,14 +22,14 @@ namespace psychorientation
         private void button1_Click(object sender, EventArgs e)
         {
             InterfaceClasse iC = new InterfaceClasse(false);
-            iC.Show();
+            iC.ShowDialog();
         }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
             InterfaceClasse iC = new InterfaceClasse(true);
-            iC.Show();
+            iC.ShowDialog();
         }
 
         private void TransmitKeyDown()
@@ -53,6 +53,11 @@ namespace psychorientation
             {
                 Close();
             }
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
