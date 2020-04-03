@@ -41,7 +41,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Propositions d'amélioration du jeu
 
-- Ajouter différentes matières, avec pour chacun des élèves. Pour chaque matière, l'élève aura son propre effort/sa compétence.
+- Proposition 1
 - Proposition 2
 
 # Grille d'évaluation T4
@@ -52,8 +52,8 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Les fichiers sources sont tous partagés et organisés.
   - [ ] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
 - Versioning
-  - [ ] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
-  - [x] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
+  - [x] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
+  - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
   - [ ] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
   - [x] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT et ce dépôt est accessible à tous.
@@ -61,12 +61,12 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README.md
   - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
-  - [ ] Le README n'est pas complet.
-  - [x] Il n'y a pas de README.
+  - [x] Le README n'est pas complet.
+  - [ ] Il n'y a pas de README.
 - CDC.md
-  - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
+  - [x] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
   - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
-  - [x] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
+  - [ ] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
 
 
 Justifications :
@@ -86,8 +86,8 @@ Justifications :
   - [ ] Le prototype est instable
 - Affordabilité
   - [ ] Toutes les instructions de jeu sont inclues dans le prototype sous forme d'un tutoriel.
-  - [ ] Les instructions de jeu sont sous forme d'un manuel.
-  - [x] Les instructions de jeu ne sont pas données.
+  - [x] Les instructions de jeu sont sous forme d'un manuel.
+  - [ ] Les instructions de jeu ne sont pas données.
 - Transmission du concept
   - [x] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
   - [ ] Le prototype permet de transmettre le concept-cible au joueur.
@@ -105,44 +105,44 @@ Justifications :
   - [ ] La description permet de se faire une idée de l'application attendue.
   - [ ] La description ne permet pas de se faire une idée de l'application attendue.
 - Modèle conceptuel
-  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
-  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
+  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
+  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
 Justifications : 
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
-  - [ ] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
-  - [x] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
+  - [ ] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
   - [ ] La description des entrées ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Sorties / Infomations au joueur
-  - [ ] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
-  - [x] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
+  - [ ] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
   - [ ] La description des sorties ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Description du moteur interne
-  - [ ] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
-  - [x] La description du moteur interne permet de comprendre le fonctionnement de l'application.
+  - [x] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
+  - [ ] La description du moteur interne permet de comprendre le fonctionnement de l'application.
   - [ ] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
 - Découpage modulaire 
-  - [ ] L'application est couverte par des modules pertinents et pleinement décrits.
+  - [x] L'application est couverte par des modules pertinents et pleinement décrits.
   - [ ] L'application est découpée en modules pertinents.
-  - [x] L'application n'est pas découpée en modules pertinents.
+  - [ ] L'application n'est pas découpée en modules pertinents.
 - Granularité des fonctionnalités
-  - [ ] Les fonctionnalités sont très fines.
-  - [x] Les fonctionnalités sont fines.
+  - [x] Les fonctionnalités sont très fines.
+  - [ ] Les fonctionnalités sont fines.
   - [ ] Les fonctionnalités sont grossières.
 - Exhaustivité des fonctionnalités
   - [x] Les fonctionnalités couvrent la totalité de l'application.
   - [ ] Les fonctionnalités couvrent globalement l'application.
   - [ ] Les fonctionnalités ne couvrent pas l'application.
 - Description des fonctionnalités
-  - [ ] Les fonctionnalités sont précisément décrites.
-  - [x] Les fonctionnalités sont décrites.
+  - [x] Les fonctionnalités sont précisément décrites.
+  - [ ] Les fonctionnalités sont décrites.
   - [ ] Les fonctionnalités ne sont pas bien décrites.
 - Priorisation des fonctionnalités
-  - [ ] Les fonctionnalités sont classées par priorités de façon pertinentes.
-  - [x] Les fonctionnalités sont classées par priorités.
+  - [x] Les fonctionnalités sont classées par priorités de façon pertinentes.
+  - [ ] Les fonctionnalités sont classées par priorités.
   - [ ] Les fonctionnalités ne sont pas classées par priorités.
 - Difficulté des fonctionnalités
   - [ ] Les fonctionnalités sont annotées par une difficulté pertinente.
@@ -168,7 +168,7 @@ Justifications :
 Justifications :
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point: 
-- Total d'item « Insatisfaisant » (0 point) :
-- Note totale  : 
+- Total d'item « Excellent » (2 point) : 22
+- Total d'item « Satisfaisant » (1 point: 1
+- Total d'item « Insatisfaisant » (0 point) : 1
+- Note sur 10 : 9.375
