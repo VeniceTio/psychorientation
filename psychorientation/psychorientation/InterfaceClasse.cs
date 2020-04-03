@@ -100,8 +100,8 @@ namespace psychorientation
             lblValCompetence.Tag = "Compétence : ";
             lblValEffort.Location = new Point(130, 5 + tbNota.Location.Y + tbNota.Size.Height);
             lblValCompetence.Location = new Point(1, 5 + tbNota.Location.Y + tbNota.Size.Height);
-            lblValEffort.Text = lblValEffort.Tag + ((20 - tbNota.Value) / 10.0).ToString();
-            lblValCompetence.Text = lblValCompetence.Tag + (tbNota.Value / 10.0).ToString();
+            lblValEffort.Text = lblValEffort.Tag + (( tbNota.Value) / 10.0).ToString();
+            lblValCompetence.Text = lblValCompetence.Tag + ( (20 - tbNota.Value) / 10.0).ToString();
             lblValCompetence.BackColor= System.Drawing.Color.Transparent;
             lblValEffort.BackColor= System.Drawing.Color.Transparent;
             pnlChoix.Controls.Add(lblValEffort);
@@ -307,8 +307,8 @@ namespace psychorientation
             TrackBar tbNota = (TrackBar)sender;
             valNotation = (double)tbNota.Value;
 
-            lblValEffort.Text = lblValEffort.Tag + ( (20 - valNotation) / 10.0).ToString();
-            lblValCompetence.Text = lblValCompetence.Tag + (valNotation / 10.0).ToString();
+            lblValEffort.Text = lblValEffort.Tag + ( (valNotation) / 10.0).ToString();
+            lblValCompetence.Text = lblValCompetence.Tag + ( (20 - valNotation) / 10.0).ToString();
         }
 
         private void tbCours_Scroll(object sender, EventArgs e)
