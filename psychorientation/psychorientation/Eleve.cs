@@ -158,12 +158,12 @@ namespace psychorientation
 
         private double CalculerNote(double coeff)
         {
-            return (this.effort * (2 - coeff) + this.competence * coeff);
+            return (this.effort * (coeff) + this.competence * (2 - coeff));
         }
 
         private double CalculerAppreciation(double coeff)
         {
-            return (this.effort * (2 - coeff) + this.competence * coeff);
+            return (this.effort * (coeff) + this.competence * (2 - coeff));
         }
     }
 }
