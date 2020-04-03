@@ -46,6 +46,8 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Grille d'évaluation T4
 
+# Grille d'évaluation T4
+
 ## GIT 
 - Organisation
   - [x] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
@@ -60,8 +62,8 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
   - [ ] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README.md
-  - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
-  - [x] Le README n'est pas complet.
+  - [x] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
+  - [ ] Le README n'est pas complet.
   - [ ] Il n'y a pas de README.
 - CDC.md
   - [x] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
@@ -70,11 +72,15 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 
 Justifications :
+    Organisation : camelCase
+    Versioning : 145 commits rensignés avec des commentaires qui décrit les modifications apportées
+    Droits d'accès : voir members
+    README : voir le README 
 
 ## Prototype
 - Installation
-  - [ ] Le prototype s'installe sans effort.
-  - [x] Le prototype s'installe en suivant une procédure.
+  - [x] Le prototype s'installe sans effort.
+  - [ ] Le prototype s'installe en suivant une procédure.
   - [ ] Le prototype ne s'installe pas.
 - Exécution
   - [x] Le prototype s'exécute en cliquant sur une icône.
@@ -94,6 +100,12 @@ Justifications :
   - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
 Justifications :
+    Installation : le prototype ce telecharge en cliquant sur un simple lien
+    Exécution : pour lancer le prototype, il suffit de cliqué sur le .exe telecharger au prealable 
+    Stabilité : aucun bug de n'est apparut meme apres un long essai
+    Affordabilité : les instructions sont données a l'endroit ou l'ont change les curseurs 
+    Transmission du concept : le prototype transmet le concept-cible au joueur grace aux actions qu'il effectue sur la classe
+    
  
 ## Cahier des charges
 - Modèle de document
@@ -109,7 +121,10 @@ Justifications :
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
-Justifications : 
+Justifications :
+    Modèle de document : 
+    Description de l'application :
+    Modèles conceptuel : present dans le CDC
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
@@ -150,6 +165,10 @@ Justifications :
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
 Justifications : 
+    Entrées / Actions du joueur : On vois des le debut de la partie les 2 curseurs et la fleche verte de continuation
+    Sorties / Infomations au joueur : lors de la fin de la partie, on sais si on a gagné ou non, grâce a des indicateurs de couleur
+    Découpage modulaire : plusieur forms s'entremelent 
+    
 
 ### Scénarios
 - Nombre
@@ -161,14 +180,17 @@ Justifications :
   - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
   - [ ] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
 - Scénarios additionnels 
-  - [x] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
-  - [ ] Des scénarios additionnels sont proposés. 
+  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
+  - [x] Des scénarios additionnels sont proposés. 
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
 Justifications :
+    Nombre : Il y a 2 scénarios diférent et tous les 2 aboutis
+    Exhaustivité : Les scénarios developpé s'appuient sur toute les fonctionnalités definies
+    Scénarios additionnels : 2 sceanrios presentés mais sans explications explicite or du CDD
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 20
-- Total d'item « Satisfaisant » (1 point: 2
-- Total d'item « Insatisfaisant » (0 point) : 2
-- Note sur 10 : 8.75
+- Total d'item « Excellent » (2 point) : 22
+- Total d'item « Satisfaisant » (1 point): 2
+- Total d'item « Insatisfaisant » (0 point) : 1
+- Note sur 10 : 9.2
