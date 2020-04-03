@@ -52,10 +52,10 @@ namespace psychorientation
             competenceScore = Math.Round(100 * (competenceFinal - competenceInitial) / competenceInitial, 1); 
             moyenneScore = Math.Round(100 * (moyenneFinale - moyenneInitiale) / moyenneInitiale, 1);
             effortLimite = Math.Round(100 * ((10 - effortInitial) / 3) / effortInitial, 1);
-            competenceLimite = Math.Round(100 * ((10 - competenceInitial) / 3) / competenceInitial, 1);
+            competenceLimite = Math.Round(100 * ((10 - competenceInitial) / 4) / competenceInitial, 1);
             moyenneLimite = 0;
             effortScoreRouge = effortFinal > ((10 - effortInitial) / 3) + effortInitial;
-            competenceScoreRouge = competenceFinal > ((10 - competenceInitial) / 3) + competenceInitial;
+            competenceScoreRouge = competenceFinal > ((10 - competenceInitial) / 4) + competenceInitial;
             moyenneScoreRouge = moyenneFinale > moyenneInitiale;
         }
 
