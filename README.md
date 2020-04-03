@@ -17,6 +17,9 @@ Une fois téléchargé, le jeu est prêt à être démarré.
 ## Description du jeu
 - __Type de jeu :__ Gestion 
 - __Incarnation du joueur :__ Un professeur principal d’une classe de lycée
+
+Ce jeu est un jeu sérieux qui va vous permettre de gérer une classe avec différents profils d'élèves pour vous faire découvrir le rôle d'enseignant et les décisions qui lui incombe comme le choix de notation et le niveau de la difficulté de ces cours.
+
 ## Déroulement d’une partie
 
 ![Illustration](/images/choixScenario.PNG)
