@@ -29,16 +29,20 @@ namespace psychorientation
         }
 
 
-        public void setParam(Eleve el)
+        public void setParam(Eleve el,Image pb)
         {
             this.eleve = el;
+            
+            pcbEleve.Image = pb;
             actualiser();
         }
 
         private void actualiser()
         {
+            lblEffort.Text = "Effort : " + Math.Round(eleve.GetEffort(),1);
+            lblCompetence.Text = "Compétence : " + Math.Round(eleve.GetCompetence(),1);
             Libelle lib = new Libelle();
-            string nom = "Eleve n°" + eleve.GetId();
+            string nom = "Élève n°" + eleve.GetId();
             this.Text = nom;
             lblNomEleve.Text = nom;
             lblNiveau.Text = lib.Niveau(eleve.GetClasse());
@@ -57,6 +61,8 @@ namespace psychorientation
 
             InitNote();
         }
+
+
         private void MajPanel(Panel p, double valeur)
         {
             int val = (int)valeur;
@@ -93,7 +99,7 @@ namespace psychorientation
                 tlp.Controls.Add(CreerLabel(Math.Round(note.GetEffort(), 2).ToString()), 3, i);
             }
 
-            tlp.Size = new System.Drawing.Size(413, largeurLigne* tlp.RowCount);
+            tlp.Size = new System.Drawing.Size(320, largeurLigne * tlp.RowCount + 10);
             tlp.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             pnlNote.Controls.Add(tlp);
         }
@@ -105,6 +111,12 @@ namespace psychorientation
             return lbl;
         }
 
-
+        private void InterfaceInfoCompletEleve_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 27) // Echap
+            {
+                Close();
+            }
+        }
     }
 }

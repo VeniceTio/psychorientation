@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs" />
     <Compile Include="Eleve.cs" />
     <Compile Include="InterfaceClasse.cs">
       <SubType>Form</SubType>
@@ -149,6 +148,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salleV11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\patern\paternFeuille.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prof2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paternFeuille.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

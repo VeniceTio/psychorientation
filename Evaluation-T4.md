@@ -73,8 +73,8 @@ Justifications :
 
 ## Prototype
 - Installation
-  - [ ] Le prototype s'installe sans effort.
-  - [x] Le prototype s'installe en suivant une procédure.
+  - [x] Le prototype s'installe sans effort.
+  - [ ] Le prototype s'installe en suivant une procédure.
   - [ ] Le prototype ne s'installe pas.
 - Exécution
   - [x] Le prototype s'exécute en cliquant sur une icône.
@@ -105,9 +105,9 @@ Justifications :
   - [ ] La description permet de se faire une idée de l'application attendue.
   - [ ] La description ne permet pas de se faire une idée de l'application attendue.
 - Modèle conceptuel
-  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
+  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
-  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
+  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
 Justifications : 
 
@@ -168,7 +168,7 @@ Justifications :
 Justifications :
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 20
-- Total d'item « Satisfaisant » (1 point: 2
-- Total d'item « Insatisfaisant » (0 point) : 2
-- Note sur 10 : 8.75
+- Total d'item « Excellent » (2 point) : 22
+- Total d'item « Satisfaisant » (1 point: 1
+- Total d'item « Insatisfaisant » (0 point) : 1
+- Note sur 10 : 9.375

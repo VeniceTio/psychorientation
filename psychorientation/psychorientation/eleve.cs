@@ -16,6 +16,7 @@ namespace psychorientation
         private List<Note> listeNotes = new List<Note>();
         private double appreciation;
         private static Random r = new Random();
+        
         public Eleve(int id)
         {
             
@@ -24,7 +25,7 @@ namespace psychorientation
             this.competence = Eleve.r.NextDouble()*10;
             this.effort = Eleve.r.NextDouble()*10;
             this.orientation = 0;
-            this.appreciation=CalculerAppreciation();
+            this.appreciation=CalculerAppreciation(1);
         }
 
         public Eleve(int id,int classe, double competence, double effort, int orientation)
@@ -34,7 +35,7 @@ namespace psychorientation
             this.competence = competence;
             this.effort = effort;
             this.orientation = orientation;
-            this.appreciation = CalculerAppreciation();
+            this.appreciation = CalculerAppreciation(1);
         }
         public void SetClasse(int classe)
         {
@@ -124,7 +125,7 @@ namespace psychorientation
         {
             double note = CalculerNote(coeff);
             
-            double note_convenable = 10 + (competence - 5);
+            double note_convenable = 10 + (competence - 5);//((competence + effort) / 2 - 5);
             if (effort > 5)
             {
                 if (note >= note_convenable)
@@ -144,10 +145,10 @@ namespace psychorientation
                 }
                 else
                 {
-                    effort += 0.25;
+                    effort -= 0.25;
                 }
             }
-
+            
             if (effort < 0) { effort = 0; }
             else if (effort > 10) { effort = 10; }
 
@@ -160,9 +161,9 @@ namespace psychorientation
             return (this.effort * (2 - coeff) + this.competence * coeff);
         }
 
-        private double CalculerAppreciation()
+        private double CalculerAppreciation(double coeff)
         {
-            return (this.effort * Config.GetInstance().GetCoeffEffortOral() + this.competence * Config.GetInstance().GetCoeffCompetenceOral());
+            return (this.effort * (2 - coeff) + this.competence * coeff);
         }
     }
 }
