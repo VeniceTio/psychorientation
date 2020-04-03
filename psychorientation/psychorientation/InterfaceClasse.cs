@@ -12,6 +12,12 @@ namespace psychorientation
 {
     public partial class InterfaceClasse : Form
     {
+
+        double effortInitial = 0.0;
+        double competenceInitial = 0.0;
+        double moyenenInitial = 0.0;
+
+
         private Random r = new Random();
         private Libelle libelle = Libelle.GetInstance();
         private int moisActuel = 8;
@@ -54,9 +60,12 @@ namespace psychorientation
         {
             lblDate.Text = libelle.Mois(moisActuel % 12);
             lblClasse.Text = libelle.Niveau(anneeActuelle);
-            lblEffort.Text = "Effort de la classe : " + Math.Round(gestEleve.GetEffortClasse(), 1).ToString();
-            lblCompetence.Text = "Competence de la classe : " + Math.Round(gestEleve.GetCompetenceClasse(), 1).ToString();
-            lblMoyenne.Text = "Moyenne de la classe : " + Math.Round(gestEleve.GetMoyenneClasse(), 1).ToString();
+            effortInitial = Math.Round(gestEleve.GetEffortClasse(), 1);
+            competenceInitial = Math.Round(gestEleve.GetCompetenceClasse(), 1);
+            moyenenInitial = Math.Round(gestEleve.GetMoyenneClasse(), 1);
+            lblEffort.Text = "Effort de la classe : " + effortInitial.ToString();
+            lblCompetence.Text = "Competence de la classe : " + competenceInitial.ToString();
+            lblMoyenne.Text = "Moyenne de la classe : " + moyenenInitial.ToString();
 
             Libelle lib = new Libelle();
             int y = 40;
@@ -75,6 +84,7 @@ namespace psychorientation
             tbNota.Location = new System.Drawing.Point(0, lblNotation.Location.Y + lblNotation.Size.Height);
             tbNota.Size = new System.Drawing.Size(184, 45);
             tbNota.Maximum = 20;
+            tbNota.BackColor = System.Drawing.Color.Tan; 
             tbNota.Value = 10;
             tbNota.SmallChange = 1;
             tbNota.LargeChange = 1;
@@ -89,10 +99,13 @@ namespace psychorientation
             lblValCompetence.Location = new Point(1, 5 + tbNota.Location.Y + tbNota.Size.Height);
             lblValEffort.Text = lblValEffort.Tag + ((20 - tbNota.Value) / 10.0).ToString();
             lblValCompetence.Text = lblValCompetence.Tag + (tbNota.Value / 10.0).ToString();
+            lblValCompetence.BackColor= System.Drawing.Color.Transparent;
+            lblValEffort.BackColor= System.Drawing.Color.Transparent;
             pnlChoix.Controls.Add(lblValEffort);
             pnlChoix.Controls.Add(lblValCompetence);
 
             TrackBar tbCours = new TrackBar();
+            tbCours.BackColor= System.Drawing.Color.Tan;
             tbCours.Location = new System.Drawing.Point(0, 10 + lblCours.Location.Y + lblCours.Size.Height);
             tbCours.Size = new System.Drawing.Size(184, 45);
             tbCours.Value = 5;
@@ -161,7 +174,7 @@ namespace psychorientation
             iice.Show();
         }
 
-        private void Pb_action_suivante_Click(object sender, EventArgs e)
+        private void ActionSuivante()
         {
             // Traite les actions à effectuer avant de passer au mois suivant.
 
@@ -178,7 +191,7 @@ namespace psychorientation
 
             // Passe au mois suivant.
             moisActuel++;
-            switch(moisActuel)
+            switch (moisActuel)
             {
                 case 17: // Fin de la 1ère année : Début Juin.
                     moisActuel = 20;
@@ -190,14 +203,23 @@ namespace psychorientation
                     break;
                 case 42: // Fin de la 3ème année : Debut Juillet.
                     // Fin de la partie.
-                    Message m_fin = new Message( 
-                        "Vous avez fini la phase bêta de ce jeu !\n" + 
-                        "Bravo à vous et n'hésitez pas à essayer à nouveau pour " + 
-                        "améliorer votre compréhension du monde extérieur.", 
-                        "Félicitations", 
-                        TypeMessage.INFORMATION
+                    double moyenneFinal = Math.Round(gestEleve.GetMoyenneClasse(), 1);
+                    double effortFinal = Math.Round(gestEleve.GetEffortClasse(), 1);
+                    double competenceFinal = Math.Round(gestEleve.GetCompetenceClasse(), 1);
+                    double diffEffort = effortFinal - effortInitial;
+                    double diffCompetence = competenceFinal - competenceInitial;
+                    double diffMoyenne= moyenneFinal-moyenenInitial;
+
+                    Message m_fin = new Message(
+                        "Vous avez fini la phase bêta de ce jeu !\n" +
+                        "Bravo à vous et n'hésitez pas à essayer à nouveau pour " +
+                        "améliorer votre compréhension du monde extérieur.\n",
+                        "Félicitations",
+                        TypeMessage.RESULTAT
                     );
+                    m_fin.setParamRes(Math.Round(100*diffEffort/effortInitial,1), Math.Round(100 *diffCompetence/competenceInitial,1), Math.Round(100 *diffMoyenne/moyenenInitial,1),moyenneFinal>moyenenInitial,effortFinal>effortInitial+(10-effortInitial)/2,competenceFinal>competenceInitial+(10-competenceInitial)/2);
                     m_fin.ShowDialog();
+                    UntransmitKeyDown();
                     pb_action_suivante.Click -= new System.EventHandler(Pb_action_suivante_Click);
                     break;
             }
@@ -207,7 +229,12 @@ namespace psychorientation
             // Cours particuliers.
 
             lblDate.Text = libelle.Mois(moisActuel % 12);
-            lblClasse.Text= libelle.Niveau(anneeActuelle);
+            lblClasse.Text = libelle.Niveau(anneeActuelle);
+        }
+
+        private void Pb_action_suivante_Click(object sender, EventArgs e)
+        {
+            ActionSuivante();
         }
 
         private void Pb_liste_eleves_Click(object sender, EventArgs e)
@@ -234,13 +261,6 @@ namespace psychorientation
             PictureBox pb1 = pb_action_suivante;
             pb1.Location = new Point(Size.Width - pb1.Width - 32, Size.Height - pb1.Height - 32);
         }
-        /*
-         if (MessageBox.Show("Souhaitez-vous quitter le jeu ?\nVous perdrez alors votre progression dans la partie en cours.",
-                                "Confirmation de fermeture", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
-            {
-                Close();
-            } 
-         */
 
         private void tbNota_Scroll(object sender, EventArgs e)
         {
@@ -288,11 +308,31 @@ namespace psychorientation
             }
         }
 
+        private void UntransmitKeyDown()
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel)
+                {
+                    foreach (Control c2 in (c as Panel).Controls)
+                    {
+                        c2.KeyDown -= new System.Windows.Forms.KeyEventHandler(InterfaceClasse_KeyDown);
+                    }
+                }
+                c.KeyDown -= new System.Windows.Forms.KeyEventHandler(InterfaceClasse_KeyDown);
+            }
+        }
+
         private void InterfaceClasse_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
                 Close();
+            }
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                ActionSuivante();
             }
         }
     }

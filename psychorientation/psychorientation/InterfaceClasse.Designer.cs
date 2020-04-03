@@ -43,11 +43,11 @@
             this.lbl_barre_decisions = new System.Windows.Forms.Label();
             this.lblCours = new System.Windows.Forms.Label();
             this.lblNotation = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbProf = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_action_suivante)).BeginInit();
             this.pnlListeEleve.SuspendLayout();
             this.pnlChoix.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProf)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_action_suivante
@@ -126,7 +126,8 @@
             // pnlListeEleve
             // 
             this.pnlListeEleve.AutoScroll = true;
-            this.pnlListeEleve.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlListeEleve.BackColor = System.Drawing.Color.NavajoWhite;
+            this.pnlListeEleve.BackgroundImage = global::psychorientation.Properties.Resources.paternFeuille;
             this.pnlListeEleve.Controls.Add(this.lblListeEleve);
             this.pnlListeEleve.Location = new System.Drawing.Point(0, -1);
             this.pnlListeEleve.Name = "pnlListeEleve";
@@ -158,6 +159,7 @@
             // 
             // pnlChoix
             // 
+            this.pnlChoix.BackgroundImage = global::psychorientation.Properties.Resources.paternFeuille1;
             this.pnlChoix.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlChoix.Controls.Add(this.lbl_barre_decisions);
             this.pnlChoix.Controls.Add(this.lblCours);
@@ -199,16 +201,16 @@
             this.lblNotation.TabIndex = 0;
             this.lblNotation.Text = "Coefficients de prise en compte de l\'effort et de la compétence pour noter :";
             // 
-            // pictureBox1
+            // pbProf
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::psychorientation.Properties.Resources.prof2;
-            this.pictureBox1.Location = new System.Drawing.Point(642, 234);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.pbProf.BackColor = System.Drawing.Color.Transparent;
+            this.pbProf.Image = global::psychorientation.Properties.Resources.prof2;
+            this.pbProf.Location = new System.Drawing.Point(642, 234);
+            this.pbProf.Name = "pbProf";
+            this.pbProf.Size = new System.Drawing.Size(71, 93);
+            this.pbProf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbProf.TabIndex = 9;
+            this.pbProf.TabStop = false;
             // 
             // InterfaceClasse
             // 
@@ -218,7 +220,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1357, 783);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbProf);
             this.Controls.Add(this.pnlChoix);
             this.Controls.Add(this.lblEffort);
             this.Controls.Add(this.lblCompetence);
@@ -241,7 +243,7 @@
             this.pnlListeEleve.ResumeLayout(false);
             this.pnlListeEleve.PerformLayout();
             this.pnlChoix.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProf)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,7 +266,7 @@
         private System.Windows.Forms.Label lblNotation;
         private System.Windows.Forms.Label lblCours;
         private System.Windows.Forms.Label lbl_barre_decisions;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbProf;
     }
 }
 

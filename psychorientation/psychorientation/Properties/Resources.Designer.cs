@@ -93,6 +93,16 @@ namespace psychorientation.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap paternFeuille1 {
+            get {
+                object obj = ResourceManager.GetObject("paternFeuille1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap prof2 {
             get {
                 object obj = ResourceManager.GetObject("prof2", resourceCulture);
