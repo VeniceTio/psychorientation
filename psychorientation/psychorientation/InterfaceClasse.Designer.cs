@@ -56,9 +56,9 @@
             this.pb_action_suivante.BackgroundImage = global::psychorientation.Properties.Resources.passer;
             this.pb_action_suivante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pb_action_suivante.InitialImage = null;
-            this.pb_action_suivante.Location = new System.Drawing.Point(1225, 651);
+            this.pb_action_suivante.Location = new System.Drawing.Point(1156, 623);
             this.pb_action_suivante.Name = "pb_action_suivante";
-            this.pb_action_suivante.Size = new System.Drawing.Size(120, 120);
+            this.pb_action_suivante.Size = new System.Drawing.Size(165, 148);
             this.pb_action_suivante.TabIndex = 0;
             this.pb_action_suivante.TabStop = false;
             this.pb_action_suivante.Click += new System.EventHandler(this.Pb_action_suivante_Click);
