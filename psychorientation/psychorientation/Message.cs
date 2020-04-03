@@ -51,7 +51,7 @@ namespace psychorientation
         public void setParamRes(double effortInitial, double competenceInitial, double moyenneInitiale, double effortFinal, double competenceFinal, double moyenneFinale)
         {
             effortScore = Math.Round(100 * (effortFinal - effortInitial) / effortInitial, 1);
-            competenceScore = Math.Round(100 * (competenceFinal - competenceInitial) / competenceInitial, 1); 
+            competenceScore = Math.Round(100 * (competenceFinal - competenceInitial) / competenceInitial, 1);
             moyenneScore = Math.Round(100 * (moyenneFinale - moyenneInitiale) / moyenneInitiale, 1);
             effortLimite = Math.Round(100 * ((10 - effortInitial) / 3) / effortInitial, 1);
             competenceLimite = Math.Round(100 * ((10 - competenceInitial) / 4) / competenceInitial, 1);

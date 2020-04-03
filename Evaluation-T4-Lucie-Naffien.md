@@ -13,38 +13,38 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Procédure
-  - [x] La procédure a été suivie à la lettre sans le moindre écart.
+  - [ ] La procédure a été suivie à la lettre sans le moindre écart.
   - [ ] La procédure a été globalement suivie.
-  - [ ] La procédure n'a pas été bien suivie.
+  - [x] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du jeu
-  - [x] Au moins trois propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
   - [ ] Au moins trois propositions d'améliorations sont faites.
-  - [ ] Moins de trois propositions d'améliorations sont faites.
+  - [x] Moins de trois propositions d'améliorations sont faites.
 - Propositions d'amélioration du Cahier des charges
-  - [x] Au moins cinq propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
   - [ ] Au moins cinq propositions d'améliorations sont faites.
-  - [ ] Moins de cinq propositions d'améliorations sont faites.
+  - [x] Moins de cinq propositions d'améliorations sont faites.
 - Grille d'évaluation T4 / critères
-  - [x] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
+  - [ ] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
   - [ ] Certain critères ont été remplis un peu à l'arrache.
-  - [ ] Des critères n'ont pas été remplis
+  - [x] Des critères n'ont pas été remplis
 - Implication
   - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
   - [x] Il y a eu un défaut d'implication T2.
 
 ### Résultat T2
-- Total d'item « Excellent » (2 point) : 10
-- Total d'item « Satisfaisant » (1 point: 0
-- Total d'item « Insatisfaisant » (0 point) : 0
-- Note sur 10 : 10
+- Total d'item « Excellent » (2 point) : 
+- Total d'item « Satisfaisant » (1 point: 
+- Total d'item « Insatisfaisant » (0 point) :
+- Note sur 10 : 
 
 # Propositions d'amélioration du jeu
 
-- Proposition 1
-- Proposition 2
-
-# Grille d'évaluation T4
+- Proposition 1 : Ajouter un tutoriel ou des indications sur chaque élément du jeu.
+- Proposition 2 : Mettre un code couleur sur les éléments donnés au tableau.
+- Proposition 3 : Ajouter un bouton pour recommencer le jeu plutôt que e le faire dans deux fenêtres différentes.
+- Proposition 4 : Proposer un mode où l'utilisateur choisit un niveau de difficulté, ou où il choisit les caractéristiques de chaque élève et leur nombre par partie.
 
 # Grille d'évaluation T4
 
@@ -62,25 +62,17 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
   - [ ] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README.md
-  - [x] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
-  - [ ] Le README n'est pas complet.
+  - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
+  - [x] Le README n'est pas complet.
   - [ ] Il n'y a pas de README.
 - CDC.md
-  - [x] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
-  - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
+  - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
+  - [x] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
   - [ ] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
 
 
-Justifications :
+Justifications : Le README étant existant mais vide, le cahier des charges ne peut pas y être lié.
 
-    Organisation : camelCase
-    
-    Versioning : 145 commits renseignés avec des commentaires qui décrit les modifications apportées
-    
-    Droits d'accès : voir members
-    
-    README : voir le README 
-    
 ## Prototype
 - Installation
   - [x] Le prototype s'installe sans effort.
@@ -103,18 +95,7 @@ Justifications :
   - [ ] Le prototype permet de transmettre le concept-cible au joueur.
   - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
-Justifications :
-
-    Installation : le prototype ce telecharge en cliquant sur un simple lien
-    
-    Exécution : pour lancer le prototype, il suffit de cliqué sur le .exe telecharger au prealable 
-    
-    Stabilité : aucun bug de n'est apparut meme apres un long essai
-    
-    Affordabilité : les instructions sont données a l'endroit ou l'ont change les curseurs
-    
-    Transmission du concept : le prototype transmet le concept-cible au joueur grace aux actions qu'il effectue sur la classe
-    
+Justifications : L'installation et l'exécution du prototype est simple et rapide. Il est stable et transmet parfaitement bien le concept-cible au joueur. Cependant, il manque d'explications sur la manipulation du prototype, même si finalement celle-ci se découvre et se prend en main assez rapidement.
  
 ## Cahier des charges
 - Modèle de document
@@ -130,14 +111,7 @@ Justifications :
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
-Justifications :
-
-    Modèle de document : 
-    
-    Description de l'application :
-    
-    Modèles conceptuel : present dans le CDC
-    
+Justifications : Le cahier des charges est claire et semble complet. La description du jeu était claire et concise et le modèle  conceptuel applicatif est bien détaillé et exhaustif.
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
@@ -177,14 +151,8 @@ Justifications :
   - [ ] Les fonctionnalités sont annotées par une difficulté.
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
-Justifications : 
+Justifications : Les entrées et les sorties sont claires. La difficulté des fonctionnalités étant générée aléatoirement, elle n'est pas annotée.
 
-    Entrées / Actions du joueur : On vois des le debut de la partie les 2 curseurs et la fleche verte de continuation
-    
-    Sorties / Infomations au joueur : lors de la fin de la partie, on sais si on a gagné ou non, grâce a des indicateurs de couleur
-    
-    Découpage modulaire : plusieur forms s'entremelent 
-    
 ### Scénarios
 - Nombre
   - [x] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
@@ -195,20 +163,14 @@ Justifications :
   - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
   - [ ] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
 - Scénarios additionnels 
-  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
-  - [x] Des scénarios additionnels sont proposés. 
+  - [x] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
+  - [ ] Des scénarios additionnels sont proposés. 
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
-Justifications :
-
-    Nombre : Il y a 2 scénarios diférent et tous les 2 aboutis
-    
-    Exhaustivité : Les scénarios developpé s'appuient sur toute les fonctionnalités definies
-    
-    Scénarios additionnels : 2 sceanrios presentés mais sans explications explicite or du CDD
+Justifications : Le scénario changeant en fonction des choix du joueur, il propose de nombreuses alternatives qui s'appuient sur toutes les fonctionnalités porposées. Le scénario additionnel est porposé sous différents modes de jeux, dont l'intérêt paraît évident en y jouant.
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 22
-- Total d'item « Satisfaisant » (1 point): 2
+- Total d'item « Excellent » (2 point) : 21
+- Total d'item « Satisfaisant » (1 point) : 3
 - Total d'item « Insatisfaisant » (0 point) : 1
-- Note sur 10 : 9.2
+- Note sur 10 : 8.4

@@ -36,6 +36,9 @@ namespace psychorientation
         private Label lblValEffort = new Label();
         private Label lblValCompetence = new Label();
 
+        private List<Eleve> listEleveOuvert = new List<Eleve>();
+        private List<InterfaceInfoCompletEleve> listInterfaceOuvert = new List<InterfaceInfoCompletEleve>();
+
         private bool isRandom=true;
 
         public InterfaceClasse(bool isRandom)
@@ -76,6 +79,17 @@ namespace psychorientation
                 ii.Tag = eleve;
                 ii.Location = new Point(6, y);
                 ii.Click += new System.EventHandler(PbOuvrirInfo);
+                foreach (Control c in ii.Controls)
+                {
+                    if (c is Panel)
+                    {
+                        foreach (Control c2 in (c as Panel).Controls)
+                        {
+                            c2.Click += new System.EventHandler(PbOuvrirInfo);
+                        }
+                    }
+                    c.Click += new System.EventHandler(PbOuvrirInfo);
+                }
                 pnlListeEleve.Controls.Add(ii);
                 y += 220;
             }
@@ -97,8 +111,8 @@ namespace psychorientation
             lblValCompetence.Tag = "Compétence : ";
             lblValEffort.Location = new Point(130, 5 + tbNota.Location.Y + tbNota.Size.Height);
             lblValCompetence.Location = new Point(1, 5 + tbNota.Location.Y + tbNota.Size.Height);
-            lblValEffort.Text = lblValEffort.Tag + ((20 - tbNota.Value) / 10.0).ToString();
-            lblValCompetence.Text = lblValCompetence.Tag + (tbNota.Value / 10.0).ToString();
+            lblValEffort.Text = lblValEffort.Tag + (( tbNota.Value) / 10.0).ToString();
+            lblValCompetence.Text = lblValCompetence.Tag + ( (20 - tbNota.Value) / 10.0).ToString();
             lblValCompetence.BackColor= System.Drawing.Color.Transparent;
             lblValEffort.BackColor= System.Drawing.Color.Transparent;
             pnlChoix.Controls.Add(lblValEffort);
@@ -164,15 +178,42 @@ namespace psychorientation
             {
                 tag = (Eleve)(sender as PictureBox).Tag;
             }
-            else
+            else 
             {
-                tag = (Eleve)(sender as InterfaceInfoEleve).Tag;
+                tag = (Eleve)(sender as Control).Tag;
             }
             int id = tag.GetId();
+
             InterfaceInfoCompletEleve iice = new InterfaceInfoCompletEleve();
-            iice.setParam(tag,imageEleve[id-1]);
-            iice.Show();
+            InterfaceInfoCompletEleve aSuppr=null;
+            if (listEleveOuvert.Contains(tag))
+            {
+                listEleveOuvert.Remove(tag);
+                foreach(InterfaceInfoCompletEleve c2 in listInterfaceOuvert)
+                {
+
+                    if (c2.getEleve() == tag)
+                    {
+                        c2.Close();
+                        aSuppr = c2;
+                        
+                    }
+                }
+                listInterfaceOuvert.Remove(aSuppr);
+            }
+            else
+            {
+                listInterfaceOuvert.Add(iice);
+                listEleveOuvert.Add(tag);
+                iice.setParam(tag, imageEleve[id - 1]);
+                iice.Show();
+            }
+            
+  
+            
         }
+
+
 
         private void ActionSuivante()
         {
@@ -277,8 +318,8 @@ namespace psychorientation
             TrackBar tbNota = (TrackBar)sender;
             valNotation = (double)tbNota.Value;
 
-            lblValEffort.Text = lblValEffort.Tag + ( (20 - valNotation) / 10.0).ToString();
-            lblValCompetence.Text = lblValCompetence.Tag + (valNotation / 10.0).ToString();
+            lblValEffort.Text = lblValEffort.Tag + ( (valNotation) / 10.0).ToString();
+            lblValCompetence.Text = lblValCompetence.Tag + ( (20 - valNotation) / 10.0).ToString();
         }
 
         private void tbCours_Scroll(object sender, EventArgs e)
