@@ -105,9 +105,9 @@ Justifications :
   - [ ] La description permet de se faire une idée de l'application attendue.
   - [ ] La description ne permet pas de se faire une idée de l'application attendue.
 - Modèle conceptuel
-  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
+  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
-  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
+  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
 Justifications : 
 
