@@ -165,10 +165,10 @@ Justifications : Les entrées et les sorties sont claires. La difficulté des fo
   - [ ] Des scénarios additionnels sont proposés. 
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
-Justifications : Le scénario change en fonction des choix du joueur, il propose de nombreuses alternatives qui s'appuient sur toutes les fonctionnalités porposées. Le scénario additionnel est porposé sous différents modes de jeux, dont l'intérêt paraît évident en y jouant.
+Justifications : Le scénario changeant en fonction des choix du joueur, il propose de nombreuses alternatives qui s'appuient sur toutes les fonctionnalités porposées. Le scénario additionnel est porposé sous différents modes de jeux, dont l'intérêt paraît évident en y jouant.
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 22
-- Total d'item « Satisfaisant » (1 point) : 1
+- Total d'item « Excellent » (2 point) : 21
+- Total d'item « Satisfaisant » (1 point) : 3
 - Total d'item « Insatisfaisant » (0 point) : 1
-- Note sur 10 : 9.375
+- Note sur 10 : 8.4
