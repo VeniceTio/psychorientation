@@ -7,7 +7,7 @@
 
 ## Procédure d'installation
 
-[Cliquez ici pour télécharger le jeu](https://git.unistra.fr/m.a.t.h.s.-manieurs-de-l-avenir-technologique-des-humains-stup-faits/psychorientation/-/raw/master/historique_prototypes/Psychorientation_V7.exe?inline=false)<br/>
+[Cliquez ici pour télécharger le jeu](https://git.unistra.fr/m.a.t.h.s.-manieurs-de-l-avenir-technologique-des-humains-stup-faits/psychorientation/-/raw/master/historique_prototypes/Psychorientation_V8.exe?inline=false)<br/>
 Une fois téléchargé, le jeu est prêt à être démarré.
 
 ## Décisions prises
