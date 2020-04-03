@@ -45,7 +45,7 @@ namespace psychorientation
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {            
             AjouterEleveImage();
             GenererBase();
             TransmitKeyDown();
@@ -220,11 +220,14 @@ namespace psychorientation
                         moyenneInitiale,
                         effortFinal,
                         competenceFinal,
-                        moyenneFinale
+                        moyenneFinale,
+                        isRandom
                     );
                     m_fin.ShowDialog();
                     UntransmitKeyDown();
                     pb_action_suivante.Click -= new System.EventHandler(Pb_action_suivante_Click);
+                    this.FormClosing -= new System.Windows.Forms.FormClosingEventHandler(InterfaceClasse_FormClosing);
+                    Close();
                     break;
             }
 
