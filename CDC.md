@@ -22,4 +22,4 @@
 
 
 
-![MCD]('images/mcd.png')
+![MCD](images/mcd.png)
