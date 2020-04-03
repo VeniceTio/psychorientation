@@ -13,7 +13,7 @@ namespace psychorientation
 
     public enum TypeMessage
     {
-        INFORMATION,NOTATION
+        INFORMATION,NOTATION,RESULTAT
     }
 
     public partial class Message : Form
@@ -27,6 +27,14 @@ namespace psychorientation
         int reponseInt = 0;
         double reponseDouble = 0;
 
+        bool effortScoreRouge = false;
+        bool moyenneScoreRouge = false;
+        bool competenceScoreRouge = false;
+
+        double effortScore;
+        double moyenneScore;
+        double competenceScore;
+
 
         public Message(string messageAffiche,string titreAffiche,TypeMessage typeMessage)
         {
@@ -34,6 +42,16 @@ namespace psychorientation
             this.typeMessage = typeMessage;
             message = messageAffiche;
             titre = titreAffiche;
+        }
+
+        public void setParamRes(double resEffort, double resCompetence, double resMoyenne,bool effortRouge, bool competenceRouge, bool moyenneRouge)
+        {
+            effortScore = resEffort;
+            moyenneScore = resMoyenne;
+            competenceScore = resCompetence; 
+             effortScoreRouge = effortRouge;
+            competenceScoreRouge = competenceRouge;
+            moyenneScoreRouge = moyenneRouge;
         }
 
         public bool getReponseBool
@@ -60,10 +78,12 @@ namespace psychorientation
         private void Message_Load(object sender, EventArgs e)
         {
             lblMessage.Text = message;
+            lblScore.Text = message;
             lblTitre.Text = titre;
             switch (typeMessage)
             {
                 case TypeMessage.INFORMATION:
+                    lblMessage.Visible = true;
                     this.Size = new Size(986, 347);
                     Button b = new Button();
                     b.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -75,7 +95,51 @@ namespace psychorientation
                     b.Click += new System.EventHandler(this.b_Click);
                     this.Controls.Add(b);
                     break;
+                case TypeMessage.RESULTAT:
+                    lblCompetence.Visible = true;
+                    lblEffort.Visible = true;
+                    lblMoyenen.Visible = true;
+                    lblScore.Visible = true;
+                    lblCompetence.Text = "L'évolution des compétences de vos élèves est de : " + competenceScore+" %";
+                    lblEffort.Text = "L'évolution des efforts de vos élèves est de : " + effortScore + " %";
+                    lblMoyenen.Text = "L'évolution des moyennes de vos élèves est de : " + moyenneScore + " %";
+                    if (!effortScoreRouge)
+                    {
+                        lblEffort.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        lblEffort.ForeColor = Color.Green;
+                    }
+                    if (!competenceScoreRouge)
+                    {
+                        lblCompetence.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        lblCompetence.ForeColor = Color.Green;
+                    }
+                    if (!moyenneScoreRouge)
+                    {
+                        lblMoyenen.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        lblMoyenen.ForeColor = Color.Green;
+                    }
+                    this.Size = new Size(986, 347);
+                    Button bh = new Button();
+                    bh.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    bh.Location = new System.Drawing.Point(784, 284);
+                    bh.Size = new System.Drawing.Size(190, 51);
+                    bh.TabIndex = 2;
+                    bh.Text = "Valider";
+                    bh.UseVisualStyleBackColor = true;
+                    bh.Click += new System.EventHandler(this.b_Click);
+                    this.Controls.Add(bh);
+                    break;
                 case TypeMessage.NOTATION:
+                    lblMessage.Visible = true;
                     this.Size = new Size(986, 347);
                     Button bu = new Button();
                     bu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,6 +185,11 @@ namespace psychorientation
             Label tag = (Label)tb.Tag;
             this.reponseDouble = (double)tb.Value;
             tag.Text= "Type de cours visant à aider les élèves de compétence : " + this.reponseDouble;
+        }
+
+        private void lblMoyenen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
