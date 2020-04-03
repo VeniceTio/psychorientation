@@ -71,11 +71,11 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 
 Justifications :
-    -Organisation: Les fichiers suive une règle de nommage et sont organisé de manière logique. Le code utilise la norme de codage camelCase.
-    -Versionning: Les commits sont faits de manière régulières, et sont renseignés.
-    -Droit d'accès: Oui, voir members.
-    -Readme.md:
-    -CDC.md: Il est diponible et il est liées depuis le readme.
+ <br>   -Organisation: Les fichiers suive une règle de nommage et sont organisé de manière logique. Le code utilise la norme de codage camelCase.
+ <br>   -Versionning: Les commits sont faits de manière régulières, et sont renseignés.
+ <br>   -Droit d'accès: Oui, voir members.
+ <br>   -Readme.md:
+ <br>   -CDC.md: Il est diponible et il est liées depuis le readme.
 
 ## Prototype
 - Installation
@@ -100,11 +100,11 @@ Justifications :
   - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
 Justifications :
-    -Installation: Pas d'installation à faire, il s'installe donc sans effort.
-    -Exécution: Il s'éxécute s'implement en cliquant sur un .exe
-    -Stabilité: Aucune problème n'a été rencontré lors des différents test
-    -Affordabilité: Aucune instruction n'est disponible pour le jeu
-    -Transmission du concept: Il permet de comprendre facilement le concepte, et de manière précise.
+ <br>  -Installation: Pas d'installation à faire, il s'installe donc sans effort.
+ <br>   -Exécution: Il s'éxécute s'implement en cliquant sur un .exe
+ <br>   -Stabilité: Aucune problème n'a été rencontré lors des différents test
+ <br>   -Affordabilité: Aucune instruction n'est disponible pour le jeu
+ <br>  -Transmission du concept: Il permet de comprendre facilement le concepte, et de manière précise.
 ## Cahier des charges
 - Modèle de document
   - [x] Le CdC respecte parfaitement le modèle de document.
@@ -160,15 +160,15 @@ Justifications :
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
 Justifications : 
-    -Entrées/Actions du joueur: Ils permettents de se faire une idée parfaite des intéractions, on comprend chacun des élèments et leur utilités.
-    -Sorties/Actions du joueur: On voit facilement les informations données au joueurs. Ils sont clairement affichés sur l'interface de jeu.
-    -Description du moteur interne: Permet parfaitement la compréhension du moteur de jeu et de comment il fonctionne, en montrant les différentes étapes.
-    -Découpage modulaire: Différents modules sont utilisé pour l'application, différentes classes, différents forms, mais ceux-ci ne sont pas décrits.
-    -Granularité des fonctionnalités: Les formules utilisés sont fines et complexes.
-    -Exhaustivité des fonctionnalités: Les fonctionnalité couvrent la totalité de l'application et ont toutes utilisés par celle-ci.
-    -Description des fonctionnalités: Les fonctionnalités sont décrites, mais pas précisement.
-    -Priorisation des fonctionnalités: Elles ne sont pas classés par priorités.
-    -Difficulté des fonctionnalités: Aucune fonctionnalité est annoté.
+<br>    -Entrées/Actions du joueur: Ils permettents de se faire une idée parfaite des intéractions, on comprend chacun des élèments et leur utilités.
+<br>    -Sorties/Actions du joueur: On voit facilement les informations données au joueurs. Ils sont clairement affichés sur l'interface de jeu.
+<br>    -Description du moteur interne: Permet parfaitement la compréhension du moteur de jeu et de comment il fonctionne, en montrant les différentes étapes.
+<br>    -Découpage modulaire: Différents modules sont utilisé pour l'application, différentes classes, différents forms, mais ceux-ci ne sont pas décrits.
+<br>    -Granularité des fonctionnalités: Les formules utilisés sont fines et complexes.
+<br>    -Exhaustivité des fonctionnalités: Les fonctionnalité couvrent la totalité de l'application et ont toutes utilisés par celle-ci.
+<br>    -Description des fonctionnalités: Les fonctionnalités sont décrites, mais pas précisement.
+<br>    -Priorisation des fonctionnalités: Elles ne sont pas classés par priorités.
+<br>    -Difficulté des fonctionnalités: Aucune fonctionnalité est annoté.
 
 ### Scénarios
 - Nombre
@@ -185,9 +185,9 @@ Justifications :
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
 Justifications :
-    -Nombre: Il y a un scénario pleinement développé, avec deux alternatives.
-    -Exhaustivité: Le scéniaro principal utilise tout les fonctionnalités proposés: Les efforts et compétences sont bien prix en compte.
-    -Scénario additionnels: Un scénario additionnel est proposé, et son interêt est explicite.
+<br>   -Nombre: Il y a un scénario pleinement développé, avec deux alternatives.
+<br>    -Exhaustivité: Le scéniaro principal utilise tout les fonctionnalités proposés: Les efforts et compétences sont bien prix en compte.
+<br>    -Scénario additionnels: Un scénario additionnel est proposé, et son interêt est explicite.
 ## Résultat T4
 - Total d'item « Excellent » (2 point) : 
 - Total d'item « Satisfaisant » (1 point: 
