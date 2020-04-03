@@ -13,31 +13,31 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Procédure
-  - [x] La procédure a été suivie à la lettre sans le moindre écart.
+  - [ ] La procédure a été suivie à la lettre sans le moindre écart.
   - [ ] La procédure a été globalement suivie.
-  - [ ] La procédure n'a pas été bien suivie.
+  - [x] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du jeu
-  - [x] Au moins trois propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
   - [ ] Au moins trois propositions d'améliorations sont faites.
-  - [ ] Moins de trois propositions d'améliorations sont faites.
+  - [x] Moins de trois propositions d'améliorations sont faites.
 - Propositions d'amélioration du Cahier des charges
-  - [x] Au moins cinq propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
   - [ ] Au moins cinq propositions d'améliorations sont faites.
-  - [ ] Moins de cinq propositions d'améliorations sont faites.
+  - [x] Moins de cinq propositions d'améliorations sont faites.
 - Grille d'évaluation T4 / critères
-  - [x] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
+  - [ ] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
   - [ ] Certain critères ont été remplis un peu à l'arrache.
-  - [ ] Des critères n'ont pas été remplis
+  - [x] Des critères n'ont pas été remplis
 - Implication
-  - [x] L'implication T2 été vraiment été cruciale dans le processus du T4.
+  - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
-  - [ ] Il y a eu un défaut d'implication T2.
+  - [x] Il y a eu un défaut d'implication T2.
 
 ### Résultat T2
-- Total d'item « Excellent » (2 point) : 10
-- Total d'item « Satisfaisant » (1 point: 0
-- Total d'item « Insatisfaisant » (0 point) : 0
-- Note sur 10 : 10
+- Total d'item « Excellent » (2 point) : 
+- Total d'item « Satisfaisant » (1 point: 
+- Total d'item « Insatisfaisant » (0 point) :
+- Note sur 10 : 
 
 # Propositions d'amélioration du jeu
 
@@ -69,7 +69,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
 
 
-Justifications :
+Justifications : Le README étant existant mais vide, le cahier des charges ne peut pas y être lié.
 
 ## Prototype
 - Installation
@@ -93,7 +93,7 @@ Justifications :
   - [ ] Le prototype permet de transmettre le concept-cible au joueur.
   - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
-Justifications :
+Justifications : L'installation et l'exécution du prototype est simple et rapide. Il est stable et transmet parfaitement bien le concept-cible au joueur. Cependant, il manque d'explications sur la manipulation du prototype, même si finalement celle-ci se découvre et se prend en main assez rapidement.
  
 ## Cahier des charges
 - Modèle de document
@@ -109,7 +109,7 @@ Justifications :
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
-Justifications : 
+Justifications : Le cahier des charges est claire et semble complet. La description du jeu était claire et concise et le modèle  conceptuel applicatif est bien détaillé et exhaustif.
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
@@ -149,7 +149,7 @@ Justifications :
   - [ ] Les fonctionnalités sont annotées par une difficulté.
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
-Justifications : 
+Justifications : Les entrées et les sorties sont claires. La difficulté des fonctionnalités étant générée aléatoirement, elle n'est pas annotée.
 
 ### Scénarios
 - Nombre
@@ -165,7 +165,7 @@ Justifications :
   - [ ] Des scénarios additionnels sont proposés. 
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
-Justifications :
+Justifications : Le scénario change en fonction des choix du joueur, il propose de nombreuses alternatives qui s'appuient sur toutes les fonctionnalités porposées. Le scénario additionnel est porposé sous différents modes de jeux, dont l'intérêt paraît évident en y jouant.
 
 ## Résultat T4
 - Total d'item « Excellent » (2 point) : 22
