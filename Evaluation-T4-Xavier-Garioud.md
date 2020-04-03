@@ -71,7 +71,11 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 
 Justifications :
--Organisation:
+    -Organisation: Les fichiers suive une règle de nommage et sont organisé de manière logique. Le code utilise la norme de codage camelCase.
+    -Versionning: Les commits sont faits de manière régulières, et sont renseignés.
+    -Droit d'accès: Oui, voir members.
+    -Readme.md:
+    -CDC.md: Il est diponible et il est liées depuis le readme.
 
 ## Prototype
 - Installation
