@@ -125,9 +125,9 @@ Justifications :
   - [x] La description du moteur interne permet de comprendre le fonctionnement de l'application.
   - [ ] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
 - Découpage modulaire 
-  - [ ] L'application est couverte par des modules pertinents et pleinement décrits.
+  - [x] L'application est couverte par des modules pertinents et pleinement décrits.
   - [ ] L'application est découpée en modules pertinents.
-  - [x] L'application n'est pas découpée en modules pertinents.
+  - [ ] L'application n'est pas découpée en modules pertinents.
 - Granularité des fonctionnalités
   - [ ] Les fonctionnalités sont très fines.
   - [x] Les fonctionnalités sont fines.
