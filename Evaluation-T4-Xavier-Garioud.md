@@ -61,9 +61,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
   - [ ] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README.md
-  - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
+  - [x] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
   - [ ] Le README n'est pas complet.
-  - [x] Il n'y a pas de README.
+  - [ ] Il n'y a pas de README.
 - CDC.md
   - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
   - [x] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
@@ -74,7 +74,7 @@ Justifications :
  <br>   -Organisation: Les fichiers suive une règle de nommage et sont organisé de manière logique. Le code utilise la norme de codage camelCase.
  <br>   -Versionning: Les commits sont faits de manière régulières, et sont renseignés.
  <br>   -Droit d'accès: Oui, voir members.
- <br>   -Readme.md:
+ <br>   -Readme.md: Capture d'écran, description du jeu, procedure, tout est là!
  <br>   -CDC.md: Il est diponible et il est liées depuis le readme.
 
 ## Prototype
@@ -192,7 +192,7 @@ Justifications :
 <br>    -Exhaustivité: Le scéniaro principal utilise tout les fonctionnalités proposés: Les efforts et compétences sont bien prix en compte.
 <br>    -Scénario additionnels: Un scénario additionnel est proposé, et son interêt est explicite.
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 15
+- Total d'item « Excellent » (2 point) : 16
 - Total d'item « Satisfaisant » (1 point: 6
 - Total d'item « Insatisfaisant » (0 point) :3
-- Note totale  : 
+- Note totale  : 38/50, soit 7.6/10
