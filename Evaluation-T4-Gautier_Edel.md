@@ -71,9 +71,13 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 Justifications :
 Organisation: Les noms des fichiers permettent de comprendre directement de quoi il s'agit et ils sont bien répartis dans des dossiers.
+
 Versioning: Les descriptions des commit sont claires et ils sont réguliers.
+
 Droit d'accès: Oui, (Maintainer) et le GIT est public
+
 README.md: Le fichier n'est pas complet à l'heure actuelle.
+
 CDC.md: /
 
 
@@ -101,9 +105,13 @@ CDC.md: /
 
 Justifications :
 Installation: Seulement un téléchargement est nécessaire.
+
 Exécution: Il suffit d'éxecuter pour que l'application se lance.
+
 Stabilité: Je n'ai jamais eu de bug, et pourtant j'ai essayé d'en faire apparaître.
+
 Affordabilité: Il n'y a pas de tutoriel ou d'explications des règles.
+
 Transmission du concept: On comprend le concept globalement mais pas dans les détails.
  
 ## Cahier des charges
@@ -122,7 +130,9 @@ Transmission du concept: On comprend le concept globalement mais pas dans les d�
 
 Justifications : 
 Modèle de document: Le CdC respecte le modèle.
+
 Description de l'application: On comprend comment jouer mais pas forcément les impacts de nos décisions dans la partie.
+
 Modèle conceptuel: Le MCD est clair et semble complet.
 
 ### Fonctionnalités
@@ -165,13 +175,21 @@ Modèle conceptuel: Le MCD est clair et semble complet.
 
 Justifications : 
 Entrées: Les actions sont détaillées et énumérées.
+
 Sorties: Les actions sont détaillées et énumérées.
+
 Description du moteur: /
+
 Découpage modulaire: Les modules ne sont pas décrits
+
 Granularité des fonctionnalités: les fonctionnalités sont réussies sans pour autant être optimales.
+
 Exhaustivité des fonctionnalités: /
+
 Description des fonctionnalités: /
+
 Priorisation des fonctionnalités: /
+
 Difficulté des fonctionnalités: Aucunes annotations de difficultés.
 
 ### Scénarios
@@ -190,7 +208,9 @@ Difficulté des fonctionnalités: Aucunes annotations de difficultés.
 
 Justifications :
 Nombre: Un scénario bien développé et un seul autre.
+
 Exhaustivité: Oui.
+
 Scénarios additionnels: Un scénario en plus dont l'intérêt est expliqué dans le CdC.
 
 ## Résultat T4
