@@ -225,6 +225,7 @@ namespace psychorientation
                     m_fin.ShowDialog();
                     UntransmitKeyDown();
                     pb_action_suivante.Click -= new System.EventHandler(Pb_action_suivante_Click);
+                    Close();
                     break;
             }
 
