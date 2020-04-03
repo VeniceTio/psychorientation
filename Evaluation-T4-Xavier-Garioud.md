@@ -48,17 +48,17 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 ## GIT 
 - Organisation
-  - [ ] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
+  - [x] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
   - [ ] Les fichiers sources sont tous partagés et organisés.
-  - [x] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
+  - [ ] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
 - Versioning
   - [ ] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
-  - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
-  - [x] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
+  - [x] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
+  - [ ] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
-  - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT et ce dépôt est accessible à tous.
+  - [x] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT et ce dépôt est accessible à tous.
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
-  - [x] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
+  - [ ] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README.md
   - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
   - [ ] Le README n'est pas complet.
@@ -73,25 +73,25 @@ Justifications :
 
 ## Prototype
 - Installation
-  - [ ] Le prototype s'installe sans effort.
+  - [x] Le prototype s'installe sans effort.
   - [ ] Le prototype s'installe en suivant une procédure.
-  - [x] Le prototype ne s'installe pas.
+  - [ ] Le prototype ne s'installe pas.
 - Exécution
-  - [ ] Le prototype s'exécute en cliquant sur une icône.
+  - [x] Le prototype s'exécute en cliquant sur une icône.
   - [ ] Le prototype s'exécute en suivant une procédure.
-  - [x] Le prototype ne s'exécute pas
+  - [ ] Le prototype ne s'exécute pas
 - Stabilité
-  - [ ] Le prototype est parfaitement stable
+  - [x] Le prototype est parfaitement stable
   - [ ] Le prototype est rarement instable
-  - [x] Le prototype est instable
+  - [ ] Le prototype est instable
 - Affordabilité
   - [ ] Toutes les instructions de jeu sont inclues dans le prototype sous forme d'un tutoriel.
   - [ ] Les instructions de jeu sont sous forme d'un manuel.
   - [x] Les instructions de jeu ne sont pas données.
 - Transmission du concept
-  - [ ] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
+  - [x] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
   - [ ] Le prototype permet de transmettre le concept-cible au joueur.
-  - [x] Le prototype ne permet pas de transmettre le concept-cible au joueur.
+  - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
 Justifications :
  
@@ -153,9 +153,9 @@ Justifications :
 
 ### Scénarios
 - Nombre
-  - [ ] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
+  - [x] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
   - [ ] Un scénario est pleinement développé.
-  - [x] Un scénario n'est pas pleinement développé.
+  - [ ] Un scénario n'est pas pleinement développé.
 - Exhaustivité
   - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités.
   - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
