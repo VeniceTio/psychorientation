@@ -73,8 +73,8 @@ Justifications :
 
 ## Prototype
 - Installation
-  - [ ] Le prototype s'installe sans effort.
-  - [x] Le prototype s'installe en suivant une procédure.
+  - [x] Le prototype s'installe sans effort.
+  - [ ] Le prototype s'installe en suivant une procédure.
   - [ ] Le prototype ne s'installe pas.
 - Exécution
   - [x] Le prototype s'exécute en cliquant sur une icône.
