@@ -97,17 +97,17 @@ Justifications :
  
 ## Cahier des charges
 - Modèle de document
-  - [ ] Le CdC respecte parfaitement le modèle de document.
+  - [x] Le CdC respecte parfaitement le modèle de document.
   - [ ] Le CdC respecte globalement le modèle de document.
-  - [x] Le CdC ne respecte pas le modèle de document.
+  - [ ] Le CdC ne respecte pas le modèle de document.
 - Description de l'application
-  - [ ] La description permet de se faire une idée précise et exhaustive de l'application attendue.
+  - [x] La description permet de se faire une idée précise et exhaustive de l'application attendue.
   - [ ] La description permet de se faire une idée de l'application attendue.
-  - [x] La description ne permet pas de se faire une idée de l'application attendue.
+  - [ ] La description ne permet pas de se faire une idée de l'application attendue.
 - Modèle conceptuel
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
-  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
-  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
+  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
+  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
 Justifications : 
 
