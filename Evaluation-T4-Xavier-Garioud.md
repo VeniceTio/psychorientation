@@ -66,8 +66,8 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [x] Il n'y a pas de README.
 - CDC.md
   - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
-  - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
-  - [x] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
+  - [x] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
+  - [ ] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
 
 
 Justifications :
@@ -114,16 +114,16 @@ Justifications :
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
-  - [ ] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
-  - [x] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
+  - [ ] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
   - [ ] La description des entrées ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Sorties / Infomations au joueur
-  - [ ] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
-  - [x] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
+  - [ ] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
   - [ ] La description des sorties ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Description du moteur interne
-  - [ ] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
-  - [x] La description du moteur interne permet de comprendre le fonctionnement de l'application.
+  - [x] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
+  - [ ] La description du moteur interne permet de comprendre le fonctionnement de l'application.
   - [ ] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
 - Découpage modulaire 
   - [x] L'application est couverte par des modules pertinents et pleinement décrits.
@@ -151,7 +151,10 @@ Justifications :
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
 Justifications : 
-
+-Entrées/Actions du joueur: Ils permettents de se faire une idée parfaite des intéractions, on comprend chacun des élèments et leur utilités.
+-Sorties/Actions du joueur: On voit facilement les informations données au joueurs. Ils sont clairement affichés sur l'interface de jeu.
+-Description du moteur interne: Permet parfaitement la compréhension du moteur de jeu et de comment il fonctionne, en montrant les différentes étapes.
+-Découpage modulaire:
 ### Scénarios
 - Nombre
   - [x] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
@@ -167,7 +170,9 @@ Justifications :
   - [ ] Des scénarios additionnels ne sont pas proposés.
 
 Justifications :
-
+    -Nombre: Il y a un scénario pleinement développé, avec deux alternatives.
+    -Exhaustivité: Le scéniaro principal utilise tout les fonctionnalités proposés: Les efforts et compétences sont bien prix en compte.
+    -Scénario additionnels: Un scénario additionnel est proposé, et son interêt est explicite.
 ## Résultat T4
 - Total d'item « Excellent » (2 point) : 
 - Total d'item « Satisfaisant » (1 point: 
